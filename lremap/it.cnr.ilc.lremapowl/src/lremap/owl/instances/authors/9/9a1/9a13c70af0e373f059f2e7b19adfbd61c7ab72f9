@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/9a1/9a13c70af0e373f059f2e7b19adfbd61c7ab72f9">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Cavalli-Sforza</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:v.cavallisforza@aui.ma"/>
+		<foaf:mbox_sha1sum>9a13c70af0e373f059f2e7b19adfbd61c7ab72f9</foaf:mbox_sha1sum>
+		<foaf:firstName>Violetta</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/287/28737d470b335f058f570db87b27535a2132a1f2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b6b/b6be6b9c3c35813ef9cbdfcfbf8b7b17663aec98"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

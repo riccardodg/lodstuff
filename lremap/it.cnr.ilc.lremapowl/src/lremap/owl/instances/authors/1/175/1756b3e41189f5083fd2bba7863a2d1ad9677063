@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/1/175/1756b3e41189f5083fd2bba7863a2d1ad9677063">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Damaskou</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:e_damaskou@yahoo.gr"/>
+		<foaf:mbox_sha1sum>1756b3e41189f5083fd2bba7863a2d1ad9677063</foaf:mbox_sha1sum>
+		<foaf:firstName>Eftychia</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/61a/61a2b30a0b486e1e882508182d96d8f3f5bf9b43"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6a6/6a69f8a96c5db9f600053ac15d3f52a8ebcdde6e"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

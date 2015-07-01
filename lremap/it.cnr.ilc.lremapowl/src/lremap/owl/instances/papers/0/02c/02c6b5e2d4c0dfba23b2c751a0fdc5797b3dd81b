@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/0/02c/02c6b5e2d4c0dfba23b2c751a0fdc5797b3dd81b">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Generating Linked-Data based Domain-Specific Sentiment Lexicons from Legacy Language and Semantic Resources</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/b/bb3/bb3c7738165f15a0b83aca1b8e019e1467cbb54f">
+				<rdfs:label>De Biasi Gilles</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/9/985/985c3ab912ecd45d224cc9ad67367f25ac024dce">
+				<rdfs:label>Buitelaar Paul</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/51c/51c5d6a6cf237a337892ac29858722e2d03870ea">
+				<rdfs:label>Coughlan Barry</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/13d/13d289c3690536d959f6bde00afe76c46206da00">
+				<rdfs:label>Arcan Mihael</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bbb/bbb8578dc412a5a091773c77ca366ff8cae80929">
+				<rdfs:label>Vulcu Gabriela</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/4b8/4b8113ea51b43c87134595258754f19619bad6fd">
+				<rdfs:label>Negi Sapna</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/2dc/2dcf8fd212a58e398a7399be4be0ccb627772b60">
+				<rdfs:label>J. Sanchez Fernando</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8f2/8f2506d82330d1014b914554b43dd143684787b0">
+				<rdfs:label>Pereira Bianca</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bbb/bbb8578dc412a5a091773c77ca366ff8cae80929">
+				<rdfs:label>Vulcu Gabriela</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/830/830d5b46d744f0de87e946ddc3a02e8d06a129a9">
+				<rdfs:label>A. Iglesias Carlos</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a8e/a8ea449b69ed1a94f991f10c675c3de5bd2d59dc">
+				<rdfs:label>Nebout Florian</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d76/d76110ff698b922cfdb5f1c05d4d9d76aa5eb051">
+				<rdfs:label>Caffiau Sybille</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

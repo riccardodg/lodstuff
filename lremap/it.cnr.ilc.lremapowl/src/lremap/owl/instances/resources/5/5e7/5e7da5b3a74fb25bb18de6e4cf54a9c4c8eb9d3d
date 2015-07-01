@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/5/5e7/5e7da5b3a74fb25bb18de6e4cf54a9c4c8eb9d3d">
+		<rdf:type rdf:resource="&lremap;Corpus"/>
+		<lremap:hasResourceAvailability rdf:resource="&ri;resources/5/5e7/We_are_working_hard_to_acquire_the_broadcaster_agreement_of_using_the_captured_multimedia_content_and_annotations_outside_our_laboratory"/>
+		<lremap:hasResourceStatus rdf:resource="&lremap;Newly_created-finished"/>
+		<lremap:hasResourceModality rdf:resource="&lremap;Speech-Written"/>
+		<lremap:hasResourceUse rdf:resource="&lremap;Speech_Recognition-Understanding"/>
+		<lremap:hasResourceName rdf:resource="&lremap;TUKE-BNews-SK-_A_Slovak_Broadcast_News_Corpus"/>
+		<dcterms:references rdf:resource="&sub;#LREC2014-680X-E6C6P2G9G2"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/5/5e7/TUKE-BNews-SK-_A_Slovak_Broadcast_News_Corpus">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+
+
+<!-- Start Resource Avails List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/5/5e7/We_are_working_hard_to_acquire_the_broadcaster_agreement_of_using_the_captured_multimedia_content_and_annotations_outside_our_laboratory">
+		<rdf:type rdf:resource="&lremap;ResourceAvailability"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Avails List -->
+</rdf:RDF>

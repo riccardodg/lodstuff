@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/d69/d69abecc96b7bf3436dba6c14923dd020730e319">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Aussems</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:s.h.j.a.aussems@tilburguniversity.edu"/>
+		<foaf:mbox_sha1sum>d69abecc96b7bf3436dba6c14923dd020730e319</foaf:mbox_sha1sum>
+		<foaf:firstName>Suzanne</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/dfa/dfa84ad6a88c4604ddc9de1dea7bb6e9af1d8343"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/fa2/fa2b85ba5eb9e67e874f8fa48f53566f8224b5c8"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

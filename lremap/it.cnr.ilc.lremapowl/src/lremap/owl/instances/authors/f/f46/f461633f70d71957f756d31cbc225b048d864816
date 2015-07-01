@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/f46/f461633f70d71957f756d31cbc225b048d864816">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>KLESSA</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:klessa@amu.edu.pl"/>
+		<foaf:mbox_sha1sum>f461633f70d71957f756d31cbc225b048d864816</foaf:mbox_sha1sum>
+		<foaf:firstName>KATARZYNA</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8f1/8f1f1a3e616f25319230938598dd9dd507d3e4db"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/593/593d3657ec1d02989eb28b720c3a5078790a7925"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

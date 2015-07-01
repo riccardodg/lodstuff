@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/8/827/827a0991001d77a9b0a24d0e5072c3f44b05cad6">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Vulnerability in Acquisition, Language Impairments in Dutch: Creating a VALID Data Archive</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/d/dbe/dbe654256ba66ad775bf98ddc42739e25d671048">
+				<rdfs:label>De Jong Jan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/038/0386f5458522a800e7864ce44a64d4d28a82af3d">
+				<rdfs:label>Marteau Pierre-Francois</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/ba9/ba97b7c7b50409e5bf0832ad8918217a847c5d49">
+				<rdfs:label>Wijnen Frank</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/46c/46c061ef8db4d2bf3032294525a024eab4d9d13d">
+				<rdfs:label>van den Heuvel Henk</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e01/e01183bec53594f776637b830b53b8b7c18a5a3e">
+				<rdfs:label>Fikkert Paula</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/46c/46c061ef8db4d2bf3032294525a024eab4d9d13d">
+				<rdfs:label>van den Heuvel Henk</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d0f/d0feac3f6061f21a95c56fcb3d94686eed1a5c5a">
+				<rdfs:label>Baker Anne</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/caa/caa0dfc2beade1d259a700b17e1a7d760bf3b301">
+				<rdfs:label>Sanders Eric</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/6f3/6f38582b1ca30efe76960a71637745177d7b6a8f">
+				<rdfs:label>Pelegrina Ana Belen</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/cc4/cc42090e746c7162c2438528b0786652d61f24f4">
+				<rdfs:label>Trilsbeek Paul</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

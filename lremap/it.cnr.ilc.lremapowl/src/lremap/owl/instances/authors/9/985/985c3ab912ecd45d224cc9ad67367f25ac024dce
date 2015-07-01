@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/985/985c3ab912ecd45d224cc9ad67367f25ac024dce">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Buitelaar</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:paul.buitelaar@deri.org"/>
+		<foaf:mbox_sha1sum>985c3ab912ecd45d224cc9ad67367f25ac024dce</foaf:mbox_sha1sum>
+		<foaf:firstName>Paul</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8e5/8e5493cdc237b42d0151c8c9491b1f9054e8ab05"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/106/106c7db10ba86c2c23983ea7b41fbc391e0c1d52"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8c2/8c2e7d96e7bd2401963207dd643f5577ac617e07"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/620/620bb3965bf5aeaa9d0d9a61bc2db918725c5698"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/887/8877b903a3320661080f400cd427179e2c0bde8d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

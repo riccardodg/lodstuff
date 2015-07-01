@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/7/7ce/7ced7b8eb2849ad91b2ffdf4d2c73fa30d4e1447">
+		<rdf:type rdf:resource="&lremap;Corpus"/>
+		<lremap:hasResourceAvailability rdf:resource="&lremap;From_Data_Center(s)"/>
+		<lremap:hasResourceStatus rdf:resource="&lremap;Existing-used"/>
+		<lremap:hasResourceModality rdf:resource="&lremap;Speech"/>
+		<lremap:hasResourceUse rdf:resource="&lremap;Acquisition"/>
+		<lremap:hasResourceName rdf:resource="&lremap;The_SLI_RU-Kentalis_data_base"/>
+		<dcterms:references rdf:resource="&sub;#LREC2014-89X-E9F3C7C4D6"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/7/7ce/The_SLI_RU-Kentalis_data_base">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+</rdf:RDF>

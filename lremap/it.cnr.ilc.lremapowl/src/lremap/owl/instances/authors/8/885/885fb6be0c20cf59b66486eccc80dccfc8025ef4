@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/885/885fb6be0c20cf59b66486eccc80dccfc8025ef4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Culy</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:christopher.culy@uni-tuebingen.de"/>
+		<foaf:mbox_sha1sum>885fb6be0c20cf59b66486eccc80dccfc8025ef4</foaf:mbox_sha1sum>
+		<foaf:firstName>Chris</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b9b/b9bd726e98cf8a9de063a3fd0a8bfec98b4e8452"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1a5/1a54e68b37cbb4eb2bcfadf9303f7334e9e2f119"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

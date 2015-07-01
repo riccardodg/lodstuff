@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/f94/f94ad05e61eb76114b1a292dac983112249ca993">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>de Matos</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:david.matos@inesc-id.pt"/>
+		<foaf:mbox_sha1sum>f94ad05e61eb76114b1a292dac983112249ca993</foaf:mbox_sha1sum>
+		<foaf:firstName>David Martins</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/742/742bf78962828d1f5536f938af780c2bffbeb518"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/01c/01c418fb368f03e77c8cdf68153a3366c51feef0"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

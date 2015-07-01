@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/eaa/eaa6bf9729c0269f9c1207a374e7d8ca9c30e347">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Draxler</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:draxler@phonetik.uni-muenchen.de"/>
+		<foaf:mbox_sha1sum>eaa6bf9729c0269f9c1207a374e7d8ca9c30e347</foaf:mbox_sha1sum>
+		<foaf:firstName>Christoph</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/609/609688eac0c97b30adfadd00b1c53043431891bc"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/53f/53fdb324edd28d24ddb6c076228965f0f642d718"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

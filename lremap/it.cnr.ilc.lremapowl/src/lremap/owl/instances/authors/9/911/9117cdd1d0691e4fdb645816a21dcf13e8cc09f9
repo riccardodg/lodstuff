@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/911/9117cdd1d0691e4fdb645816a21dcf13e8cc09f9">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>McCrae</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:jmccrae@cit-ec.uni-bielefeld.de"/>
+		<foaf:mbox_sha1sum>9117cdd1d0691e4fdb645816a21dcf13e8cc09f9</foaf:mbox_sha1sum>
+		<foaf:firstName>John Philip</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6fd/6fd043408239169afb5c550076f36357581d173d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2ab/2aba0ca18ebcb95aefdc8d1f7abef0f35a465a7b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/dea/dea22c5f28851909d25d5da52b0d808c95d2cfee"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

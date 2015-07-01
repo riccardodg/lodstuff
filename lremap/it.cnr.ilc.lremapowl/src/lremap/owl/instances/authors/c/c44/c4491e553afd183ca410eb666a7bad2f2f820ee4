@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/c44/c4491e553afd183ca410eb666a7bad2f2f820ee4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Roth</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ryanr@ccls.columbia.edu"/>
+		<foaf:mbox_sha1sum>c4491e553afd183ca410eb666a7bad2f2f820ee4</foaf:mbox_sha1sum>
+		<foaf:firstName>Ryan</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/62a/62a86f447260deca487e833c95c22d6f83e80603"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/126/1266827c442c12df0844bc815392b2d5f7c63c7b"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

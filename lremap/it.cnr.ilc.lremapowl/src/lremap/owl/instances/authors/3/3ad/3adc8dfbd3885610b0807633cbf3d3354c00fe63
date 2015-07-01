@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/3ad/3adc8dfbd3885610b0807633cbf3d3354c00fe63">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Helgadóttir</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:sigruhel@hi.is"/>
+		<foaf:mbox_sha1sum>3adc8dfbd3885610b0807633cbf3d3354c00fe63</foaf:mbox_sha1sum>
+		<foaf:firstName>Sigrún</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/972/9729fb570a0f434cd101b7013254e7db12a95ed4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0cf/0cfce6f3bf28d1f6a2266e5a6897f444de1280ba"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY year "http://www.resourcebook.eu/lremap/owl/lremap_year" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&year;#"
+     xmlns:dc="&dc;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:year="&year;">
+    <owl:Ontology rdf:about="&year;">
+        <rdfs:label rdf:datatype="&xsd;string">Basic Year Ontology</rdfs:label>
+    </owl:Ontology>
+    
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_year#Year -->
+
+    <owl:Class rdf:about="&year;Year">
+        <rdfs:label xml:lang="en">Year</rdfs:label>
+        <rdfs:label xml:lang="it">Anno</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://live.dbpedia.org/ontology/Year</rdfs:seeAlso>
+    </owl:Class>
+
+<!-- Start Class Year List -->
+	<owl:Class rdf:about="&year;#2014">
+		<rdfs:label>2014</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&year;#Year"/>
+	</owl:Class>
+
+
+<!-- End Class Year List -->
+
+
+
+<!-- Start Year List -->
+	<owl:NamedIndividual rdf:about="&year;#2014">
+		<rdf:type rdf:resource="&year;#2014"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Year List -->
+</rdf:RDF>

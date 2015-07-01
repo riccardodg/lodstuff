@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/d54/d54523e4ca68bb01e869697f4b733f1fc9addb51">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Vila-Suero</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:dvila@fi.upm.es"/>
+		<foaf:mbox_sha1sum>d54523e4ca68bb01e869697f4b733f1fc9addb51</foaf:mbox_sha1sum>
+		<foaf:firstName>Daniel</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6ec/6ec64d93ce1a1fb2e129ebe6860242af828fb501"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/31f/31fe15123497b4fdb0bceb735358b8e8a1927149"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5a6/5a6552625ef6eda9f7e179b7bf568283f7175bac"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

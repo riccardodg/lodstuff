@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/4/40f/40fc8fe06a18e5f423e906c42dd9930d3f648f58">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>De La Clergerie</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:eric.de_la_clergerie@inria.fr"/>
+		<foaf:mbox_sha1sum>40fc8fe06a18e5f423e906c42dd9930d3f648f58</foaf:mbox_sha1sum>
+		<foaf:firstName>Eric</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/93c/93c3e7bf7091da467ccd9c060a4822592b465a1f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/55a/55ab17b9115d0cd37f317fc58751fe82c3a13888"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

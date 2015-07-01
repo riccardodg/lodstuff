@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/e/e5a/e5a21c43634252a698f1b5c08b4689389dc7006b">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>A Multi-Cultural Repository of Automatically Discovered Linguistic and Conceptual Metaphors</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/2/229/229c30f2e1ec76eab40954bb1b244109dbbbd1e4">
+				<rdfs:label>Taylor Sarah</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/7b5/7b580b1d9039cc37dc5fa4bffe5f764637b11c12">
+				<rdfs:label>Cases Ignacio</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8e9/8e911ce3329829427559b409fd6712f0d1d46127">
+				<rdfs:label>Cho Kit</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/23b/23b5614e55fd540f7ca6979a9fc66cad481108a8">
+				<rdfs:label>Liu Ting</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/4ff/4ff0383b2be5c0cf4dca683e6d7ac2b0760448e9">
+				<rdfs:label>Peshkova Yuliya</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/ced/ced93da7b8e9c63e5d71fe8c082644948e926a32">
+				<rdfs:label>Shaikh Samira</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/ced/ced93da7b8e9c63e5d71fe8c082644948e926a32">
+				<rdfs:label>Shaikh Samira</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bcc/bcc4b757266bdba01456e08da90685c4b285b8b5">
+				<rdfs:label>Broadwell George Aaron</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/9/90d/90d388797af6a7aff7f905b3036cf1f034e134b1">
+				<rdfs:label>Lin Ching-Sheng</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/01c/01c4524f2f2e65dc9418f52af11e312d1c8027ec">
+				<rdfs:label>Feldman Laurie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/49c/49ca1ae924df35e296454bf171fc0daf0d24c608">
+				<rdfs:label>Yamrom Boris</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f9c/f9cbf1a5bf4b8df02c548a068f196a27c5293dd9">
+				<rdfs:label>Strzalkowski Tomek</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/761/76194b0a39a0b0c4cb00b69369c55cbf73024b0f">
+				<rdfs:label>Boz Umit</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/lremap_auth" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/lremap_paper" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl/" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:paper="&paper;"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="&paper;">
+        <rdfs:comment>The way we used for covering the basic paper information contained in the LreMap is to import the bibo (http://purl.org/ontology/bibo/) ontology for modeling the aspects of the paper such as title, authors, status and so on and to import the lremap_auth (http://www.resourcebook.eu/lremap/owl/lremap_auth.owl) for managing the correlations between authors and papers.</rdfs:comment>
+        <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
+        <owl:imports rdf:resource="&auth;"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasTopic -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasTopic">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>

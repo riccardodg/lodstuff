@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/f/fd8/fd8346356913acbc5f131bb2b164966c3d14c8ee">
+		<rdf:type rdf:resource="&lremap;Corpus"/>
+		<lremap:hasResourceAvailability rdf:resource="&lremap;Freely_Available"/>
+		<lremap:hasResourceStatus rdf:resource="&lremap;Newly_created-finished"/>
+		<lremap:hasResourceModality rdf:resource="&lremap;Written"/>
+		<lremap:hasResourceUse rdf:resource="&ri;resources/f/fd8/Error_Detection_and_Correction"/>
+		<lremap:hasResourceName rdf:resource="&lremap;Parallel_sentences_for_error_detection_and_correction_from_WIkipedia_2012_and_2013"/>
+		<dcterms:references rdf:resource="&sub;#LREC2014-453X-J3B6E5J2F7"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/f/fd8/Parallel_sentences_for_error_detection_and_correction_from_WIkipedia_2012_and_2013">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+
+
+<!-- Start Resource Uses List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/f/fd8/Error_Detection_and_Correction">
+		<rdf:type rdf:resource="&lremap;ResourceUse"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Uses List -->
+</rdf:RDF>

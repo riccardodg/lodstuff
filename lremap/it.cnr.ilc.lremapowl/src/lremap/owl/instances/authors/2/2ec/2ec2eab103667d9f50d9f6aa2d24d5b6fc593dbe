@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/2/2ec/2ec2eab103667d9f50d9f6aa2d24d5b6fc593dbe">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Gurevych</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:gurevych@ukp.informatik.tu-darmstadt.de"/>
+		<foaf:mbox_sha1sum>2ec2eab103667d9f50d9f6aa2d24d5b6fc593dbe</foaf:mbox_sha1sum>
+		<foaf:firstName>Iryna</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4e0/4e03a146321a8770a80e1b4d2b26903859afb592"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/de5/de53af4b712d5fdabbf0e765aeae2369c06cab44"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/88a/88a31fd681b7e5ae4402fda9b3051d925e33e8e0"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

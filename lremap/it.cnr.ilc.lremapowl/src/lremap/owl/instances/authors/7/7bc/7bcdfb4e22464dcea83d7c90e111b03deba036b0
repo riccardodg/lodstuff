@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/7bc/7bcdfb4e22464dcea83d7c90e111b03deba036b0">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Bel</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:nuria.bel@upf.edu"/>
+		<foaf:mbox_sha1sum>7bcdfb4e22464dcea83d7c90e111b03deba036b0</foaf:mbox_sha1sum>
+		<foaf:firstName>Núria</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c40/c40dfe37798206b38d6b7c2bb864894fffd38e1f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/096/096a9c9858b83dfa4b67296833ce8be14b2c1141"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b89/b89e9f951e72c60a87376f7a85f92583d07c2490"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8c9/8c901958c587ac677b63722157c49c6942d03dfd"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/74a/74aa90bd0f92bf4ec7908700a4ece03c1540a965"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/309/3095fa7d72bb329b05d5cd2f8c20f2a5dd685656"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/320/320ee2558aaa778db8376b9bea1eb5591cd04832"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/bae/bae375385aabb8dd32a9e792725734ed3cc05a25"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

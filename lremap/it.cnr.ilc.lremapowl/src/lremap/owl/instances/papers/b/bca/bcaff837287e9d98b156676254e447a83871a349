@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/b/bca/bcaff837287e9d98b156676254e447a83871a349">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Revisiting comparable corpora in connected space</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/d/df8/df8fe785f81b5be023b2eb5b834b263b9b19fc91">
+				<rdfs:label>Yamamoto Mikio</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/ccf/ccfece1142b7e0dcb53b2ac796911a2fce624316">
+				<rdfs:label>Zweigenbaum Pierre</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/36d/36d16c759f1709b136650ce684b27700f96ab560">
+				<rdfs:label>Boitet Christian</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8e8/8e8bdf2fef4c6d5981b717bc84c4b93aaa685aff">
+				<rdfs:label>Mangeot Mathieu</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/df8/df8fe785f81b5be023b2eb5b834b263b9b19fc91">
+				<rdfs:label>Mitsuhashi Tomoharu</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/ccf/ccfece1142b7e0dcb53b2ac796911a2fce624316">
+				<rdfs:label>Zweigenbaum Pierre</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

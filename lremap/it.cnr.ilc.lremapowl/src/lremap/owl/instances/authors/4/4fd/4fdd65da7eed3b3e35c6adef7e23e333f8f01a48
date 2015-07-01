@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/4/4fd/4fdd65da7eed3b3e35c6adef7e23e333f8f01a48">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>MARTIN</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:philippe.martin@utoronto.ca"/>
+		<foaf:mbox_sha1sum>4fdd65da7eed3b3e35c6adef7e23e333f8f01a48</foaf:mbox_sha1sum>
+		<foaf:firstName>Philippe</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/920/9205dd9e22f0ffa519544b04aa6d2a2435c3e16b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a5f/a5fe6d232f84026fc73009f5907cb447dbfa3aaf"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

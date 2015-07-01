@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/32a/32ad3587643342683601dcadd4bc6fdb6b22b3d4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Lyding</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:verena.lyding@eurac.edu"/>
+		<foaf:mbox_sha1sum>32ad3587643342683601dcadd4bc6fdb6b22b3d4</foaf:mbox_sha1sum>
+		<foaf:firstName>Verena</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ee0/ee019e6c39bca0f447b7e6001281270e811ec97b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d81/d81258880ca761ed5d20d5b0a85b18262dac8ae0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a4e/a4ef8fccf70c152f6f23414c92edc4e71835a585"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/4/424/42472dde2fae60b1527bedce545a702a51d8d088">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Moore</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:j.moore@ed.ac.uk"/>
+		<foaf:mbox_sha1sum>42472dde2fae60b1527bedce545a702a51d8d088</foaf:mbox_sha1sum>
+		<foaf:firstName>Johanna</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9ec/9ec74b7895d6ae4f480b63300ecc95db6fe13343"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8f7/8f7c12f93f5503790540be48e3b254f8a2151c92"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0ca/0ca204b4c15013f0ab6b91e155bfa3f4aa9315a5"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

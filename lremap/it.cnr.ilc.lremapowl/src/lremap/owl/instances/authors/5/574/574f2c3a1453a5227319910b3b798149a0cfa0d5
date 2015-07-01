@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/574/574f2c3a1453a5227319910b3b798149a0cfa0d5">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Cybulska</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:agatacybulska@gmail.com"/>
+		<foaf:mbox_sha1sum>574f2c3a1453a5227319910b3b798149a0cfa0d5</foaf:mbox_sha1sum>
+		<foaf:firstName>Agata</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2ed/2ed8fe954445c736abc0f54816c2bcc57deafd5f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/732/732f63265e7253b7e85c78c6d04c3aa6b6b01554"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a37/a373ac12cfa14751a51c85a001360c4cc42e3686"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

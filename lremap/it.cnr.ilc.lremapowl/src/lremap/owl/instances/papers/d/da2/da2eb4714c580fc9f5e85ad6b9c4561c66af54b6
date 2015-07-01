@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/d/da2/da2eb4714c580fc9f5e85ad6b9c4561c66af54b6">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Construction of Diachronic Ontologies from People's Daily of Fifty Years</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/b/bfd/bfdcc8f1a4e8b0a3622695c41b9e95d7d4fa8851">
+				<rdfs:label>Darwish Kareem</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b89/b8940ff503382a6ae6606caa8f8b9d769204e82b">
+				<rdfs:label>Hu Junfeng</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/9/975/97518c954974b870f0fc5dc3d65e402050750eb6">
+				<rdfs:label>He Shaoda</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/9/93c/93c94dfb3ad595affb7751ef52249c470db9f66f">
+				<rdfs:label>Xiao Liumingjing</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bf4/bf4334044380cf5f50e48a5f4c9a01e1ccef612d">
+				<rdfs:label>Cartoni Bruno</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

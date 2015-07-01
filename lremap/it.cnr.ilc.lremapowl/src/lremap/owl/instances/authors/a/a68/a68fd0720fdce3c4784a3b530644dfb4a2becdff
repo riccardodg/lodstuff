@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a68/a68fd0720fdce3c4784a3b530644dfb4a2becdff">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>de Marneffe</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:mcdm@ling.ohio-state.edu"/>
+		<foaf:mbox_sha1sum>a68fd0720fdce3c4784a3b530644dfb4a2becdff</foaf:mbox_sha1sum>
+		<foaf:firstName>Marie-Catherine</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/fd8/fd8660e3df9e5f5d3a5b0259b4a375538a25b02f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1b4/1b4f9fa0f084262bef5f2e248d2282e41b547aa0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/718/7184dbc018981bea28620d70d2b5c91458fa62e0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/645/645bfb5f5f20749d86cb29905291da8e7e70781d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

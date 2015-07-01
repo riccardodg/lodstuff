@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/5c4/5c4fba2411dae92d93e2d0763426a9d53ae3f0b1">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Soria</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:claudia.soria@ilc.cnr.it"/>
+		<foaf:mbox_sha1sum>5c4fba2411dae92d93e2d0763426a9d53ae3f0b1</foaf:mbox_sha1sum>
+		<foaf:firstName>Claudia</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/afb/afb9bf509aaa1fb2156db9726d12f7d4cf908389"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/282/28283f49c52249d321865b0e2db04afcb608630a"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

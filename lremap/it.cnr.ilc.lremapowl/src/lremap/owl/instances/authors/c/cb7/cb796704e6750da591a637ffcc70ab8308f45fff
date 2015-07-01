@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/cb7/cb796704e6750da591a637ffcc70ab8308f45fff">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Agerri</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:rodrigo.agerri@ehu.es"/>
+		<foaf:mbox_sha1sum>cb796704e6750da591a637ffcc70ab8308f45fff</foaf:mbox_sha1sum>
+		<foaf:firstName>Rodrigo</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/76f/76f1203f000d10f8c4d658e42d426948642b13c0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b8e/b8edde36e5670b693c3a7d3212f9d8f878a77def"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/752/7528467e331bc42d638235f2053ef994bd08dfa5"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e21/e211144fb7a94b4a8b21079b31f33834ca7e19b2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1df/1dfa767ff34ae56e8ac1fe775c963e1bf1f43387"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/24c/24c5b91cada3f1c1eed4e210afbb8c0daac85ad4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2ad/2ad4b9ac9c29ca3cab3895404f547956fa476369"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/685/685fbfe35bd3539975a9815713a2a9da8e67c450"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4c9/4c96d872d17e371066719fd66769dcd090d3b09d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d3e/d3ea5022e1997e918d2ccf80f764d4570f76e245"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/532/5323034e0197eae868939fcd76a24683d8cc7c05"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b35/b3516803fe07d0fcac5d497e1dffe412bd90bedb"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/4/45f/45f0added7514ff9976f2f5f85ce8bbfc2d34beb">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Ousidhoum</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:nedjma.ousidhoum@gmail.com"/>
+		<foaf:mbox_sha1sum>45f0added7514ff9976f2f5f85ce8bbfc2d34beb</foaf:mbox_sha1sum>
+		<foaf:firstName>Nedjma Djouhra</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d71/d7180ec649ce50df38a51b066619b2d511d69d85"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/bf4/bf4f89edd5f612953d131e95258fdf2b715fbc9f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/923/92359bdfdec7fb1ec0acd65f0333f176e139631a"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

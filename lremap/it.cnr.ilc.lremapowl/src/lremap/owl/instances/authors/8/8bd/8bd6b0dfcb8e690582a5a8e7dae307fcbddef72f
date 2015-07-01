@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/8bd/8bd6b0dfcb8e690582a5a8e7dae307fcbddef72f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>O Riordan</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:colm.oriordan@nuigalway.ie"/>
+		<foaf:mbox_sha1sum>8bd6b0dfcb8e690582a5a8e7dae307fcbddef72f</foaf:mbox_sha1sum>
+		<foaf:firstName>Colm</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/973/973a9173dafe7af02d58fd7c0417b6c8386c3599"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/138/138c9cdd2acbdf4358b691afdd147ccdc458c8bc"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

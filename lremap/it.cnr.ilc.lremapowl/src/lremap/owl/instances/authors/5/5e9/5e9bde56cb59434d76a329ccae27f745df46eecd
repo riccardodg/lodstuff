@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/5e9/5e9bde56cb59434d76a329ccae27f745df46eecd">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Jean-Louis</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ludovic.jeanlouis@gmail.com"/>
+		<foaf:mbox_sha1sum>5e9bde56cb59434d76a329ccae27f745df46eecd</foaf:mbox_sha1sum>
+		<foaf:firstName>Ludovic</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ee8/ee878a2d9e2500786be4e6bea7e5a7862ae01231"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

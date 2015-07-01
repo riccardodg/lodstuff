@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/b/bc2/bc26d0a4f62ae04540618a88d6e1ca32293884c2">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Intelligent systems' Holistic Evolving Analysis of Real-life Universal speaker characteristics</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/2/228/2280df21971f0dddf27b46bcbeb8c1215e625249">
+				<rdfs:label>Kazemzadeh Abe</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/022/022d5aa11b400f51bd6d56c59e4e784a5a06edbc">
+				<rdfs:label>Eyben Florian</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/5b3/5b362a1c0df31ed062afa50ccb06c8d4ea3ab324">
+				<rdfs:label>Weninger Felix</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/772/7727792e28dd240a0ba460984932692e3d3c78af">
+				<rdfs:label>Zhang Yue</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/222/222aa22da2401adaea8e6cd497ce0be3d3a3d0be">
+				<rdfs:label>Steiner Ingmar</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d52/d5218190dd866d5daeaf01e650007429e3107f19">
+				<rdfs:label>Schuller Björn</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d52/d5218190dd866d5daeaf01e650007429e3107f19">
+				<rdfs:label>Schuller Björn</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8a5/8a50b735fa09eddc5fb8da28a552118f6b0a261d">
+				<rdfs:label>Gebhard Patrick</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/68e/68e73e97a281d8adfb86e6c0454de3d63bacd200">
+				<rdfs:label>Fobe Gerhard</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

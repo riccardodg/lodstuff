@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/2/20a/20a3a6b796b52b9472486a82718bf9b0fb2cd6d4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Stambolieva</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ekaterina.stambolieva@euroscript.lu"/>
+		<foaf:mbox_sha1sum>20a3a6b796b52b9472486a82718bf9b0fb2cd6d4</foaf:mbox_sha1sum>
+		<foaf:firstName>Ekaterina</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3d7/3d71622d6797c8bdf168048141368fe053169c39"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b8b/b8b43785b6a4f324d352c80077dd85259d9bdf78"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/80b/80bf7630eced40b1e6f272038dd276da1df72c3d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

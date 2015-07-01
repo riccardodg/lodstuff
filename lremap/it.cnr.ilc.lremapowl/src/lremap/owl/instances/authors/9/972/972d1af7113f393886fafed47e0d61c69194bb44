@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/972/972d1af7113f393886fafed47e0d61c69194bb44">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Rebholz-Schuhmann</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:rebholz@ifi.uzh.ch"/>
+		<foaf:mbox_sha1sum>972d1af7113f393886fafed47e0d61c69194bb44</foaf:mbox_sha1sum>
+		<foaf:firstName>Dietrich</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3fd/3fd828a6231d6ff0f8a616110094a7983edaef74"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8c0/8c086eb957e296decb9c9b613fa7f2a8e9063d60"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/815/815f6889af6b61a6842a341e12b9bf4b6c6d0e95"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/189/189ece1469d47237d1d6d1783e407d953f21484e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/39f/39f087120183dc0bdbf92343feaba4b534c03cdd"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/2/257/2579817c53b936f3056453663fb793787b7b6e08">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Blache</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:blache@lpl-aix.fr"/>
+		<foaf:mbox_sha1sum>2579817c53b936f3056453663fb793787b7b6e08</foaf:mbox_sha1sum>
+		<foaf:firstName>Philippe</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/eae/eaeb50c86d134bb83ca831c6e7a5f1f4e7eac63e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/73d/73dd4ec49cf09ad7caf3e45f7b923277df394791"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/211/211343c455e08051cade16b5e6db54bce503db17"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,971 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY res "http://www.resourcebook.eu/lremap/owl/lremap_resources.owl#" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl/" >
+]>
+
+
+<rdf:RDF xmlns="&res;#"
+     xml:base="&base;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:owl="&owl;#"
+     xmlns:res="&res;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;">
+    <owl:Ontology rdf:about="http://www.resourcebook.eu/lremap/owl/lremap_resource">
+        <rdfs:label>The Resource as it comes out from the submission</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <rdfs:comment>This ontology models the Resource Object as it is provided in the submission page. The resource is characterized according to its type, while other metadata are defined as classes whose individuals are the values</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasAvailability -->
+
+    <owl:ObjectProperty rdf:about="&res;hasAvailability">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasAvailability"/>
+                <owl:onClass rdf:resource="&res;Availability"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasAvailability"/>
+                <owl:onClass rdf:resource="&res;Availability"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasLanguageType -->
+
+    <owl:ObjectProperty rdf:about="&res;hasLanguageType">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasLanguageType"/>
+                <owl:onClass rdf:resource="&res;LanguageType"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasLanguages -->
+
+    <owl:ObjectProperty rdf:about="&res;hasLanguages">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasLanguages"/>
+                <owl:someValuesFrom rdf:resource="&res;Languages"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasLicence -->
+
+    <owl:ObjectProperty rdf:about="&res;hasLicence">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasLicence"/>
+                <owl:someValuesFrom rdf:resource="&res;licence"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasModality -->
+
+    <owl:ObjectProperty rdf:about="&res;hasModality">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasModality"/>
+                <owl:onClass rdf:resource="&res;Modality"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasModality"/>
+                <owl:onClass rdf:resource="&res;Modality"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasName -->
+
+    <owl:ObjectProperty rdf:about="&res;hasName">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasName"/>
+                <owl:onClass rdf:resource="&res;Name"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="&res;hasStatus">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasStatus"/>
+                <owl:onClass rdf:resource="&res;Status"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasStatus"/>
+                <owl:onClass rdf:resource="&res;Status"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasUse -->
+
+    <owl:ObjectProperty rdf:about="&res;hasUse">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasUse"/>
+                <owl:onClass rdf:resource="&res;Use"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&res;hasUse"/>
+                <owl:onClass rdf:resource="&res;Use"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasDescription">
+        <rdfs:subPropertyOf rdf:resource="&res;hasMetaData"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasDoc -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasDoc">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:subPropertyOf rdf:resource="&res;hasMetaData"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasMetaData -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasMetaData">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasSize">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:subPropertyOf rdf:resource="&res;hasMetaData"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasSizeUnit -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasSizeUnit">
+        <rdfs:subPropertyOf rdf:resource="&res;hasSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasSizeValue -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasSizeValue">
+        <rdfs:subPropertyOf rdf:resource="&res;hasSize"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="&res;hasURL">
+        <rdfs:domain rdf:resource="&res;Resource"/>
+        <rdfs:subPropertyOf rdf:resource="&res;hasMetaData"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Annotation_Tool -->
+
+    <owl:Class rdf:about="&res;Annotation_Tool">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Annotation</rdfs:seeAlso>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Tool</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Availability -->
+
+    <owl:Class rdf:about="&res;Availability">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#CommonValue -->
+
+    <owl:Class rdf:about="&res;CommonValue">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+        <rdfs:comment>This class contains values which are common to many metadata</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Corpus -->
+
+    <owl:Class rdf:about="&res;Corpus">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Corpus_linguistics</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Evaluation_Data -->
+
+    <owl:Class rdf:about="&res;Evaluation_Data">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Evaluation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Evaluation_Methodology-Formalism-Guidelines -->
+
+    <owl:Class rdf:about="&res;Evaluation_Methodology-Formalism-Guidelines">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Evaluation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Evaluation_Package -->
+
+    <owl:Class rdf:about="&res;Evaluation_Package">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Evaluation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Evaluation_Standard-Best_Practice -->
+
+    <owl:Class rdf:about="&res;Evaluation_Standard-Best_Practice">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Evaluation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Evaluation_Tool -->
+
+    <owl:Class rdf:about="&res;Evaluation_Tool">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Tool</rdfs:seeAlso>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Evaluation</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Grammar-Language_Model -->
+
+    <owl:Class rdf:about="&res;Grammar-Language_Model">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Image_Analyser -->
+
+    <owl:Class rdf:about="&res;Image_Analyser">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#LanguageType -->
+
+    <owl:Class rdf:about="&res;LanguageType">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Language_Identifier -->
+
+    <owl:Class rdf:about="&res;Language_Identifier">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Languages -->
+
+    <owl:Class rdf:about="&res;Languages">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Lexicon -->
+
+    <owl:Class rdf:about="&res;Lexicon">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Lexicon</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#MetaData -->
+
+    <owl:Class rdf:about="&res;MetaData">
+        <rdfs:seeAlso>http://live.dbpedia.org/page/Metadata</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Metadata -->
+
+    <owl:Class rdf:about="&res;Metadata">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Modality -->
+
+    <owl:Class rdf:about="&res;Modality">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Name -->
+
+    <owl:Class rdf:about="&res;Name">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Named_Entity_Recognizer -->
+
+    <owl:Class rdf:about="&res;Named_Entity_Recognizer">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Ontology -->
+
+    <owl:Class rdf:about="&res;Ontology">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Prosodic_Analyser -->
+
+    <owl:Class rdf:about="&res;Prosodic_Analyser">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Representation-Annotation_Formalism-Guidelines -->
+
+    <owl:Class rdf:about="&res;Representation-Annotation_Formalism-Guidelines">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Representation-Annotation_Standard-Best_Practice -->
+
+    <owl:Class rdf:about="&res;Representation-Annotation_Standard-Best_Practice">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Resource -->
+
+    <owl:Class rdf:about="&res;Resource">
+        <rdfs:comment>This is the main Class for Type.
+Values are extracted from the current map</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Signal_Processing-Feature_Extraction -->
+
+    <owl:Class rdf:about="&res;Signal_Processing-Feature_Extraction">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Speaker_recogniser -->
+
+    <owl:Class rdf:about="&res;Speaker_recogniser">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Status -->
+
+    <owl:Class rdf:about="&res;Status">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Tagger-Parser -->
+
+    <owl:Class rdf:about="&res;Tagger-Parser">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Terminology -->
+
+    <owl:Class rdf:about="&res;Terminology">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Tokenizer -->
+
+    <owl:Class rdf:about="&res;Tokenizer">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Transcriber -->
+
+    <owl:Class rdf:about="&res;Transcriber">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Use -->
+
+    <owl:Class rdf:about="&res;Use">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Word_Sense_Disambiguator -->
+
+    <owl:Class rdf:about="&res;Word_Sense_Disambiguator">
+        <rdfs:subClassOf rdf:resource="&res;Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#licence -->
+
+    <owl:Class rdf:about="&res;licence">
+        <rdfs:subClassOf rdf:resource="&res;MetaData"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Acquisition -->
+
+    <owl:NamedIndividual rdf:about="&res;Acquisition">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Bi -->
+
+    <owl:NamedIndividual rdf:about="&res;Bi">
+        <rdf:type rdf:resource="&res;LanguageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Dialogue -->
+
+    <owl:NamedIndividual rdf:about="&res;Dialogue">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Discourse -->
+
+    <owl:NamedIndividual rdf:about="&res;Discourse">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Document_Classification-Text_categorisation -->
+
+    <owl:NamedIndividual rdf:about="&res;Document_Classification-Text_categorisation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Emotion_Recognition-Generation -->
+
+    <owl:NamedIndividual rdf:about="&res;Emotion_Recognition-Generation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Existing-updated -->
+
+    <owl:NamedIndividual rdf:about="&res;Existing-updated">
+        <rdf:type rdf:resource="&res;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Existing-used -->
+
+    <owl:NamedIndividual rdf:about="&res;Existing-used">
+        <rdf:type rdf:resource="&res;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Freely_Available -->
+
+    <owl:NamedIndividual rdf:about="&res;Freely_Available">
+        <rdf:type rdf:resource="&res;Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#From_Data_Center(s) -->
+
+    <owl:NamedIndividual rdf:about="&res;From_Data_Center(s)">
+        <rdf:type rdf:resource="&res;Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#From_Owner -->
+
+    <owl:NamedIndividual rdf:about="&res;From_Owner">
+        <rdf:type rdf:resource="&res;Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Information_Extraction-Information_Retrieval -->
+
+    <owl:NamedIndividual rdf:about="&res;Information_Extraction-Information_Retrieval">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Knowledge_Discovery-Representation -->
+
+    <owl:NamedIndividual rdf:about="&res;Knowledge_Discovery-Representation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#LI -->
+
+    <owl:NamedIndividual rdf:about="&res;LI">
+        <rdf:type rdf:resource="&res;LanguageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Language_Identification -->
+
+    <owl:NamedIndividual rdf:about="&res;Language_Identification">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Language_Modelling -->
+
+    <owl:NamedIndividual rdf:about="&res;Language_Modelling">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Machine_Translation-SpeechToSpeech_Translation -->
+
+    <owl:NamedIndividual rdf:about="&res;Machine_Translation-SpeechToSpeech_Translation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Modality_Independent -->
+
+    <owl:NamedIndividual rdf:about="&res;Modality_Independent">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Mono -->
+
+    <owl:NamedIndividual rdf:about="&res;Mono">
+        <rdf:type rdf:resource="&res;LanguageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Multi -->
+
+    <owl:NamedIndividual rdf:about="&res;Multi">
+        <rdf:type rdf:resource="&res;LanguageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Multimedia_Document_Processing -->
+
+    <owl:NamedIndividual rdf:about="&res;Multimedia_Document_Processing">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Multimodal/Multimedia -->
+
+    <owl:NamedIndividual rdf:about="&res;Multimodal/Multimedia">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Named_Entity_Recognition -->
+
+    <owl:NamedIndividual rdf:about="&res;Named_Entity_Recognition">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Natural_Language_Generation -->
+
+    <owl:NamedIndividual rdf:about="&res;Natural_Language_Generation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Newly_created-finished -->
+
+    <owl:NamedIndividual rdf:about="&res;Newly_created-finished">
+        <rdf:type rdf:resource="&res;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Newly_created-in_progress -->
+
+    <owl:NamedIndividual rdf:about="&res;Newly_created-in_progress">
+        <rdf:type rdf:resource="&res;Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Not_Applicable -->
+
+    <owl:NamedIndividual rdf:about="&res;Not_Applicable">
+        <rdf:type rdf:resource="&res;CommonValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Not_Available -->
+
+    <owl:NamedIndividual rdf:about="&res;Not_Available">
+        <rdf:type rdf:resource="&res;Availability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Not_Relevant -->
+
+    <owl:NamedIndividual rdf:about="&res;Not_Relevant">
+        <rdf:type rdf:resource="&res;CommonValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Person_Identification -->
+
+    <owl:NamedIndividual rdf:about="&res;Person_Identification">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Question_Answering -->
+
+    <owl:NamedIndividual rdf:about="&res;Question_Answering">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Semantic_Web -->
+
+    <owl:NamedIndividual rdf:about="&res;Semantic_Web">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Sign_Language -->
+
+    <owl:NamedIndividual rdf:about="&res;Sign_Language">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Sign_Language_Recognition-Generation -->
+
+    <owl:NamedIndividual rdf:about="&res;Sign_Language_Recognition-Generation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Speech -->
+
+    <owl:NamedIndividual rdf:about="&res;Speech">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Speech-Written -->
+
+    <owl:NamedIndividual rdf:about="&res;Speech-Written">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Speech_Recognition-Understanding -->
+
+    <owl:NamedIndividual rdf:about="&res;Speech_Recognition-Understanding">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Speech_Synthesis -->
+
+    <owl:NamedIndividual rdf:about="&res;Speech_Synthesis">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Summarisation -->
+
+    <owl:NamedIndividual rdf:about="&res;Summarisation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Text_Mining -->
+
+    <owl:NamedIndividual rdf:about="&res;Text_Mining">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Textual_Entailment -->
+
+    <owl:NamedIndividual rdf:about="&res;Textual_Entailment">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Topic_Detection_and_Tracking -->
+
+    <owl:NamedIndividual rdf:about="&res;Topic_Detection_and_Tracking">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Tri -->
+
+    <owl:NamedIndividual rdf:about="&res;Tri">
+        <rdf:type rdf:resource="&res;LanguageType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Voice_Control -->
+
+    <owl:NamedIndividual rdf:about="&res;Voice_Control">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Web_Services -->
+
+    <owl:NamedIndividual rdf:about="&res;Web_Services">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Word_Sense_Disambiguation -->
+
+    <owl:NamedIndividual rdf:about="&res;Word_Sense_Disambiguation">
+        <rdf:type rdf:resource="&res;Use"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_resource#Written -->
+
+    <owl:NamedIndividual rdf:about="&res;Written">
+        <rdf:type rdf:resource="&res;Modality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&res;Availability"/>
+            <rdf:Description rdf:about="&res;LanguageType"/>
+            <rdf:Description rdf:about="&res;Languages"/>
+            <rdf:Description rdf:about="&res;Modality"/>
+            <rdf:Description rdf:about="&res;Name"/>
+            <rdf:Description rdf:about="&res;Status"/>
+            <rdf:Description rdf:about="&res;Use"/>
+            <rdf:Description rdf:about="&res;licence"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>

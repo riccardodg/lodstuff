@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/7/7b7/7b78414c51422c6a66533097e3eb25fd966132c5">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The EASR Corpora of European Portuguese, French, Hungarian and Polish Elderly Speech</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/e/ee5/ee538fa61d7635708f338782d32bd54aa2d97494">
+				<rdfs:label>Baroni Marco</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/74c/74c128b0ea44ab9ca3c746c1cf016f6bee4232a8">
+				<rdfs:label>Lan Karine</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e96/e96813ac7c38f27ca644ff4113aee3f72b14a589">
+				<rdfs:label>Zamparelli Roberto</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/113/11301515ec72572f11e7aaa924d915fda350be8d">
+				<rdfs:label>Csobánka Petra</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/189/189ac25cbec1e6bcd81a34fe594a04fe96977374">
+				<rdfs:label>Bentivogli Luisa</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fc2/fc2efbaab7f862291564c06f41602a11c1981a2e">
+				<rdfs:label>Hämäläinen Annika</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/39b/39b2c89d5f414ab4c6f597f1f1e748103a57e468">
+				<rdfs:label>bernardi Raffaella</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fc2/fc2efbaab7f862291564c06f41602a11c1981a2e">
+				<rdfs:label>Hämäläinen Annika</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a1d/a1d4e0784102b7072e5a0d04ac310b63fa93aaa4">
+				<rdfs:label>Németh Géza</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/64b/64bf390f750196083b87df0d1cc1b3c5c6606e59">
+				<rdfs:label>Ji Heng</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a3a/a3a72e345702234fe89c341c77e4baf484cad0f1">
+				<rdfs:label>Hewson David</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

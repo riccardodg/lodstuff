@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/c83/c8320a9e3012a17131933b6132b07b6ec4a52830">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Tadić</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:marko.tadic@ffzg.hr"/>
+		<foaf:mbox_sha1sum>c8320a9e3012a17131933b6132b07b6ec4a52830</foaf:mbox_sha1sum>
+		<foaf:firstName>Marko</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1f6/1f636099d65167d5bd8ba301a9458d858388517d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9b0/9b0fe09b414e222b8b4c15ea744d2f80d6afcb9c"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

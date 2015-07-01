@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/1/16e/16ea178e189a794f010a2d03702e8fee283650fa">
+		<rdf:type rdf:resource="&lremap;Corpus"/>
+		<lremap:hasResourceAvailability rdf:resource="&ri;resources/1/16e/Endangered_Languages_Archive-_SOAS-_London"/>
+		<lremap:hasResourceStatus rdf:resource="&ri;resources/1/16e/Archived_but_constantly_updated_as_more_annotations_are_made."/>
+		<lremap:hasResourceModality rdf:resource="&lremap;Sign_Language"/>
+		<lremap:hasResourceUse rdf:resource="&ri;resources/1/16e/Empirical_language_description_(grammar-_dictionaries)-_language_teaching"/>
+		<lremap:hasResourceName rdf:resource="&lremap;Auslan_Corpus"/>
+		<dcterms:references rdf:resource="&sub;#SignLanguage2014-3X-J3P4G2P6B8"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/1/16e/Auslan_Corpus">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+
+
+<!-- Start Resource Avails List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/1/16e/Endangered_Languages_Archive-_SOAS-_London">
+		<rdf:type rdf:resource="&lremap;ResourceAvailability"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Avails List -->
+
+
+<!-- Start Resource Status List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/1/16e/Archived_but_constantly_updated_as_more_annotations_are_made.">
+		<rdf:type rdf:resource="&lremap;ResourceStatus"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Status List -->
+
+
+<!-- Start Resource Uses List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/1/16e/Empirical_language_description_(grammar-_dictionaries)-_language_teaching">
+		<rdf:type rdf:resource="&lremap;ResourceUse"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Uses List -->
+</rdf:RDF>

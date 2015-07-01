@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a79/a79760ec558fd4a3717cb0f0341d9f17baefab57">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Beermann</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:dorothee.beermann@ntnu.no"/>
+		<foaf:mbox_sha1sum>a79760ec558fd4a3717cb0f0341d9f17baefab57</foaf:mbox_sha1sum>
+		<foaf:firstName>Dorothee</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d00/d005dcef7063afc271a60abc609b3ea8f3b51141"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/91e/91e77b999b3ce43ec4e3c0fc588dddb792a5a01e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/23a/23a524bde9a8c4eda1fc4d673acaac4a2b88f4e5"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

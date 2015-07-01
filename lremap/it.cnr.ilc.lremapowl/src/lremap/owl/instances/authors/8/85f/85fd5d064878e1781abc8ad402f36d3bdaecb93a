@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/85f/85fd5d064878e1781abc8ad402f36d3bdaecb93a">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Olsen</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:saolsen@hum.ku.dk"/>
+		<foaf:mbox_sha1sum>85fd5d064878e1781abc8ad402f36d3bdaecb93a</foaf:mbox_sha1sum>
+		<foaf:firstName>Sussi</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c0b/c0b5c3e2c302339a2b0193ba46bb39ed3e656778"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e80/e807625185f7f245a402fef30e71404fade13dd0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ee3/ee392cb9e12bee751281c0dc6544d6eaf8614fe0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ecb/ecb3d3447673d7b6106fab872c277410f1a133b4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

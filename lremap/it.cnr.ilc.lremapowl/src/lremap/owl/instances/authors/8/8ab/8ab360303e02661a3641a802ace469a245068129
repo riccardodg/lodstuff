@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/8ab/8ab360303e02661a3641a802ace469a245068129">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Wang</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:lingxiao.wang@imag.fr"/>
+		<foaf:mbox_sha1sum>8ab360303e02661a3641a802ace469a245068129</foaf:mbox_sha1sum>
+		<foaf:firstName>Lingxiao</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c7f/c7f81db2edf70f7848fc8738d59a973cedc77157"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/003/0037555d1c5767a619a650c56f664fe4c7ee601b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0b6/0b60fa33abca168108ea247766459c5559168ffc"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

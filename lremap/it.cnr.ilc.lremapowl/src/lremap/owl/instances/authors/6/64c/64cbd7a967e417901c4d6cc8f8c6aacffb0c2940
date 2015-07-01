@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/64c/64cbd7a967e417901c4d6cc8f8c6aacffb0c2940">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Farzindar</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:farzindar@nlptechnologies.ca"/>
+		<foaf:mbox_sha1sum>64cbd7a967e417901c4d6cc8f8c6aacffb0c2940</foaf:mbox_sha1sum>
+		<foaf:firstName>Atefeh</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ef7/ef73aaa641ee3342f6d3d5ffbc07b89d0c36edd7"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/97a/97a9823e174aed79cf9ab54cdb2bb1b487cfaa2b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/f86/f86d2fa140e34c9dee18e9ba9ee86a5a3a8d42f8"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b4a/b4a4d50bab0882a6651eb200b244444e7997bfc0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/ff8/ff8d5e573abd63b910ad4d09ffbd2edeb7755ae5"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

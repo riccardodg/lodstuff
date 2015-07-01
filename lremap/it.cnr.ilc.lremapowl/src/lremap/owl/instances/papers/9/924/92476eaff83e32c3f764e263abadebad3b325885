@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/9/924/92476eaff83e32c3f764e263abadebad3b325885">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The IULA Spanish LSP Treebank</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/d/d4b/d4baa418d9571e2409b498be18e488525d62a9ed">
+				<rdfs:label>Lorente Mercè</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bdb/bdba12bebbbbf52a9244fad7b73d39344486f674">
+				<rdfs:label>Søgaard Anders</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/71b/71b7760503ff97d05ef0696540fd73bf3f6ee0a8">
+				<rdfs:label>Tchobanov Atanas</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/561/56186f98be84c2144544757f7f79875927b66ab4">
+				<rdfs:label>Neidle Carol</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/106/106de0044ee87580cc51ae4f1c7e9a3d7644614d">
+				<rdfs:label>Passonneau Rebecca J.</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e90/e904d89415193a3fa3150c63b67749c9a47ba18b">
+				<rdfs:label>Morell Carlos</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/14d/14d67ecca0dcadd0d260e613db7b827498ec0e58">
+				<rdfs:label>Marimon Montserrat</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/14d/14d67ecca0dcadd0d260e613db7b827498ec0e58">
+				<rdfs:label>Marimon Montserrat</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/7bc/7bcdfb4e22464dcea83d7c90e111b03deba036b0">
+				<rdfs:label>Bel Núria</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e47/e478d58a034338b1d1fd42025e9cdcdab9e8c414">
+				<rdfs:label>Vivaldi Jorge</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/0cf/0cfccac5306ea090f27a450f2ab4ccb581fa2c12">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Saquete</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:stela@dlsi.ua.es"/>
+		<foaf:mbox_sha1sum>0cfccac5306ea090f27a450f2ab4ccb581fa2c12</foaf:mbox_sha1sum>
+		<foaf:firstName>Estela</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c2c/c2c34ad62945c54ab3855e07100f3d015c831037"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/837/837a2103ad8cd5817fa78ee3643069d1648669b3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/774/7748f1ca8bfa4260dafe5f5cca120130678f4974"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

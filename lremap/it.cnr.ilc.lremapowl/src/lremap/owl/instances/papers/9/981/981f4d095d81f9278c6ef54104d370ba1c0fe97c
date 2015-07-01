@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/9/981/981f4d095d81f9278c6ef54104d370ba1c0fe97c">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Annotating Cohesion for Multilingual Analysis</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/f/f3f/f3fd0a5b6da31d4a5d5f3fc68a1073d5808277cb">
+				<rdfs:label>Lapshinova-Koltunski Ekaterina</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/6e2/6e2ac1c00ed1b1050340ef3cc633a29406013178">
+				<rdfs:label>Bai Yingguang</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f3f/f3fd0a5b6da31d4a5d5f3fc68a1073d5808277cb">
+				<rdfs:label>Lapshinova-Koltunski Ekaterina</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/231/231bb5002eb18629cb414c2e1728737c7cae3a82">
+				<rdfs:label>Vosinakis Spyros</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d96/d96b435c76eca66ff10539abe3c2975717e04371">
+				<rdfs:label>Kunz Kerstin Anna</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/daf/daf10737b333d6b7a9e0d4041dd8818183ead068">
+				<rdfs:label>Ma Lina</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

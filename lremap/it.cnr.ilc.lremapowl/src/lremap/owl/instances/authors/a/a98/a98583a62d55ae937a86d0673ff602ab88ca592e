@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a98/a98583a62d55ae937a86d0673ff602ab88ca592e">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Daelemans</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:walter.daelemans@ua.ac.be"/>
+		<foaf:mbox_sha1sum>a98583a62d55ae937a86d0673ff602ab88ca592e</foaf:mbox_sha1sum>
+		<foaf:firstName>Walter</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/772/772a1c0600823762fe6c65a989c50ee38cf6cbe5"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/200/20050a1b4a24b3dfc45b8e2e6a2708ec1db7029a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/ad0/ad0442a5b7eab521dbb52178efb2c01b07f97ebe"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/de0/de0171211d873f11a9a9a79816df8379268e4326"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

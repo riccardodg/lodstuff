@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/ebc/ebc7291d67b1f435f79f4869d70c3369c6d4c27c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Poddar</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:writetolahari@gmail.com"/>
+		<foaf:mbox_sha1sum>ebc7291d67b1f435f79f4869d70c3369c6d4c27c</foaf:mbox_sha1sum>
+		<foaf:firstName>Lahari</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/f94/f94581208f1555c74d5b47c05c237c96d7056d6e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/075/07587f8194fb6060a70f0e0c19577b18a5b1698d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5df/5df0e2dfce6f322ab8ccac23c5f087fb543cd169"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

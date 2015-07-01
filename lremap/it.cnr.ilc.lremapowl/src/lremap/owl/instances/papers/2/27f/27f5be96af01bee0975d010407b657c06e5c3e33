@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/2/27f/27f5be96af01bee0975d010407b657c06e5c3e33">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Dbnary: Wiktionary as Linked Data for 12 Language Editions with Enhanced Translation Relations</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/2/251/251ba50e740877387d388dba4837d32bd5e6a72a">
+				<rdfs:label>Sérasset Gilles</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/db7/db7c52d0bd484c04e8fdcdc063d4a1faf40a9485">
+				<rdfs:label>Tchechmedjiev Andon</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/814/8143808e979bc3d8700e0464f9a196f805c4465f">
+				<rdfs:label>Zinsmeister Heike</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/251/251ba50e740877387d388dba4837d32bd5e6a72a">
+				<rdfs:label>Sérasset Gilles</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e0e/e0e383c68e9d48d96faccb272f7af10464ecdcff">
+				<rdfs:label>Vertan Cristina</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

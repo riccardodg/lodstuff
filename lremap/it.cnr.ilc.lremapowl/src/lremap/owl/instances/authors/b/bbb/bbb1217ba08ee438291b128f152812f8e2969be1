@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/b/bbb/bbb1217ba08ee438291b128f152812f8e2969be1">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Polychroniou</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:annap@dcs.gla.ac.uk"/>
+		<foaf:mbox_sha1sum>bbb1217ba08ee438291b128f152812f8e2969be1</foaf:mbox_sha1sum>
+		<foaf:firstName>Anna</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2fc/2fcc6e37b3398c2f9c6024a8717cd5b17c0acdca"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/585/585ca163c98ea53cacd3a6c64121689ca5bf3c95"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

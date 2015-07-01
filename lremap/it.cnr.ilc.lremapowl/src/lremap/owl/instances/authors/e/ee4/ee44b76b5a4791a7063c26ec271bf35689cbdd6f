@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/ee4/ee44b76b5a4791a7063c26ec271bf35689cbdd6f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Gerlach</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:johanna.gerlach@unige.ch"/>
+		<foaf:mbox_sha1sum>ee44b76b5a4791a7063c26ec271bf35689cbdd6f</foaf:mbox_sha1sum>
+		<foaf:firstName>Johanna</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b82/b82161fbe805e2e15b31ac2121b76312fd286062"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/571/57182fc81d9ec46d115f6ab1fc6eedf86e4060ae"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/47f/47fe77fa88f385a99c6fe519c59f09ed2131055f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2e0/2e0fe46c792485c32a672b723c48009005ffcad4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/f/f88/f88809193c325d973d869e9bc957a820380f21db">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>MAPPING DIATOPIC AND DIACHRONIC VARIATION IN SPOKEN CZECH: THE ORTOFON AND DIALEKT CORPORA</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/b/bb1/bb141199140d64bff2750af52c10fc77cf0aae4d">
+				<rdfs:label>Ramakrishnan Ganesh</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/68d/68d392f687691d5964fd9e330185e2f3ee1cc427">
+				<rdfs:label>Uszkoreit Hans</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c0d/c0de2b079817162624c43ac94cd66023d4f1fb8e">
+				<rdfs:label>Krause Sebastian</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f42/f42b520dae5addc7dc029592e563f961ca419cce">
+				<rdfs:label>Kopřivová Marie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c19/c19b0c6e399aca9bb084f639a6ad7bb02a12c6e2">
+				<rdfs:label>Hummel Robert</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/844/8449f332ccd8b3d4c051e99e56ba23aec787a11d">
+				<rdfs:label>Mironova Veselina</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f42/f42b520dae5addc7dc029592e563f961ca419cce">
+				<rdfs:label>Kopřivová Marie</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

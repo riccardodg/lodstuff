@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/032/032e7bdee29d7f920e2300bc05a2e3c07bcc0390">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Bojar</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:bojar@ufal.mff.cuni.cz"/>
+		<foaf:mbox_sha1sum>032e7bdee29d7f920e2300bc05a2e3c07bcc0390</foaf:mbox_sha1sum>
+		<foaf:firstName>Ondrej</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/697/69781f60f2d6bd6fd74258924f2ab94704b74cca"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b53/b53be64dcc6e16ffca5e9ef0fbac45661b048332"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5f0/5f039c969a6b54fa923372d54ce1bbecfb76bc86"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/871/8715049b4ad88326768944fef18b13e454a30980"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cf0/cf072cdbe5f702221bd52b68ecf8b3424a39111a"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

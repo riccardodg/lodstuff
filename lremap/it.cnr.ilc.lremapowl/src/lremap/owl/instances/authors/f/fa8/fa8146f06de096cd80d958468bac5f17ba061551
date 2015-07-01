@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/fa8/fa8146f06de096cd80d958468bac5f17ba061551">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Lo Duca</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:angelica.loduca@iit.cnr.it"/>
+		<foaf:mbox_sha1sum>fa8146f06de096cd80d958468bac5f17ba061551</foaf:mbox_sha1sum>
+		<foaf:firstName>Angelica</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/60e/60ec546b530251dfc216d7e21eeed81ed5961ce0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/f8e/f8e5e9be9bf7b69c12bb486b6bb4cdcc4aced110"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/15c/15c33f4159fac96dcad4ea98e8bea20db5ae8c8a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c36/c36d417b32841714998f240492ce169c04018947"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/7bf/7bfd588c197dff200f3c2f2bd056693bee06e399"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d8e/d8ef7a8f8224bc64bde52f354ae1914340c76ac5"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

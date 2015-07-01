@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a1c/a1c8d9fc5da1a5ec69071eea0ea8a7e137f8876f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>LEDOUBLE</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ledouble@univ-tln.fr"/>
+		<foaf:mbox_sha1sum>a1c8d9fc5da1a5ec69071eea0ea8a7e137f8876f</foaf:mbox_sha1sum>
+		<foaf:firstName>Helene</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5ad/5adb323e252c6e745692b930be1132cdd8141ba1"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c5b/c5bfe8e02857d52d771df0f06b0502115f0efb66"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9e1/9e1c8783b9dca374ce9c5cbd74287ccee4e1be0d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

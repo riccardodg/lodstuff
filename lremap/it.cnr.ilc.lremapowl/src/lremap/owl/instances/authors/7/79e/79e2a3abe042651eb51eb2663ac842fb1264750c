@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/79e/79e2a3abe042651eb51eb2663ac842fb1264750c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Quasthoff</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:quasthoff@informatik.uni-leipzig.de"/>
+		<foaf:mbox_sha1sum>79e2a3abe042651eb51eb2663ac842fb1264750c</foaf:mbox_sha1sum>
+		<foaf:firstName>Uwe</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/98d/98df9175264ffbf757d9af53536585375285c3ca"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/177/177bf96b27b4705853f1d1686e0922a6d4cac4f3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0fb/0fb5ae38efdb214f16dc5d3c47e81350dbb6984c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/df3/df39633cb931eb16985ee4a9a16a36648a5080b9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/7f9/7f98328a4997d11109760c5d5ca7863bae30ff30"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/afe/afe3afec462e8235e99f386748a845c6168e55eb">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Inoue</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:masash.inoue@gmail.com"/>
+		<foaf:mbox_sha1sum>afe3afec462e8235e99f386748a845c6168e55eb</foaf:mbox_sha1sum>
+		<foaf:firstName>Masashi</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/026/0268e9e08c31c1e8c8646ad8cfa5c414d73cfcc8"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/474/474c975db7bbd0243922e40bb107e4ee8c8571ca"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

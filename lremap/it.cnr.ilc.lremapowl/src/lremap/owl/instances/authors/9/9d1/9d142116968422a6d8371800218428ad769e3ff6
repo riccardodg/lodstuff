@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/9d1/9d142116968422a6d8371800218428ad769e3ff6">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Bond</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:bond@ieee.org"/>
+		<foaf:mbox_sha1sum>9d142116968422a6d8371800218428ad769e3ff6</foaf:mbox_sha1sum>
+		<foaf:firstName>Francis</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/f16/f16f0499ae89a0148c4c05629d4a2f2f23c622bc"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/168/1681e08e269ab69a725e29b4b2b96df8b3644223"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/409/40939bb69355fbc243d356244cc605803c194506"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/90c/90c8bb12f573d376044cbe9552b7ce29a36bcf7b"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

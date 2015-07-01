@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/ad4/ad4700a6626fce2c78c6eb91dc03b7cf780ff00d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Callejas</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:zoraida@ugr.es"/>
+		<foaf:mbox_sha1sum>ad4700a6626fce2c78c6eb91dc03b7cf780ff00d</foaf:mbox_sha1sum>
+		<foaf:firstName>Zoraida</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/388/3889c7816eea1d080514a38357391b55be3300d0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/01d/01db61b5d4cffd376eb7e0b3e05e56326d1f828b"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

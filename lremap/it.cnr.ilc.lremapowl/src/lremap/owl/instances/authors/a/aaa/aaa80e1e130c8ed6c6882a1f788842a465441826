@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/aaa/aaa80e1e130c8ed6c6882a1f788842a465441826">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Saggion</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:horacio.saggion@upf.edu"/>
+		<foaf:mbox_sha1sum>aaa80e1e130c8ed6c6882a1f788842a465441826</foaf:mbox_sha1sum>
+		<foaf:firstName>Horacio</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/643/6438e8dd476c4b43ce1a8b1858141e704b98a4d6"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6ad/6ad4797a3d9f16fef377e984d00fac19ab597688"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/411/411292b389b7c324f0c03f1b0878352c8cef6238"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d27/d27ca8368b5f584df3b7fccd00428dabc4a3f3f2"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

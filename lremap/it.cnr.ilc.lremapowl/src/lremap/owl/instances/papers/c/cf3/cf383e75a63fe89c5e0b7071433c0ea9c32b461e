@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/c/cf3/cf383e75a63fe89c5e0b7071433c0ea9c32b461e">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Morphological analysis for lesser-resourced languages with complex morphology: Maximum Affix Overlap applied to Zulu</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/e/e7b/e7ba49a49ae9e29fc897a2b3c688e5a91393594f">
+				<rdfs:label>Váradi Tamás</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/44a/44a10bbffc7ed1dd011201049bda73a6b2ce20c0">
+				<rdfs:label>Dogan Mehmet Ugur</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b29/b29f4229a4c56dcf8ff0e8fbfa935cfe633be3fe">
+				<rdfs:label>Oeter Stefan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/eab/eabebb5874a7c35666e078bed37d9e5da4563090">
+				<rdfs:label>Kirchmeier-Andersen Sabine</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/213/213b0514950aa4108c4a346e38316c45968fab63">
+				<rdfs:label>Gramstad Sigve</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/0b3/0b39b850143ab506c003897370e9e91eb5441609">
+				<rdfs:label>Jones Meirion Prys</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/dce/dce323e6a6ea6f50da2033d078236a076f0d0d8a">
+				<rdfs:label>Stickel Gerhard</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d5c/d5cd610f5251af5c18fb13ee411023c4ce71e9cb">
+				<rdfs:label>Mermer Coskun</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b3f/b3f4b2fc296a6cd9d3f9f04936510618e7dc240f">
+				<rdfs:label>Goetcherian Vartkes</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/79e/79e2a3abe042651eb51eb2663ac842fb1264750c">
+				<rdfs:label>Quasthoff Uwe</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/03e/03e7a7af13b50a510559368fc2a1a0d8824d3df4">
+				<rdfs:label>Goldhahn Dirk</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/03e/03e7a7af13b50a510559368fc2a1a0d8824d3df4">
+				<rdfs:label>Goldhahn Dirk</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/590/590c10ed2177ca13db5be6302a7c4aaa82bd561a">
+				<rdfs:label>Bosch Sonja</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

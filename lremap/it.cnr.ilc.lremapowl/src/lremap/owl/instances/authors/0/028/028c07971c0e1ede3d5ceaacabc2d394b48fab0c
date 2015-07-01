@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/028/028c07971c0e1ede3d5ceaacabc2d394b48fab0c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Langlais</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:felipe@iro.umontreal.ca"/>
+		<foaf:mbox_sha1sum>028c07971c0e1ede3d5ceaacabc2d394b48fab0c</foaf:mbox_sha1sum>
+		<foaf:firstName>Phillippe</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1d9/1d998087964e439080123cdd335851a1c04cd670"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8b8/8b8a0d74230dbf708bf9eba799a65565f56c0d25"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a95/a95ee5312540bd9cad5c70abfff16c47fbd04853"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ea7/ea7e5b63a60c03f020803a0b10afd9483e79691c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a0d/a0dde5f79417a831ea64d54a88663b7bfbcd8cd9"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/3b6/3b628a75e06c767c2e26317d8c749efe1c364297">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>BIGI</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:brigitte.bigi@lpl-aix.fr"/>
+		<foaf:mbox_sha1sum>3b628a75e06c767c2e26317d8c749efe1c364297</foaf:mbox_sha1sum>
+		<foaf:firstName>Brigitte</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/05d/05dc470085d39f6d84d59bdb07132a8ce691b10f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6f3/6f38604cc9f3233861e2c0db11ac0567d6bf9e32"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/df0/df0151084935c257072a5e37432f68a12ad2de41"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ef3/ef3f6fa9edc6d4490578e04b4d0fb9eb69b65cdc"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

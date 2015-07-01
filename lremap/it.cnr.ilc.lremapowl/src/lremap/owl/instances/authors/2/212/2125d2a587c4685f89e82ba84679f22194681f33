@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/2/212/2125d2a587c4685f89e82ba84679f22194681f33">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Généreux</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:genereux@clul.ul.pt"/>
+		<foaf:mbox_sha1sum>2125d2a587c4685f89e82ba84679f22194681f33</foaf:mbox_sha1sum>
+		<foaf:firstName>Michel</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/49c/49c8c9ea09326b883940dba2e030b02f17af28de"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/82b/82b0320c39984401cc58c3ed596f97c728ca3292"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/195/195d5a6ff1e4c43224bf584d5fe3d8d950285f09"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1f8/1f808201f8a1cec85151423dd3a3cfa2dae45eed"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

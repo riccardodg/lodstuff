@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/aef/aef80d3529a5d4cd49c8e1155888ff48fbcb85c9">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Visweswariah</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:v-karthik@in.ibm.com"/>
+		<foaf:mbox_sha1sum>aef80d3529a5d4cd49c8e1155888ff48fbcb85c9</foaf:mbox_sha1sum>
+		<foaf:firstName>Karthik</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e47/e474d921f320b45b9e249b7760a94cb1879fd736"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/57e/57edc4685379053b5b1ae58804f8e7b6d35609e0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/199/1992cdc93acf89b597037fd01d3d9f48c950222e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cc0/cc0c8a7f1b4322e77401fb06729824ed04eb918d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

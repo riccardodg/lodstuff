@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/e/e76/e76850da0a1fa91b12d6817d90009e62ac832ab5">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Hope and Fear: How Opinions Influence Factuality</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/a/a48/a4834114bdf49ee60d55ef9a36ca77e2dd11b81e">
+				<rdfs:label>Vossen Piek</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/717/717b139812c248f836dadb615ba4cc14549ce3aa">
+				<rdfs:label>van Erp Marieke</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/717/717b139812c248f836dadb615ba4cc14549ce3aa">
+				<rdfs:label>van Erp Marieke</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/299/2994c3da2def19a01d9bc633ed3fae2d43119dbe">
+				<rdfs:label>Mendes Pedro</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c0d/c0d090390ea7c8594694c7d5a6f6f83570d1363c">
+				<rdfs:label>Pinto Cláudia</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f26/f26c4f656518b67010fdbd5e3dee1777d06401f9">
+				<rdfs:label>Almeida Miguel B.</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/643/643757c3c17acac6f97cc7182b5ab0d032d0c6d1">
+				<rdfs:label>Fokkens Antske</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

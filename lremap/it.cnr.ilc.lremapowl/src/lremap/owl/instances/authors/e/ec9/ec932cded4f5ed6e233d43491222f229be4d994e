@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/ec9/ec932cded4f5ed6e233d43491222f229be4d994e">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Panunzi</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:alessandro.panunzi@unifi.it"/>
+		<foaf:mbox_sha1sum>ec932cded4f5ed6e233d43491222f229be4d994e</foaf:mbox_sha1sum>
+		<foaf:firstName>Alessandro</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c33/c332f2cd936a7945092b979c32f05dc5b9a16924"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d72/d725de05ebf200427c8e9d229a0ad9bb01ce3ff7"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

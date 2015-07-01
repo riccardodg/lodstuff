@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/f/f41/f41cb77c449a79ab6e7e608ab02ea576ed75d3f7">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Automated and Task-Based Evaluation of the Effects of Machine Translation Domain Tuning on MT Quality, Post-editing, and Human Translation</dc:title>
+		<bibo:status rdf:resource="&paper;status/d/d4e/d4ee783493d6648284256d34f378dd19bd4c8866"/>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/5/581/58145bd346709047896db2c8eb3ee08c5948d38e">
+				<rdfs:label>Bywood Lindsay</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/5d5/5d56056e3c5ab3ead354f027ebd56b55e061d15e">
+				<rdfs:label>Voss Clare</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/5c2/5c211ebe34928d1b995d26f8d24568380becc2c7">
+				<rdfs:label>Campbell Susan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/ba1/ba112b8b39b2ef59ece71b95ecfa495993376c3f">
+				<rdfs:label>Bailey Stacey</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/22b/22bb0e9ea2d723a4f1a03a2d6e5e7583e2da8ec6">
+				<rdfs:label>Del Pozo Arantza</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/ea6/ea63a7583d7e616c900bf66e03898ec0fb846f2a">
+				<rdfs:label>van Genabith Josef</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/ba1/ba112b8b39b2ef59ece71b95ecfa495993376c3f">
+				<rdfs:label>Bailey Stacey</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/dd9/dd93581d62296dfa66f3e604be8e2ae7645dbf99">
+				<rdfs:label>Way Andy</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/ffc/ffc5244ed8e344cb778abc865c6fe020faed60e1">
+				<rdfs:label>Miller Keith J.</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

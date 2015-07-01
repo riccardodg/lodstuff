@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/d09/d09816e37efe4e1f025e02b98c8c3118787873f1">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Shin</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:maximus74@kisti.re.kr"/>
+		<foaf:mbox_sha1sum>d09816e37efe4e1f025e02b98c8c3118787873f1</foaf:mbox_sha1sum>
+		<foaf:firstName>Sungho</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/79e/79e9b99bb45ab4be8b81585341c74d0eb734b1f3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/13c/13c2768d29503dbda769c32c3b4400275bdb30be"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

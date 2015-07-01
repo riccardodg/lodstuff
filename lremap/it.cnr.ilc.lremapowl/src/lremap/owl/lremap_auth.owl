@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY gn "http://www.geonames.org/ontology#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth1 "http://www.resourcebook.eu/lremap/owl/lremap_auth.owl" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&auth1;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:auth1="&auth1;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth1;">
+        <rdfs:comment>
+        	Use this file when a multiple files are produced. This file contains the definition of properties
+    	</rdfs:comment>
+    </owl:Ontology>
+
+
+ <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+ <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#hasAffiliation -->
+
+    <auth1:ObjectProperty rdf:about="&auth1;#hasAffiliation">
+        <rdfs:range rdf:resource="&foaf;Organization"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </auth1:ObjectProperty>   
+</rdf:RDF>

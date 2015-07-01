@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/4/497/497fdaaa745fa4392c23cd322cc38ae26f8e3c17">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Anechitei</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:daniel.anechitei@info.uaic.ro"/>
+		<foaf:mbox_sha1sum>497fdaaa745fa4392c23cd322cc38ae26f8e3c17</foaf:mbox_sha1sum>
+		<foaf:firstName>Daniel</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a4d/a4d8769b5fc43641b7878699eb0cba0d190c8acb"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d89/d89e60ba0431c35565794365e391c378ff5b7a4b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2a1/2a140864acb4df79877c8da78d42c1841d9ddc8f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8b5/8b5eea201096b0a59a879d495e105d58a52abb5e"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

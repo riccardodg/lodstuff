@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/7cc/7cc4459adc50d8280f7712a846d90946a8b6f970">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Peraldi</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:s.peraldi@isit-paris.fr"/>
+		<foaf:mbox_sha1sum>7cc4459adc50d8280f7712a846d90946a8b6f970</foaf:mbox_sha1sum>
+		<foaf:firstName>Sandrine</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/61a/61a70112dcebe9c7e2565e7cd8946488c0b242cb"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/ad3/ad3d80a6c9b6769f1ec1ead667dd6f4815f0fe46"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

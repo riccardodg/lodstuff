@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/1/1ad/1adaf8e3c21d837d3a5883924e17d0115024decd">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The DBOX Corpus Collection of Spoken Human-Human and Human-Machine Dialogues</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/4/49e/49e7950fc3cd6388c4c35d1a57a0f29e7d47317e">
+				<rdfs:label>Dines John</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bcf/bcffcd7e3a9f8a8bd73d628427cc6b33fb83bd4b">
+				<rdfs:label>Schmidt Anna</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/6/65a/65ac6dece64bd0642e89bb1478b9e9517bf91da3">
+				<rdfs:label>Motlicek Petr</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/1e2/1e28eb1e695c5702ce73421c609f3afd8d892e19">
+				<rdfs:label>Topf Mario</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/15d/15d2813cf6942b98ae74804af78ee7dbdc4d3b51">
+				<rdfs:label>Egeler Ronny</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d60/d60f60caeb8bcffad063d17ca7736dace1fc0b4c">
+				<rdfs:label>Gropp Martin</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/23e/23ed4dbede5cc897f4c6e09fef2c6d7f45d3d4fd">
+				<rdfs:label>Petukhova Volha</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/23e/23ed4dbede5cc897f4c6e09fef2c6d7f45d3d4fd">
+				<rdfs:label>Petukhova Volha</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/dab/dab907bc1075aca406b6717ddc327d7c53fcc894">
+				<rdfs:label>Eigner Gregor</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/521/52122a6378300e9642326e7336e4bbce34a97ff0">
+				<rdfs:label>Meinz Uwe</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/71f/71f9c356cee0f7fddeaaf435ac0f95d25474f4ac">
+				<rdfs:label>Potard Blaise</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/ecc/eccfde20aefd11b4ef40d894202858f7aa34c418">
+				<rdfs:label>Srb Stefan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bf6/bf6fbc65a874d8bbf775eb370a807a1e3f449f39">
+				<rdfs:label>Liersch Steffen</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a70/a70e7421e149f520ef2ea82335d848dae0bf6f9b">
+				<rdfs:label>Klakow Dietrich</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/da5/da5af0a7aa8e202c72f9c289d30c2313236d74ca">
+				<rdfs:label>Deroo Olivier</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

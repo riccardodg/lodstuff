@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/3b1/3b17cfec5a0ce96ce9ccad96c0b98fbc3a48f5ca">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Islam</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:zahurul@em.uni-frankfurt.de"/>
+		<foaf:mbox_sha1sum>3b17cfec5a0ce96ce9ccad96c0b98fbc3a48f5ca</foaf:mbox_sha1sum>
+		<foaf:firstName>Zahurul</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8da/8dab5acb44cf6d8cf675f8bb9036b92b3ba1f495"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9bc/9bc7377552bd9a28cf064385251e3bb3bef08aa1"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/fee/fee28450dccef89e4ffbf2cf82e2548088286854"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/664/6648a28625b729651e87c4391e635aa91dce4fb5"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/648/648c8e52ea0c73cc042c668827e04f94be501a9f"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

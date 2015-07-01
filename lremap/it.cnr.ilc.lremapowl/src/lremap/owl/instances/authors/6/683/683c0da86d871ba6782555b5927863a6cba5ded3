@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/683/683c0da86d871ba6782555b5927863a6cba5ded3">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Hazem</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:amir.hazem@univ-nantes.fr"/>
+		<foaf:mbox_sha1sum>683c0da86d871ba6782555b5927863a6cba5ded3</foaf:mbox_sha1sum>
+		<foaf:firstName>Amir</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8e0/8e05b53f49db0da891b824abf2109bdfc8ae4f39"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1ba/1ba8b7b4b01fb1a82640a87fcfa07295524dbdcf"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/55e/55e9a36170b49d021a24320e9ff12ee0aad363ff"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

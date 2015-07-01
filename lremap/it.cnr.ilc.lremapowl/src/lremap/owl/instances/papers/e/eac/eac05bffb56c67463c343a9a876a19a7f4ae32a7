@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/e/eac/eac05bffb56c67463c343a9a876a19a7f4ae32a7">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>TexAFon 2.0: A text processing tool for the generation of expressive speech in TTS applications</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/b/b91/b9137cfa48d82ef303769e8e7dc83b6ca7a74e08">
+				<rdfs:label>Piccini Silvia</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bdb/bdba12bebbbbf52a9244fad7b73d39344486f674">
+				<rdfs:label>Søgaard Anders</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/16d/16df127be66cb693b51cb2117541f52f4b51fc83">
+				<rdfs:label>Marchetti Andrea</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/561/56186f98be84c2144544757f7f79875927b66ab4">
+				<rdfs:label>Neidle Carol</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/106/106de0044ee87580cc51ae4f1c7e9a3d7644614d">
+				<rdfs:label>Passonneau Rebecca J.</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d84/d84c5364ef521f487e3eeb81f459ce17fee6a6f2">
+				<rdfs:label>Garrido Juan-María</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d84/d84c5364ef521f487e3eeb81f459ce17fee6a6f2">
+				<rdfs:label>Garrido Juan-María</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/59b/59b73260c99860aef1648e3043c76da36df9531e">
+				<rdfs:label>Pedretti Irene</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/3e5/3e592c5e58e26c61efa81d7639a1839e5c8f6c3c">
+				<rdfs:label>Sima'an Khalil</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/205/205ff31df26a9c364e20dd47fe5a21bb3aad8ca1">
+				<rdfs:label>Morgan Brent</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

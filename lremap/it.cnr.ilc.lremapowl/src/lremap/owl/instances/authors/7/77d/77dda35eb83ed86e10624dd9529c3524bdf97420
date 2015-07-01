@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/77d/77dda35eb83ed86e10624dd9529c3524bdf97420">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Kita</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:kitaoka@nagoya-u.jp"/>
+		<foaf:mbox_sha1sum>77dda35eb83ed86e10624dd9529c3524bdf97420</foaf:mbox_sha1sum>
+		<foaf:firstName>Kenji</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/59c/59c0ac24876c613580cb461d98afc6d14cc97c41"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/72b/72b4ecd43335cefb796de1bbaf465bcf10e3460b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/602/602ff7e79d65f4f79cc04d46bb6c2459251419ea"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/baf/bafe1f6fa7f93a815481996110f7324f5889c9fe"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

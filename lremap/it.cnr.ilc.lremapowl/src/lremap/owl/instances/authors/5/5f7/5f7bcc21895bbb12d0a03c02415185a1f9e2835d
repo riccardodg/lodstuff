@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/5f7/5f7bcc21895bbb12d0a03c02415185a1f9e2835d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Abel</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:andrea.abel@eurac.edu"/>
+		<foaf:mbox_sha1sum>5f7bcc21895bbb12d0a03c02415185a1f9e2835d</foaf:mbox_sha1sum>
+		<foaf:firstName>Andrea</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/90d/90d5801e63bbf5a21bfcb430fae4693e9ae0b8df"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

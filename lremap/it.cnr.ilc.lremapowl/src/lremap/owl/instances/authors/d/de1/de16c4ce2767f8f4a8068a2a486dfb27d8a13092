@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/de1/de16c4ce2767f8f4a8068a2a486dfb27d8a13092">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Mariani</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:joseph.mariani@limsi.fr"/>
+		<foaf:mbox_sha1sum>de16c4ce2767f8f4a8068a2a486dfb27d8a13092</foaf:mbox_sha1sum>
+		<foaf:firstName>Joseph</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/74b/74b862cc83dbfdd624564a920b21bc7037aedd75"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/951/951f7dfbc41c30a0ac631defea050ad5df5639f2"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

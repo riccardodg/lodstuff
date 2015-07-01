@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/66a/66a2f88bf3adfa8cf8791e87d539364122c4c4ce">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Pirinen</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:tommi.pirinen@helsinki.fi"/>
+		<foaf:mbox_sha1sum>66a2f88bf3adfa8cf8791e87d539364122c4c4ce</foaf:mbox_sha1sum>
+		<foaf:firstName>Tommi</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/247/247043970162dc239de18df35a8fb7c2d2965a65"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/612/612362225b84723fdb60d2ed2019748a415fcda2"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

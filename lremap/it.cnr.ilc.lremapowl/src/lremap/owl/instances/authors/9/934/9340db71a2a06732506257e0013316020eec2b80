@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/934/9340db71a2a06732506257e0013316020eec2b80">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Husic</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:husic@linguistics.rub.de"/>
+		<foaf:mbox_sha1sum>9340db71a2a06732506257e0013316020eec2b80</foaf:mbox_sha1sum>
+		<foaf:firstName>Halima</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/375/375b5e1de3ea96bff9eafccac950ee7c5557d84c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5e0/5e034325225a2d8916ab709508de2406ef1e84e3"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

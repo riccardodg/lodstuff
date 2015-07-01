@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/b/bb1/bb141199140d64bff2750af52c10fc77cf0aae4d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Ramakrishnan</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ganramkr@gmail.com"/>
+		<foaf:mbox_sha1sum>bb141199140d64bff2750af52c10fc77cf0aae4d</foaf:mbox_sha1sum>
+		<foaf:firstName>Ganesh</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/384/384e601d7be1643cf0e1bb457633f99a6aefea17"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3bf/3bf6b161c142eef6e9c721b54825ebaead2d1710"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/eed/eed2e4cfeee9b8fd6e435b7deb88e1c58730c926"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/661/6613df3cf71c5fb909d534f76ce7ef2de251472d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/57e/57edc4685379053b5b1ae58804f8e7b6d35609e0"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

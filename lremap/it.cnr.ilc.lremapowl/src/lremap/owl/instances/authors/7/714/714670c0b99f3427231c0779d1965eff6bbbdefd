@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/714/714670c0b99f3427231c0779d1965eff6bbbdefd">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Tamburini</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:fabio.tamburini@unibo.it"/>
+		<foaf:mbox_sha1sum>714670c0b99f3427231c0779d1965eff6bbbdefd</foaf:mbox_sha1sum>
+		<foaf:firstName>Fabio</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/ba5/ba538a41ba804533e04afb10292f22a878f6ac2b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3db/3dbcb31e55b46d165502b75e3dc54d3b7cd8e1b2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/05a/05a4d9c69b0b171b9a72cb874cb14220884dc6e8"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

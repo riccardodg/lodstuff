@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a0a/a0aeff77fe778dbd2260d7c083c2a688d0e7a869">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Gutiérrez-Artacho</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:juncalgutierrez@ugr.es"/>
+		<foaf:mbox_sha1sum>a0aeff77fe778dbd2260d7c083c2a688d0e7a869</foaf:mbox_sha1sum>
+		<foaf:firstName>Juncal</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c6c/c6c9b0a27662910e18752489c6ea059a6828c043"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a1b/a1b0d7229520dc2eaf9c5124b0d2e55d8260e460"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

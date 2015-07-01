@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a7e/a7eb2a535ed6c9eef7a04af9de51ced832bb049e">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Fišer</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:darja.fiser@ff.uni-lj.si"/>
+		<foaf:mbox_sha1sum>a7eb2a535ed6c9eef7a04af9de51ced832bb049e</foaf:mbox_sha1sum>
+		<foaf:firstName>Darja</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e73/e7390e303292b4ae0da5ef2e32b9fde2731b2c3b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/24a/24a3cafa0dbce4e57622c309d9d8dc3dd394d7a0"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

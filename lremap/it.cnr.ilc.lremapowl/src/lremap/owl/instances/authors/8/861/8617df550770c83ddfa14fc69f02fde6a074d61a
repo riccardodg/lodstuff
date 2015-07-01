@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/861/8617df550770c83ddfa14fc69f02fde6a074d61a">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Chen</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:hhchen@ntu.edu.tw"/>
+		<foaf:mbox_sha1sum>8617df550770c83ddfa14fc69f02fde6a074d61a</foaf:mbox_sha1sum>
+		<foaf:firstName>Hsin-Hsi</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/634/634739a372b284889267dded647b3fd991847a6f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6a8/6a8099c09c227109ed200db0205eb35fd5e0aea9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/ab2/ab2ee343f56b2a828d06e0d2e9796dfab0ec7768"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/500/5000774b6b49c3d145878f72583a7e8f8be206e0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/199/1995c06adf2c4c0d9eb659b1578c6f0666ac9519"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

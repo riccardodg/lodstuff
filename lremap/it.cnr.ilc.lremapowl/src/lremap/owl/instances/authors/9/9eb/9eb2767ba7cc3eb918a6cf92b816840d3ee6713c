@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/9eb/9eb2767ba7cc3eb918a6cf92b816840d3ee6713c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Köhn</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:koehn@informatik.uni-hamburg.de"/>
+		<foaf:mbox_sha1sum>9eb2767ba7cc3eb918a6cf92b816840d3ee6713c</foaf:mbox_sha1sum>
+		<foaf:firstName>Arne</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/bf9/bf9a40d42682f4838c9da577f9a45ce68b504a3f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a89/a89b4388e4adcfc56471ca738261b764b70cb62c"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/f06/f0620875169a16cc0606d5e50e13b1e47efc9074">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Meurers</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:dm@sfs.uni-tuebingen.de"/>
+		<foaf:mbox_sha1sum>f0620875169a16cc0606d5e50e13b1e47efc9074</foaf:mbox_sha1sum>
+		<foaf:firstName>Detmar</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b9b/b9bd726e98cf8a9de063a3fd0a8bfec98b4e8452"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9be/9be371e3a695e89cbc1196fa1aae6fcd83347355"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9a0/9a0ed28a631e1974fa05e2be41e7af09910c1649"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1b5/1b5fde13294e9145c53e79d48ffaa18d3094c2e4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/dee/dee81bc765960d00915d96b8c6361dfcffa32147"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

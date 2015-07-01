@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/cad/cad2c91f73bb733f8f02cf1e5986e323a64315a4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Del Gratta</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:riccardo.delgratta@ilc.cnr.it"/>
+		<foaf:mbox_sha1sum>cad2c91f73bb733f8f02cf1e5986e323a64315a4</foaf:mbox_sha1sum>
+		<foaf:firstName>Riccardo</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/934/934d855f52fe11bfa6a47367276625d3667b20db"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/529/529c493533d8ea2e0a5f50745703eec3c42dd700"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e64/e64857c8bc012fb954502d79cc86a0cf797262cf"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1c3/1c3102ef7ccc4db1111a735e1c7c7257e0ab693a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4a0/4a0891944e7fd9e180bb287b593142d63721f266"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/6/612/6126ccec5d10fb1f8f4867448a0e052924116c54">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The “how-to” of integrating FACS and ELAN for analysis of non-manual features in ASL</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/e/e7f/e7f48e0d47bd7faf81a1a92e6e6ae26f1e554f92">
+				<rdfs:label>Lee Katie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fb3/fb3fef9cee29e5821981606d1fb1e2235b5a9585">
+				<rdfs:label>Pippuri Outi</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/295/295384cc5f3a6c96ee1b44ef3d728ed0c27ea7f5">
+				<rdfs:label>Mulrooney Kristin</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/008/0080ff56f42c4c0173324e226ec9a517bf2622f2">
+				<rdfs:label>Metaxas Dimitris</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/295/295384cc5f3a6c96ee1b44ef3d728ed0c27ea7f5">
+				<rdfs:label>Mulrooney Kristin</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c9d/c9d509cd68f6fa4c8f20148728ac5ef5e18c57f9">
+				<rdfs:label>Morris Carla</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b56/b56e52908c735bd2f51a279acbfd5c7bb0acf8ed">
+				<rdfs:label>Hochgesang Julie</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

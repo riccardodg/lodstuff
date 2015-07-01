@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/c81/c817b76e399e5c8d1e063bb2ef7f00a19475bf3c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Manning</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:manning@cs.stanford.edu"/>
+		<foaf:mbox_sha1sum>c817b76e399e5c8d1e063bb2ef7f00a19475bf3c</foaf:mbox_sha1sum>
+		<foaf:firstName>Chris</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d01/d01f34678f6d6f7e9f413bc9df2a3ee7b1574929"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2b3/2b3c5dc96245fde3d52e2f518f1eeb18ebe36f3c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b43/b4362b7c596bd4f1b76405660118e7a705a5f90d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

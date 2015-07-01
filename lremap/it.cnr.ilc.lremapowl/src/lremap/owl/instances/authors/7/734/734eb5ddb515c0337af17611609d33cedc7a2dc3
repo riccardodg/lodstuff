@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/734/734eb5ddb515c0337af17611609d33cedc7a2dc3">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Paraboni</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ivandre@usp.br"/>
+		<foaf:mbox_sha1sum>734eb5ddb515c0337af17611609d33cedc7a2dc3</foaf:mbox_sha1sum>
+		<foaf:firstName>Ivandré</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/723/7236839065a1cae6b944649a29e19a444237430c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/589/5899823f4e0038ce72e94398d3df11209ea24ab1"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/257/257ee242dcfc0189ad7604e5a514e327e73de67a"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

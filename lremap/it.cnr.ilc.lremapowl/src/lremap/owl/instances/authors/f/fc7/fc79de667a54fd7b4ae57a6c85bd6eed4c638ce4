@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/fc7/fc79de667a54fd7b4ae57a6c85bd6eed4c638ce4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Walker</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:maw@soe.ucsc.edu"/>
+		<foaf:mbox_sha1sum>fc79de667a54fd7b4ae57a6c85bd6eed4c638ce4</foaf:mbox_sha1sum>
+		<foaf:firstName>Marilyn</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6aa/6aa5550bd9ef1eb8d6478f56bec30f9edda037c9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ebd/ebd86af40dcd65677a52714548ed3a804adc3243"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/7f0/7f013303038443e451288d3670b5cc77ec48e024"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/045/0459b201eb001f81d79c44df2f7d5ce46e9bcfcb"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

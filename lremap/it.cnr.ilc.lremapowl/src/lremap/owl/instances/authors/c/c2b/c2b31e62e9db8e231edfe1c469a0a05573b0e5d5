@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/c2b/c2b31e62e9db8e231edfe1c469a0a05573b0e5d5">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Stadtfeld</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:tobias.stadtfeld@gmail.com"/>
+		<foaf:mbox_sha1sum>c2b31e62e9db8e231edfe1c469a0a05573b0e5d5</foaf:mbox_sha1sum>
+		<foaf:firstName>Tobias</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6da/6da7e951c849e5bc70ade23c100ca1509581c54d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/eb7/eb7bb1f96fa41398c95cce38a10383ac71c8f8df"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.resourcebook.eu/lremap/owl/lremap_resource" uri="http://www.resourcebook.eu/lremap/owl/lremap_resources.owl"/>
+    <uri id="Imports Wizard Entry" name="http://http://www.resourcebook.eu/lremap/owl/lremap_sub" uri="http://www.resourcebook.eu/lremap/owl/lremap_sub"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ontology/bibo/" uri="http://bibliontology.com/bibo/bibo.php#"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ontology/bibo/" uri="http://purl.org/ontology/bibo/"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1403266654393" name="http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" uri="lremap_resource.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403266654393" name="http://www.resourcebook.eu/lremap/owl/lremap_ri.owl" uri="lremap_ri.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403266654393" name="http://www.resourcebook.eu/lremap/owl/lremap_subs.owl" uri="lremap_subs.owl"/>
+    </group>
+</catalog>

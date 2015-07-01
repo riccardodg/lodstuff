@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/dca/dca34bcd092dd0847e6bc2bb66e3f45e909ed74d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Utsumi</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:utsumi@inf.uec.ac.jp"/>
+		<foaf:mbox_sha1sum>dca34bcd092dd0847e6bc2bb66e3f45e909ed74d</foaf:mbox_sha1sum>
+		<foaf:firstName>Akira</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/637/6378d8b296880d1d746c66defd8a8ce41148e681"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/174/1747afa67e40f8da2a359781629a48233dbbba15"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

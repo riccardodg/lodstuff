@@ -1,0 +1,3936 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.resourcebook.eu/lremap/owl/lremap_sub> .
+@prefix lio: <http://linkedevents.org/ontology/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix paper: <http://www.resourcebook.eu/lremap/owl/lremap_paper> .
+@prefix conf: <http://www.resourcebook.eu/lremap/owl/lremap_conf> .
+@prefix dc: <http://purl.org/dc/elements/1.1/#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcmi: <http://purl.org/dc/dcmitype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://http://www.resourcebook.eu/lremap/owl/lremap_sub>
+    a owl:Ontology ;
+    rdfs:comment """
+        	A submission is an event which references a (bibo) article and an Academic event (swc).
+    	""" .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-10X-P2C7B4A6F5>
+    dc:identifier "10X-P2C7B4A6F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-11X-F4P5C2H5A6>
+    dc:identifier "11X-F4P5C2H5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-12X-A5C8C6H5P2>
+    dc:identifier "12X-A5C8C6H5P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-13X-A8D8A7C5G3>
+    dc:identifier "13X-A8D8A7C5G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-3X-J8D4C3D8P3>
+    dc:identifier "3X-J8D4C3D8P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-4X-F3E3A5P3D2>
+    dc:identifier "4X-F3E3A5P3D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-5X-F4H6P9A4P3>
+    dc:identifier "5X-F4H6P9A4P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-6X-J6G8A5F5G3>
+    dc:identifier "6X-J6G8A5F5G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-7X-P3F4P7E6B2>
+    dc:identifier "7X-P3F4P7E6B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BUCC20142014-8X-J8A3P6J9H6>
+    dc:identifier "8X-J8A3P6J9H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-10X-C5P8A9J7P4>
+    dc:identifier "10X-C5P8A9J7P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-11X-H4C2G9F6A5>
+    dc:identifier "11X-H4C2G9F6A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-12X-E3H3P2A3F9>
+    dc:identifier "12X-E3H3P2A3F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-14X-A3H6A9B2C6>
+    dc:identifier "14X-A3H6A9B2C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-15X-A6E3B6D8G3>
+    dc:identifier "15X-A6E3B6D8G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-16X-D8B5E2C9B3>
+    dc:identifier "16X-D8B5E2C9B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-17X-F2D8D2G8F3>
+    dc:identifier "17X-F2D8D2G8F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-2X-B7C3G8G9D8>
+    dc:identifier "2X-B7C3G8G9D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-3X-G9E3D8P3F8>
+    dc:identifier "3X-G9E3D8P3F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-4X-G4P3P3C2A7>
+    dc:identifier "4X-G4P3P3C2A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-5X-P9E3C7C6D3>
+    dc:identifier "5X-P9E3C7C6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-6X-F3G4G2B6G4>
+    dc:identifier "6X-F3G4G2B6G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-7X-H6G2C2B3A3>
+    dc:identifier "7X-H6G2C2B3A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#BioTxtM2014-8X-P9F3H5E7A6>
+    dc:identifier "8X-P9F3H5E7A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-10X-H3C2J9D9H5>
+    dc:identifier "10X-H3C2J9D9H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-12X-C6H3P6J3E8>
+    dc:identifier "12X-C6H3P6J3E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-13X-B5G8J2P8P3>
+    dc:identifier "13X-B5G8J2P8P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-14X-D6C4H6A5J7>
+    dc:identifier "14X-D6C4H6A5J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-15X-F2C6F7H8F3>
+    dc:identifier "15X-F2C6F7H8F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-16X-E4E2J6F3E2>
+    dc:identifier "16X-E4E2J6F3E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-17X-J9A7E2C6C5>
+    dc:identifier "17X-J9A7E2C6C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-18X-J9F5H9B2J8>
+    dc:identifier "18X-J9F5H9B2J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-19X-B3G4A2J7D2>
+    dc:identifier "19X-B3G4A2J7D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-1X-P2D3H5E7E6>
+    dc:identifier "1X-P2D3H5E7E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-2X-C5F4C3F8P6>
+    dc:identifier "2X-C5F4C3F8P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-3X-D6H3G2G5F6>
+    dc:identifier "3X-D6H3G2G5F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-4X-B3D3B9P4G6>
+    dc:identifier "4X-B3D3B9P4G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-5X-E2G2G7J6J2>
+    dc:identifier "5X-E2G2G7J6J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-7X-P5D7C9P6J7>
+    dc:identifier "7X-P5D7C9P6J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CCURL2014-9X-A6P6F9G6G9>
+    dc:identifier "9X-A6P6F9G6G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CMLC-22014-2X-F3P6E8E6C2>
+    dc:identifier "2X-F3P6E8E6C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CMLC-22014-3X-A3P5J8F5A6>
+    dc:identifier "3X-A3P5J8F5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CMLC-22014-4X-D6F2A3J6E5>
+    dc:identifier "4X-D6F2A3J6E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CMLC-22014-5X-A2C7F3D5D6>
+    dc:identifier "5X-A2C7F3D5D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CMLC-22014-6X-B3B3P9G7A6>
+    dc:identifier "6X-B3B3P9G7A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CNL2014-3X-B4G4E5P5A6>
+    dc:identifier "3X-B4G4E5P5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CNL2014-4X-D8B2P4G5P4>
+    dc:identifier "4X-D8B2P4G5P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CNL2014-5X-E6J7A4F2H9>
+    dc:identifier "5X-E6J7A4F2H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CNL2014-6X-H4J3B6B6G6>
+    dc:identifier "6X-H4J3B6B6G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#CNL2014-7X-C5H7A3P3C9>
+    dc:identifier "7X-C5H7A3P3C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-10X-H8D2D8G5A6>
+    dc:identifier "10X-H8D2D8G5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-11X-H3F6G2J6C4>
+    dc:identifier "11X-H3F6G2J6C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-12X-H3H3H7G6E7>
+    dc:identifier "12X-H3H3H7G6E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-13X-B7P5B9E3D9>
+    dc:identifier "13X-B7P5B9E3D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-14X-D8D8J5H7H2>
+    dc:identifier "14X-D8D8J5H7H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-1X-G6P8H3A9H7>
+    dc:identifier "1X-G6P8H3A9H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-2X-J7E4B5A3F3>
+    dc:identifier "2X-J7E4B5A3F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-3X-A6D4C8C6H8>
+    dc:identifier "3X-A6D4C8C6H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-4X-P7P9E6J5C3>
+    dc:identifier "4X-P7P9E6J5C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-5X-B7E3B6H7P5>
+    dc:identifier "5X-B7E3B6H7P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-6X-E6C6B9D3J7>
+    dc:identifier "6X-E6C6B9D3J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-7X-J3P3G6B4G9>
+    dc:identifier "7X-J3P3G6B4G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-8X-C6E4F7D6P6>
+    dc:identifier "8X-C6E4F7D6P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#DIMPLE2014-9X-H6J4B2D6D7>
+    dc:identifier "9X-H6J4B2D6D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-13X-E9D5B8E2J6>
+    dc:identifier "13X-E9D5B8E2J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-14X-D8F6B7C8G5>
+    dc:identifier "14X-D8F6B7C8G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-16X-A6J7J3G9E5>
+    dc:identifier "16X-A6J7J3G9E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-17X-A2J6D8F6J2>
+    dc:identifier "17X-A2J6D8F6J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-18X-A3C7H3D2B9>
+    dc:identifier "18X-A3C7H3D2B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-19X-G5G5J3F4F6>
+    dc:identifier "19X-G5G5J3F4F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-20X-C7E5D6G3G6>
+    dc:identifier "20X-C7E5D6G3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-21X-J2A5D3B2E8>
+    dc:identifier "21X-J2A5D3B2E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-22X-F9J9A3E2B5>
+    dc:identifier "22X-F9J9A3E2B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-23X-C4J4E6F8H6>
+    dc:identifier "23X-C4J4E6F8H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-2X-F6J6B5D3E6>
+    dc:identifier "2X-F6J6B5D3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-4X-G6J3B6H3H5>
+    dc:identifier "4X-G6J3B6H3H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-5X-E3P8A6F2E3>
+    dc:identifier "5X-E3P8A6F2E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-6X-B7B5J3D4G7>
+    dc:identifier "6X-B7B5J3D4G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-7X-A9F7J8P3H3>
+    dc:identifier "7X-A9F7J8P3H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#ES3LOD2014-9X-P8G2H8A8G3>
+    dc:identifier "9X-P8G2H8A8G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-10X-J6G3D3E8A2>
+    dc:identifier "10X-J6G3D3E8A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-11X-E3A6H6F9E9>
+    dc:identifier "11X-E3A6H6F9E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-12X-G2P7B8B6E3>
+    dc:identifier "12X-G2P7B8B6E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-13X-J2C4H3C8A5>
+    dc:identifier "13X-J2C4H3C8A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-14X-J3P8A3G9A7>
+    dc:identifier "14X-J3P8A3G9A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-15X-P7F9B3C9E5>
+    dc:identifier "15X-P7F9B3C9E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-16X-E5B9J9J5C6>
+    dc:identifier "16X-E5B9J9J5C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-17X-D6A3A6D2E3>
+    dc:identifier "17X-D6A3A6D2E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-18X-F5B6D9J4F4>
+    dc:identifier "18X-F5B6D9J4F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-19X-H6G7G4P7G7>
+    dc:identifier "19X-H6G7G4P7G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-2X-E4E2G4C4B3>
+    dc:identifier "2X-E4E2G4C4B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-3X-B7D8P6G3J3>
+    dc:identifier "3X-B7D8P6G3J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-4X-G3E7P4H5D5>
+    dc:identifier "4X-G3E7P4H5D5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-7X-P6G6E6J3F3>
+    dc:identifier "7X-P6G6E6J3F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-8X-D4F5C6J4A6>
+    dc:identifier "8X-D4F5C6J4A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-10X-P2D3C7P9C6>
+    dc:identifier "10X-P2D3C7P9C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-11X-F2B6D6G5A6>
+    dc:identifier "11X-F2B6D6G5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-1X-G7H9D2F9F6>
+    dc:identifier "1X-G7H9D2F9F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-2X-D2C5G8G6D2>
+    dc:identifier "2X-D2C5G8G6D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-3X-H3D3A2A3E6>
+    dc:identifier "3X-H3D3A2A3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-4X-B3C4P9H2J5>
+    dc:identifier "4X-B3C4P9H2J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-6X-F6D4B2C5F3>
+    dc:identifier "6X-F6D4B2C5F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-7X-E9C7J3F8H3>
+    dc:identifier "7X-E9C7J3F8H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-8X-G9P5B9H5F6>
+    dc:identifier "8X-G9P5B9H5F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRE-Rel22014-9X-C9C3G6B3F9>
+    dc:identifier "9X-C9C3G6B3F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1000X-P3J6P5G7A6>
+    dc:identifier "1000X-P3J6P5G7A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1001X-P6A6D9J6D8>
+    dc:identifier "1001X-P6A6D9J6D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1003X-J8A4E4D3G6>
+    dc:identifier "1003X-J8A4E4D3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1005X-B3P7G6F3A5>
+    dc:identifier "1005X-B3P7G6F3A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1007X-A9J9D8A7D9>
+    dc:identifier "1007X-A9J9D8A7D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1009X-B2E3C7P4D6>
+    dc:identifier "1009X-B2E3C7P4D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1010X-C6H4B2E9C3>
+    dc:identifier "1010X-C6H4B2E9C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1011X-H7P7G5F5F6>
+    dc:identifier "1011X-H7P7G5F5F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1012X-G4J5D3H2C3>
+    dc:identifier "1012X-G4J5D3H2C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1016X-C7P4G2J6C8>
+    dc:identifier "1016X-C7P4G2J6C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1017X-H3H3F5J2G8>
+    dc:identifier "1017X-H3H3F5J2G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1018X-H9G4E3G6F2>
+    dc:identifier "1018X-H9G4E3G6F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1019X-P9G3A7J3H9>
+    dc:identifier "1019X-P9G3A7J3H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-101X-B6C7E9A2G4>
+    dc:identifier "101X-B6C7E9A2G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1020X-P6H7H8B5B3>
+    dc:identifier "1020X-P6H7H8B5B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1021X-G6C2G3F9E3>
+    dc:identifier "1021X-G6C2G3F9E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1022X-G6J7H4A3E8>
+    dc:identifier "1022X-G6J7H4A3E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1023X-A6C9G4G8D2>
+    dc:identifier "1023X-A6C9G4G8D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1026X-H6B9B3D5J6>
+    dc:identifier "1026X-H6B9B3D5J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1027X-P8F6F5J5C6>
+    dc:identifier "1027X-P8F6F5J5C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1029X-F2A8H2H8D9>
+    dc:identifier "1029X-F2A8H2H8D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-102X-C5A4F9G6H7>
+    dc:identifier "102X-C5A4F9G6H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1031X-H7C7F2H6A4>
+    dc:identifier "1031X-H7C7F2H6A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1032X-F7B2J8J6B5>
+    dc:identifier "1032X-F7B2J8J6B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1036X-G6D5A9G6B7>
+    dc:identifier "1036X-G6D5A9G6B7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1037X-J3D3J3P6B2>
+    dc:identifier "1037X-J3D3J3P6B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1038X-J5A2J3B3E7>
+    dc:identifier "1038X-J5A2J3B3E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-103X-P6A3E6A6F5>
+    dc:identifier "103X-P6A3E6A6F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1043X-H7A3A3C5H6>
+    dc:identifier "1043X-H7A3A3C5H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1046X-B6E6B5A5E4>
+    dc:identifier "1046X-B6E6B5A5E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1048X-J6E3H6P8A5>
+    dc:identifier "1048X-J6E3H6P8A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-104X-D9E8B6F7A6>
+    dc:identifier "104X-D9E8B6F7A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1051X-J4H6B3B8F9>
+    dc:identifier "1051X-J4H6B3B8F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1052X-G9E3A5C8G8>
+    dc:identifier "1052X-G9E3A5C8G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1053X-H3H6A7B9C5>
+    dc:identifier "1053X-H3H6A7B9C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1056X-B4E6C6F9F3>
+    dc:identifier "1056X-B4E6C6F9F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1057X-J8G6P3D9J6>
+    dc:identifier "1057X-J8G6P3D9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1058X-P3P6H9A7E2>
+    dc:identifier "1058X-P3P6H9A7E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1059X-E6A9E9J2C3>
+    dc:identifier "1059X-E6A9E9J2C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-105X-B6E7B9A7P4>
+    dc:identifier "105X-B6E7B9A7P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1060X-D4G4H7A6P5>
+    dc:identifier "1060X-D4G4H7A6P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1061X-B6E4A5G6D7>
+    dc:identifier "1061X-B6E4A5G6D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1062X-H2P6H3B6E5>
+    dc:identifier "1062X-H2P6H3B6E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1063X-D9F2A4J7A4>
+    dc:identifier "1063X-D9F2A4J7A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1064X-D7B3B6A6D6>
+    dc:identifier "1064X-D7B3B6A6D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1065X-J4A5B2P5F8>
+    dc:identifier "1065X-J4A5B2P5F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1066X-A8J7D6A7E9>
+    dc:identifier "1066X-A8J7D6A7E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1067X-J3A5D4P7H8>
+    dc:identifier "1067X-J3A5D4P7H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1068X-J3F7G5G4E3>
+    dc:identifier "1068X-J3F7G5G4E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-106X-G7G2D2P9H3>
+    dc:identifier "106X-G7G2D2P9H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1070X-C5J9B6A9B6>
+    dc:identifier "1070X-C5J9B6A9B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1071X-C9D3H9E4F5>
+    dc:identifier "1071X-C9D3H9E4F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1072X-J2E5F7A2J8>
+    dc:identifier "1072X-J2E5F7A2J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1073X-D3H3P8P5E4>
+    dc:identifier "1073X-D3H3P8P5E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1074X-G9J6P6F4H6>
+    dc:identifier "1074X-G9J6P6F4H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1075X-G4H8F6G6P4>
+    dc:identifier "1075X-G4H8F6G6P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1078X-G7B3C3C6H4>
+    dc:identifier "1078X-G7B3C3C6H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1079X-H3D3B3C6J7>
+    dc:identifier "1079X-H3D3B3C6J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-107X-G6A6H9C9A4>
+    dc:identifier "107X-G6A6H9C9A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1080X-J4H2H5F3P5>
+    dc:identifier "1080X-J4H2H5F3P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1081X-B6D9H8J6B6>
+    dc:identifier "1081X-B6D9H8J6B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1083X-E6A8E5C6J2>
+    dc:identifier "1083X-E6A8E5C6J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1085X-C3F4E5G6B6>
+    dc:identifier "1085X-C3F4E5G6B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1086X-F3B3A9B3G7>
+    dc:identifier "1086X-F3B3A9B3G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1088X-C2A9E4J3P7>
+    dc:identifier "1088X-C2A9E4J3P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1089X-G7D3H8C6F9>
+    dc:identifier "1089X-G7D3H8C6F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1090X-D4E4E2D9D4>
+    dc:identifier "1090X-D4E4E2D9D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1092X-D5H5F6D3P4>
+    dc:identifier "1092X-D5H5F6D3P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1093X-D3E3P4P6P4>
+    dc:identifier "1093X-D3E3P4P6P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1094X-A9C3A5P4C4>
+    dc:identifier "1094X-A9C3A5P4C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1095X-J3H8A6J9P3>
+    dc:identifier "1095X-J3H8A6J9P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1096X-D6G3F7C8H5>
+    dc:identifier "1096X-D6G3F7C8H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1097X-D9C9A5P6A5>
+    dc:identifier "1097X-D9C9A5P6A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1099X-F3G2P8F7H9>
+    dc:identifier "1099X-F3G2P8F7H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1102X-G8E6P3P2F9>
+    dc:identifier "1102X-G8E6P3P2F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1103X-E8P9G4J4F8>
+    dc:identifier "1103X-E8P9G4J4F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1104X-A6J3E9H8F4>
+    dc:identifier "1104X-A6J3E9H8F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1105X-E8J3H8J8C4>
+    dc:identifier "1105X-E8J3H8J8C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1106X-J6J6P6B3B9>
+    dc:identifier "1106X-J6J6P6B3B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1107X-F5C4A5P5C9>
+    dc:identifier "1107X-F5C4A5P5C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1108X-P7C5J6F3A5>
+    dc:identifier "1108X-P7C5J6F3A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-110X-E8E5G5E3A6>
+    dc:identifier "110X-E8E5G5E3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1112X-A2G9F6E5E2>
+    dc:identifier "1112X-A2G9F6E5E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1115X-D6C3G5P8D9>
+    dc:identifier "1115X-D6C3G5P8D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1116X-H6H6P2E6J3>
+    dc:identifier "1116X-H6H6P2E6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1119X-J6B2C4P2J3>
+    dc:identifier "1119X-J6B2C4P2J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1120X-G6B6G6D5E3>
+    dc:identifier "1120X-G6B6G6D5E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1125X-G9F5F6A3A6>
+    dc:identifier "1125X-G9F5F6A3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1126X-F9B6B8E6H6>
+    dc:identifier "1126X-F9B6B8E6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1127X-F7B3J3F8F4>
+    dc:identifier "1127X-F7B3J3F8F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1134X-G6C6F8D7H9>
+    dc:identifier "1134X-G6C6F8D7H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1135X-P3C2J4J8P6>
+    dc:identifier "1135X-P3C2J4J8P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1137X-P7B3F8P5J7>
+    dc:identifier "1137X-P7B3F8P5J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1138X-F5P5E3G8P9>
+    dc:identifier "1138X-F5P5E3G8P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1139X-F8C9C9D3B3>
+    dc:identifier "1139X-F8C9C9D3B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-113X-A6D2A5J7B6>
+    dc:identifier "113X-A6D2A5J7B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1143X-B7P7G6F2E6>
+    dc:identifier "1143X-B7P7G6F2E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1144X-G5B8B6C8F3>
+    dc:identifier "1144X-G5B8B6C8F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1145X-D5H3E4D6H5>
+    dc:identifier "1145X-D5H3E4D6H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1146X-B9H7G4B9B6>
+    dc:identifier "1146X-B9H7G4B9B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1147X-B7G8G6D8B2>
+    dc:identifier "1147X-B7G8G6D8B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1149X-G6B7C2C9J5>
+    dc:identifier "1149X-G6B7C2C9J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1150X-J7J9F3A9H9>
+    dc:identifier "1150X-J7J9F3A9H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1151X-H3F6C8E4C7>
+    dc:identifier "1151X-H3F6C8E4C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1153X-G3G8A5P6D9>
+    dc:identifier "1153X-G3G8A5P6D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1154X-B3H3E8P7H2>
+    dc:identifier "1154X-B3H3E8P7H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1155X-H9D7J3G9G5>
+    dc:identifier "1155X-H9D7J3G9G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1156X-E5D6H4E6F2>
+    dc:identifier "1156X-E5D6H4E6F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1157X-C5P3P2F4G5>
+    dc:identifier "1157X-C5P3P2F4G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1158X-H4J5B6C9H8>
+    dc:identifier "1158X-H4J5B6C9H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1159X-E3E7C3H2G9>
+    dc:identifier "1159X-E3E7C3H2G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-115X-D2B3D5J5G6>
+    dc:identifier "115X-D2B3D5J5G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1161X-J6P4A6F3F2>
+    dc:identifier "1161X-J6P4A6F3F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1163X-J6C8H3D9D6>
+    dc:identifier "1163X-J6C8H3D9D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1166X-B9C3G8D6A2>
+    dc:identifier "1166X-B9C3G8D6A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1167X-J6E6J8F4E6>
+    dc:identifier "1167X-J6E6J8F4E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1168X-J3D6G7D6F3>
+    dc:identifier "1168X-J3D6G7D6F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1169X-D4J4G8H6F8>
+    dc:identifier "1169X-D4J4G8H6F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-116X-P2F8C3P3H5>
+    dc:identifier "116X-P2F8C3P3H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1170X-J3H9B8A9H5>
+    dc:identifier "1170X-J3H9B8A9H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1174X-C9P3B3J9H6>
+    dc:identifier "1174X-C9P3B3J9H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1176X-C6F7D5B4P7>
+    dc:identifier "1176X-C6F7D5B4P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1179X-E7P8P7C3F3>
+    dc:identifier "1179X-E7P8P7C3F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1182X-D8P8G3D2D3>
+    dc:identifier "1182X-D8P8G3D2D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1183X-C6A2C3H3C3>
+    dc:identifier "1183X-C6A2C3H3C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1184X-H9H2G8P6H2>
+    dc:identifier "1184X-H9H2G8P6H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1185X-E3H4G7D3J3>
+    dc:identifier "1185X-E3H4G7D3J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1189X-P6P9C8G9B2>
+    dc:identifier "1189X-P6P9C8G9B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-118X-P7G4B4C8J3>
+    dc:identifier "118X-P7G4B4C8J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1193X-B9A3P7A6H8>
+    dc:identifier "1193X-B9A3P7A6H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1194X-J6P6G3G4H5>
+    dc:identifier "1194X-J6P6G3G4H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1195X-D8J6G8C2P4>
+    dc:identifier "1195X-D8J6G8C2P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1197X-E9E9E5P6H7>
+    dc:identifier "1197X-E9E9E5P6H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1198X-A5H3C9B8H7>
+    dc:identifier "1198X-A5H3C9B8H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1199X-H9C8J6H5F3>
+    dc:identifier "1199X-H9C8J6H5F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-119X-E6J6H4H7B6>
+    dc:identifier "119X-E6J6H4H7B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1200X-H6A4J4P2H5>
+    dc:identifier "1200X-H6A4J4P2H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1201X-D2G8B6E2G4>
+    dc:identifier "1201X-D2G8B6E2G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1203X-J3H6B9J9B6>
+    dc:identifier "1203X-J3H6B9J9B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1207X-J3H9C8P2H7>
+    dc:identifier "1207X-J3H9C8P2H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-120X-A3B3C2C6H7>
+    dc:identifier "120X-A3B3C2C6H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1211X-C2E4J9E3P2>
+    dc:identifier "1211X-C2E4J9E3P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1212X-E5H2J3D9F9>
+    dc:identifier "1212X-E5H2J3D9F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1213X-F6H2E3D3A2>
+    dc:identifier "1213X-F6H2E3D3A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1214X-J6G5F3C4C2>
+    dc:identifier "1214X-J6G5F3C4C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1216X-E7B4A8G5G8>
+    dc:identifier "1216X-E7B4A8G5G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1217X-H6H3E2C3J6>
+    dc:identifier "1217X-H6H3E2C3J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-121X-H3B7D6B5J6>
+    dc:identifier "121X-H3B7D6B5J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1222X-G3H8A7D3G7>
+    dc:identifier "1222X-G3H8A7D3G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1226X-H2C3J3D2H9>
+    dc:identifier "1226X-H2C3J3D2H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1227X-G7D7D3C3E2>
+    dc:identifier "1227X-G7D7D3C3E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-122X-H6H6B8F6B2>
+    dc:identifier "122X-H6H6B8F6B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-124X-G9B3P3P4B6>
+    dc:identifier "124X-G9B3P3P4B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-125X-J3P4H2G9P5>
+    dc:identifier "125X-J3P4H2G9P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-127X-A8C7B8B9G6>
+    dc:identifier "127X-A8C7B8B9G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-128X-P9A9B7E3C6>
+    dc:identifier "128X-P9A9B7E3C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-12X-F6D6B3A5C6>
+    dc:identifier "12X-F6D6B3A5C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-130X-D8D5F6F5G2>
+    dc:identifier "130X-D8D5F6F5G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-132X-D3P6J8D9G9>
+    dc:identifier "132X-D3P6J8D9G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-134X-H6D7G7H3E7>
+    dc:identifier "134X-H6D7G7H3E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-138X-P9C8A2H3G7>
+    dc:identifier "138X-P9C8A2H3G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-143X-B7E6C3H6B2>
+    dc:identifier "143X-B7E6C3H6B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-144X-D2J7E9E7A8>
+    dc:identifier "144X-D2J7E9E7A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-145X-E4F6F3F9C7>
+    dc:identifier "145X-E4F6F3F9C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-147X-E3H9D3A2A8>
+    dc:identifier "147X-E3H9D3A2A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-14X-P3B8H8A8E5>
+    dc:identifier "14X-P3B8H8A8E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-150X-C6F7D8P3A5>
+    dc:identifier "150X-C6F7D8P3A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-151X-J9F8D9B3C6>
+    dc:identifier "151X-J9F8D9B3C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-153X-C7E7B9H2E9>
+    dc:identifier "153X-C7E7B9H2E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-154X-G3F6C5A9C2>
+    dc:identifier "154X-G3F6C5A9C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-155X-J9A6P3C3C2>
+    dc:identifier "155X-J9A6P3C3C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-156X-G9P6C9C6C6>
+    dc:identifier "156X-G9P6C9C6C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-159X-D6F5B6G3J3>
+    dc:identifier "159X-D6F5B6G3J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-160X-H3P5B6D5H2>
+    dc:identifier "160X-H3P5B6D5H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-162X-P4D8E3H9J6>
+    dc:identifier "162X-P4D8E3H9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-163X-G9H5B7H6G4>
+    dc:identifier "163X-G9H5B7H6G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-165X-C5H7P7C6F6>
+    dc:identifier "165X-C5H7P7C6F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-168X-A3A9D3J6J6>
+    dc:identifier "168X-A3A9D3J6J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-169X-A6J3J6P5H6>
+    dc:identifier "169X-A6J3J6P5H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-16X-D8F6J6F7E9>
+    dc:identifier "16X-D8F6J6F7E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-171X-D3P9F8H2G5>
+    dc:identifier "171X-D3P9F8H2G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-175X-P8C8G6F6G9>
+    dc:identifier "175X-P8C8G6F6G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-176X-B3F4D3C9J6>
+    dc:identifier "176X-B3F4D3C9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-178X-D5D7H8D5J3>
+    dc:identifier "178X-D5D7H8D5J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-180X-P5G6A6F3F7>
+    dc:identifier "180X-P5G6A6F3F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-182X-D9H2P9E6A6>
+    dc:identifier "182X-D9H2P9E6A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-183X-A3C9J9B2D9>
+    dc:identifier "183X-A3C9J9B2D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-185X-A9E3F8G3C3>
+    dc:identifier "185X-A9E3F8G3C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-186X-J6E8B3B8B3>
+    dc:identifier "186X-J6E8B3B8B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-187X-G5B9D2G3G8>
+    dc:identifier "187X-G5B9D2G3G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-188X-B6J3H9C7E3>
+    dc:identifier "188X-B6J3H9C7E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-189X-C6G8D3F6J3>
+    dc:identifier "189X-C6G8D3F6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-18X-C8J5F2P6E3>
+    dc:identifier "18X-C8J5F2P6E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-190X-J5E6G2H3A8>
+    dc:identifier "190X-J5E6G2H3A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-192X-H3C6J6H8J8>
+    dc:identifier "192X-H3C6J6H8J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-195X-B8J3J6E5F6>
+    dc:identifier "195X-B8J3J6E5F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-196X-B7C6A3E3G5>
+    dc:identifier "196X-B7C6A3E3G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-199X-F8J2P5P6F7>
+    dc:identifier "199X-F8J2P5P6F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-19X-G3A4B9A5D9>
+    dc:identifier "19X-G3A4B9A5D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1X-H9C6B2P2E5>
+    dc:identifier "1X-H9C6B2P2E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-202X-E8C5J2A9F9>
+    dc:identifier "202X-E8C5J2A9F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-203X-H3H7P2F6H6>
+    dc:identifier "203X-H3H7P2F6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-205X-D9C3P8G3A8>
+    dc:identifier "205X-D9C3P8G3A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-206X-J4B7P4J6H6>
+    dc:identifier "206X-J4B7P4J6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-207X-C8A4A8A2P3>
+    dc:identifier "207X-C8A4A8A2P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-209X-A7P5F8J7G3>
+    dc:identifier "209X-A7P5F8J7G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-210X-F7E3C6A7P6>
+    dc:identifier "210X-F7E3C6A7P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-211X-A4A2J6C6C3>
+    dc:identifier "211X-A4A2J6C6C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-214X-G6C8E3G4E6>
+    dc:identifier "214X-G6C8E3G4E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-218X-P8H4E7P8E3>
+    dc:identifier "218X-P8H4E7P8E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-219X-C9D8D3J4B9>
+    dc:identifier "219X-C9D8D3J4B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-21X-J2F9B3A6G9>
+    dc:identifier "21X-J2F9B3A6G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-220X-C3H3C8G2B3>
+    dc:identifier "220X-C3H3C8G2B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-221X-D6F8E5B5G2>
+    dc:identifier "221X-D6F8E5B5G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-222X-E8G3H5B5E3>
+    dc:identifier "222X-E8G3H5B5E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-225X-B5D6J6B2B5>
+    dc:identifier "225X-B5D6J6B2B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-227X-B3H3F2E8A8>
+    dc:identifier "227X-B3H3F2E8A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-228X-A3C2H6B7F2>
+    dc:identifier "228X-A3C2H6B7F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-230X-H2G7D3J4G7>
+    dc:identifier "230X-H2G7D3J4G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-231X-B9B9C5A5C4>
+    dc:identifier "231X-B9B9C5A5C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-233X-D4H6P3C8F2>
+    dc:identifier "233X-D4H6P3C8F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-235X-B3J5P7E7B8>
+    dc:identifier "235X-B3J5P7E7B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-236X-G9C5E6E7P7>
+    dc:identifier "236X-G9C5E6E7P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-239X-J7F5A7H3H6>
+    dc:identifier "239X-J7F5A7H3H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-23X-C5D4H6B3P6>
+    dc:identifier "23X-C5D4H6B3P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-241X-F9D8D4B3E3>
+    dc:identifier "241X-F9D8D4B3E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-242X-G8G3D8P9G2>
+    dc:identifier "242X-G8G3D8P9G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-247X-J5B7F5C4B3>
+    dc:identifier "247X-J5B7F5C4B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-248X-J6G8E6E8A5>
+    dc:identifier "248X-J6G8E6E8A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-24X-J6G4P3C8B6>
+    dc:identifier "24X-J6G4P3C8B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-250X-H6F9G2D6A9>
+    dc:identifier "250X-H6F9G2D6A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-251X-A6B6G9F7D4>
+    dc:identifier "251X-A6B6G9F7D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-252X-G6H8B3D7H6>
+    dc:identifier "252X-G6H8B3D7H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-253X-J8D8A6P3D6>
+    dc:identifier "253X-J8D8A6P3D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-254X-F9P7H6H6C2>
+    dc:identifier "254X-F9P7H6H6C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-255X-E9J2E3B6G6>
+    dc:identifier "255X-E9J2E3B6G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-258X-C3H5B3C6E6>
+    dc:identifier "258X-C3H5B3C6E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-25X-A4J3B3A9C7>
+    dc:identifier "25X-A4J3B3A9C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-262X-C6E9B8H3P3>
+    dc:identifier "262X-C6E9B8H3P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-263X-B5C2H4G3F7>
+    dc:identifier "263X-B5C2H4G3F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-264X-D6G6D5G3A9>
+    dc:identifier "264X-D6G6D5G3A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-267X-A2J6D3C6J2>
+    dc:identifier "267X-A2J6D3C6J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-270X-H6F2E6B5C4>
+    dc:identifier "270X-H6F2E6B5C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-271X-P6B3B5G4H9>
+    dc:identifier "271X-P6B3B5G4H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-272X-P3C3F9E6C7>
+    dc:identifier "272X-P3C3F9E6C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-274X-D6D2E8H6D4>
+    dc:identifier "274X-D6D2E8H6D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-275X-A8B6D3B5J5>
+    dc:identifier "275X-A8B6D3B5J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-276X-D9H5P9J4J5>
+    dc:identifier "276X-D9H5P9J4J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-277X-F6E8E8E6J6>
+    dc:identifier "277X-F6E8E8E6J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-278X-J2H3E9P3D7>
+    dc:identifier "278X-J2H3E9P3D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-279X-F4E2F4D7B6>
+    dc:identifier "279X-F4E2F4D7B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-27X-A6C4E6B9A5>
+    dc:identifier "27X-A6C4E6B9A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-280X-P5E6F5D6C3>
+    dc:identifier "280X-P5E6F5D6C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-284X-A5F2D3P7B3>
+    dc:identifier "284X-A5F2D3P7B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-285X-P7A2J4F2D9>
+    dc:identifier "285X-P7A2J4F2D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-286X-J4J2B7E5P5>
+    dc:identifier "286X-J4J2B7E5P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-288X-H2G7G6P2A8>
+    dc:identifier "288X-H2G7G6P2A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-289X-B3C2G4J2P6>
+    dc:identifier "289X-B3C2G4J2P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-28X-B6J8P4P3A7>
+    dc:identifier "28X-B6J8P4P3A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-290X-P7J8D5H3B6>
+    dc:identifier "290X-P7J8D5H3B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-291X-E9B7A6E6D3>
+    dc:identifier "291X-E9B7A6E6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-292X-A6B3G9E2J2>
+    dc:identifier "292X-A6B3G9E2J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-293X-C2E4P3H3P4>
+    dc:identifier "293X-C2E4P3H3P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-294X-E4D6E6J8G3>
+    dc:identifier "294X-E4D6E6J8G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-298X-J2H6G2G5A6>
+    dc:identifier "298X-J2H6G2G5A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-299X-D8A3B9D4F6>
+    dc:identifier "299X-D8A3B9D4F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-29X-C5J3A3G3H5>
+    dc:identifier "29X-C5J3A3G3H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-2X-E5E8A8G8J9>
+    dc:identifier "2X-E5E8A8G8J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-300X-C8A2B5D9G6>
+    dc:identifier "300X-C8A2B5D9G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-302X-E3J6F7F3P7>
+    dc:identifier "302X-E3J6F7F3P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-303X-A7D3P3P6J5>
+    dc:identifier "303X-A7D3P3P6J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-308X-J7G9P4P6A3>
+    dc:identifier "308X-J7G9P4P6A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-309X-H5P3F5H3H2>
+    dc:identifier "309X-H5P3F5H3H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-311X-D5C7H4B2A9>
+    dc:identifier "311X-D5C7H4B2A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-312X-G3J5F5A4F2>
+    dc:identifier "312X-G3J5F5A4F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-316X-P4A9A9C3H9>
+    dc:identifier "316X-P4A9A9C3H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-317X-P2B3F7B8F2>
+    dc:identifier "317X-P2B3F7B8F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-318X-A9H5C5J3H7>
+    dc:identifier "318X-A9H5C5J3H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-319X-C3H6E8J5B5>
+    dc:identifier "319X-C3H6E8J5B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-31X-C3E2H3F5G9>
+    dc:identifier "31X-C3E2H3F5G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-320X-F9G5D3B7B6>
+    dc:identifier "320X-F9G5D3B7B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-321X-J3E2C9F9A5>
+    dc:identifier "321X-J3E2C9F9A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-322X-E8A3J6F6F9>
+    dc:identifier "322X-E8A3J6F6F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-323X-C3H6E6P3H9>
+    dc:identifier "323X-C3H6E6P3H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-325X-C9G8C3G6C4>
+    dc:identifier "325X-C9G8C3G6C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-327X-B9C8B7E2E7>
+    dc:identifier "327X-B9C8B7E2E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-328X-E8P3P9G2A7>
+    dc:identifier "328X-E8P3P9G2A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-329X-F9D9B3E3F9>
+    dc:identifier "329X-F9D9B3E3F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-32X-H3B8J3H5C7>
+    dc:identifier "32X-H3B8J3H5C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-330X-E7C5F9E6J3>
+    dc:identifier "330X-E7C5F9E6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-331X-F5C3H6C7J7>
+    dc:identifier "331X-F5C3H6C7J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-332X-P8B3F2A6F4>
+    dc:identifier "332X-P8B3F2A6F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-334X-P5F2C9H3F2>
+    dc:identifier "334X-P5F2C9H3F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-335X-H3J5C3F6D3>
+    dc:identifier "335X-H3J5C3F6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-337X-D6B6A4G6A2>
+    dc:identifier "337X-D6B6A4G6A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-338X-F3E5G9F3D3>
+    dc:identifier "338X-F3E5G9F3D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-339X-D4A2F3E9G3>
+    dc:identifier "339X-D4A2F3E9G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-340X-J5F6F6J6J6>
+    dc:identifier "340X-J5F6F6J6J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-341X-A7B4C3J3C2>
+    dc:identifier "341X-A7B4C3J3C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-345X-J3G3D5J4E7>
+    dc:identifier "345X-J3G3D5J4E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-346X-H6A9C3J7E5>
+    dc:identifier "346X-H6A9C3J7E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-349X-H3F3J9J3C3>
+    dc:identifier "349X-H3F3J9J3C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-34X-H6C5B7F6F3>
+    dc:identifier "34X-H6C5B7F6F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-350X-F2D2J2P3D7>
+    dc:identifier "350X-F2D2J2P3D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-353X-A4P5A5H2D7>
+    dc:identifier "353X-A4P5A5H2D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-354X-B8H2B9H7C6>
+    dc:identifier "354X-B8H2B9H7C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-356X-B9F3A6H3D2>
+    dc:identifier "356X-B9F3A6H3D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-358X-G5P7G7F8C7>
+    dc:identifier "358X-G5P7G7F8C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-360X-D4B2J8G9D6>
+    dc:identifier "360X-D4B2J8G9D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-361X-H4A6E2E3H7>
+    dc:identifier "361X-H4A6E2E3H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-362X-D8C5C6H5P6>
+    dc:identifier "362X-D8C5C6H5P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-363X-G6A2F5F9B8>
+    dc:identifier "363X-G6A2F5F9B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-364X-G8A9H3J7P6>
+    dc:identifier "364X-G8A9H3J7P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-365X-A3D9D7J9H2>
+    dc:identifier "365X-A3D9D7J9H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-368X-C6F8A2E2D6>
+    dc:identifier "368X-C6F8A2E2D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-370X-F2P6P3G3F9>
+    dc:identifier "370X-F2P6P3G3F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-371X-G3F9P5A4E5>
+    dc:identifier "371X-G3F9P5A4E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-372X-G9P2F2B9C3>
+    dc:identifier "372X-G9P2F2B9C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-373X-E6E3C7G4P9>
+    dc:identifier "373X-E6E3C7G4P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-374X-D9J9C8C3C7>
+    dc:identifier "374X-D9J9C8C3C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-375X-F6A6F5H7B2>
+    dc:identifier "375X-F6A6F5H7B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-376X-F7E4D6F3J3>
+    dc:identifier "376X-F7E4D6F3J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-377X-A2D3B7D6P6>
+    dc:identifier "377X-A2D3B7D6P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-378X-C8J8J5C5H6>
+    dc:identifier "378X-C8J8J5C5H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-379X-H5A9C7D9E5>
+    dc:identifier "379X-H5A9C7D9E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-380X-D6P5P6G5J2>
+    dc:identifier "380X-D6P5P6G5J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-381X-D2D9E2C6A4>
+    dc:identifier "381X-D2D9E2C6A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-382X-F7H4H7C7G4>
+    dc:identifier "382X-F7H4H7C7G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-383X-F4F2B4A9A3>
+    dc:identifier "383X-F4F2B4A9A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-384X-J4P6H2H8P8>
+    dc:identifier "384X-J4P6H2H8P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-385X-F7G3H4F8C4>
+    dc:identifier "385X-F7G3H4F8C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-386X-C2A5H8E2C6>
+    dc:identifier "386X-C2A5H8E2C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-387X-P6C2B3P3B8>
+    dc:identifier "387X-P6C2B3P3B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-389X-A8A5F6D5G9>
+    dc:identifier "389X-A8A5F6D5G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-390X-H2G9D3P6E9>
+    dc:identifier "390X-H2G9D3P6E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-391X-C3C9J6D3J2>
+    dc:identifier "391X-C3C9J6D3J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-392X-G6E2G8P3P2>
+    dc:identifier "392X-G6E2G8P3P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-394X-J5E6F3B2J3>
+    dc:identifier "394X-J5E6F3B2J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-396X-G7C3J9H3B6>
+    dc:identifier "396X-G7C3J9H3B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-397X-H7G9D4P7C6>
+    dc:identifier "397X-H7G9D4P7C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-398X-D6B6C3B7P5>
+    dc:identifier "398X-D6B6C3B7P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-39X-C3E3B7A8D3>
+    dc:identifier "39X-C3E3B7A8D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-3X-F5A9J6E6B6>
+    dc:identifier "3X-F5A9J6E6B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-400X-B3J3P6C4F4>
+    dc:identifier "400X-B3J3P6C4F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-401X-E6F9J5C6A7>
+    dc:identifier "401X-E6F9J5C6A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-402X-J2J6H6P3G2>
+    dc:identifier "402X-J2J6H6P3G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-403X-G7F3B9H7F2>
+    dc:identifier "403X-G7F3B9H7F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-405X-P4H3J3B3A3>
+    dc:identifier "405X-P4H3J3B3A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-409X-D2A4D2C8H9>
+    dc:identifier "409X-D2A4D2C8H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-410X-C9G6B5F5G2>
+    dc:identifier "410X-C9G6B5F5G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-413X-P6C7B8P6E8>
+    dc:identifier "413X-P6C7B8P6E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-414X-A3F3A6A3C8>
+    dc:identifier "414X-A3F3A6A3C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-415X-P9J8A6C6C6>
+    dc:identifier "415X-P9J8A6C6C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-416X-F6D8E6P9E6>
+    dc:identifier "416X-F6D8E6P9E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-417X-P3F6P6G2G3>
+    dc:identifier "417X-P3F6P6G2G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-419X-J3B3J4B4C3>
+    dc:identifier "419X-J3B3J4B4C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-41X-A3P3B9E6A3>
+    dc:identifier "41X-A3P3B9E6A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-421X-D3E7J6A6F7>
+    dc:identifier "421X-D3E7J6A6F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-422X-D2F6J2H2E3>
+    dc:identifier "422X-D2F6J2H2E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-424X-F5G3J6E5P9>
+    dc:identifier "424X-F5G3J6E5P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-425X-A2H9G9F7H2>
+    dc:identifier "425X-A2H9G9F7H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-426X-A3F5J4D8H3>
+    dc:identifier "426X-A3F5J4D8H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-427X-J7J7A7P3B8>
+    dc:identifier "427X-J7J7A7P3B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-429X-G3P7P5A7P4>
+    dc:identifier "429X-G3P7P5A7P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-42X-H3E3F9E4D5>
+    dc:identifier "42X-H3E3F9E4D5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-430X-A9P4P8J4F3>
+    dc:identifier "430X-A9P4P8J4F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-431X-B5E7A9C3C5>
+    dc:identifier "431X-B5E7A9C3C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-432X-E5J8B9D5P3>
+    dc:identifier "432X-E5J8B9D5P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-434X-F3E6J8A3A9>
+    dc:identifier "434X-F3E6J8A3A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-435X-P3E8P6B3J7>
+    dc:identifier "435X-P3E8P6B3J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-436X-A8J6G6E7J3>
+    dc:identifier "436X-A8J6G6E7J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-437X-J7B9P6J5F5>
+    dc:identifier "437X-J7B9P6J5F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-438X-E9G3C8A3P4>
+    dc:identifier "438X-E9G3C8A3P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-43X-G7B5J3G6F3>
+    dc:identifier "43X-G7B5J3G6F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-440X-D2C7A9P2H5>
+    dc:identifier "440X-D2C7A9P2H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-441X-B3G3F3B3F3>
+    dc:identifier "441X-B3G3F3B3F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-442X-H7A7D3J6A5>
+    dc:identifier "442X-H7A7D3J6A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-444X-A3B5D2J3P6>
+    dc:identifier "444X-A3B5D2J3P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-449X-G7A3E2J6C5>
+    dc:identifier "449X-G7A3E2J6C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-452X-D2C7P2D6E6>
+    dc:identifier "452X-D2C7P2D6E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-453X-J3B6E5J2F7>
+    dc:identifier "453X-J3B6E5J2F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-454X-F6D3G3G9C3>
+    dc:identifier "454X-F6D3G3G9C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-455X-F9J3E6G9J3>
+    dc:identifier "455X-F9J3E6G9J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-457X-P5G2E6A7A7>
+    dc:identifier "457X-P5G2E6A7A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-459X-H4F8A5C5H5>
+    dc:identifier "459X-H4F8A5C5H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-45X-H3B9C3C3H5>
+    dc:identifier "45X-H3B9C3C3H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-461X-B2F6C7D6H4>
+    dc:identifier "461X-B2F6C7D6H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-462X-H3H3B6J9J9>
+    dc:identifier "462X-H3H3B6J9J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-463X-F8J4J2C7J4>
+    dc:identifier "463X-F8J4J2C7J4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-465X-E5B7P7A6J6>
+    dc:identifier "465X-E5B7P7A6J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-466X-H9E3J3D4G9>
+    dc:identifier "466X-H9E3J3D4G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-467X-B6J5G3C3P5>
+    dc:identifier "467X-B6J5G3C3P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-468X-H7F5J9E3J9>
+    dc:identifier "468X-H7F5J9E3J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-46X-A4J3A8G9J6>
+    dc:identifier "46X-A4J3A8G9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-470X-G8J5C3E2A6>
+    dc:identifier "470X-G8J5C3E2A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-471X-P4J3H5P8J3>
+    dc:identifier "471X-P4J3H5P8J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-473X-J4C5B7P2G3>
+    dc:identifier "473X-J4C5B7P2G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-475X-P7G2F7J2H2>
+    dc:identifier "475X-P7G2F7J2H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-476X-J4E2B3D8D9>
+    dc:identifier "476X-J4E2B3D8D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-479X-E3D4D2J3G6>
+    dc:identifier "479X-E3D4D2J3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-47X-E2D6C8E3H4>
+    dc:identifier "47X-E2D6C8E3H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-480X-J6H9P6F6E8>
+    dc:identifier "480X-J6H9P6F6E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-483X-C8A8F6J2C6>
+    dc:identifier "483X-C8A8F6J2C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-484X-H3B3B7P8C8>
+    dc:identifier "484X-H3B3B7P8C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-486X-B5F2B8F5D3>
+    dc:identifier "486X-B5F2B8F5D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-48X-B8G7F6G9G8>
+    dc:identifier "48X-B8G7F6G9G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-492X-G5G5B4J3J9>
+    dc:identifier "492X-G5G5B4J3J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-494X-D6J3P3F9A2>
+    dc:identifier "494X-D6J3P3F9A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-496X-B5E7B3D8J6>
+    dc:identifier "496X-B5E7B3D8J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-497X-F3D4E4E8B6>
+    dc:identifier "497X-F3D4E4E8B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-498X-J6P9D7J7E6>
+    dc:identifier "498X-J6P9D7J7E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-4X-E3B5H2C7H8>
+    dc:identifier "4X-E3B5H2C7H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-500X-B7P5F5P2D9>
+    dc:identifier "500X-B7P5F5P2D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-501X-J3P5E7J3J8>
+    dc:identifier "501X-J3P5E7J3J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-502X-E4P2G3H3C5>
+    dc:identifier "502X-E4P2G3H3C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-504X-F3E4G2P2J6>
+    dc:identifier "504X-F3E4G2P2J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-506X-A5A3B3B8A7>
+    dc:identifier "506X-A5A3B3B8A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-507X-B6A9B5H4J6>
+    dc:identifier "507X-B6A9B5H4J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-508X-G3F3C8E9B7>
+    dc:identifier "508X-G3F3C8E9B7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-50X-C5E9A3J5H3>
+    dc:identifier "50X-C5E9A3J5H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-510X-H2D2A2D8E6>
+    dc:identifier "510X-H2D2A2D8E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-511X-D7G3J4J4G9>
+    dc:identifier "511X-D7G3J4J4G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-513X-H2C3G3D2P4>
+    dc:identifier "513X-H2C3G3D2P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-514X-J3E9H3A2C6>
+    dc:identifier "514X-J3E9H3A2C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-515X-B8H9G3J6P6>
+    dc:identifier "515X-B8H9G3J6P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-517X-H8B6H5J9C3>
+    dc:identifier "517X-H8B6H5J9C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-518X-H6C6C4B4C9>
+    dc:identifier "518X-H6C6C4B4C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-519X-H4C8D6D3G9>
+    dc:identifier "519X-H4C8D6D3G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-51X-H8G5J3G2D3>
+    dc:identifier "51X-H8G5J3G2D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-520X-P4D7F7B9C6>
+    dc:identifier "520X-P4D7F7B9C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-521X-E9B7H6P2B6>
+    dc:identifier "521X-E9B7H6P2B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-522X-H7E7E3H3G5>
+    dc:identifier "522X-H7E7E3H3G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-523X-J6J6P8C8E7>
+    dc:identifier "523X-J6J6P8C8E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-525X-B9D6D6P7P3>
+    dc:identifier "525X-B9D6D6P7P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-529X-A7H3C7B5J8>
+    dc:identifier "529X-A7H3C7B5J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-52X-B5D3C3H6B7>
+    dc:identifier "52X-B5D3C3H6B7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-530X-G3E4H3H7D6>
+    dc:identifier "530X-G3E4H3H7D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-531X-D3F6G6F6P6>
+    dc:identifier "531X-D3F6G6F6P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-532X-H7F2D2A5E3>
+    dc:identifier "532X-H7F2D2A5E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-533X-F2B4E6D2C8>
+    dc:identifier "533X-F2B4E6D2C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-535X-E6J3F9B6B9>
+    dc:identifier "535X-E6J3F9B6B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-536X-J6C8C6P6E3>
+    dc:identifier "536X-J6C8C6P6E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-537X-A6C8G3H5P3>
+    dc:identifier "537X-A6C8G3H5P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-538X-E8C3P6P7H3>
+    dc:identifier "538X-E8C3P6P7H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-53X-A6A3G7E8B6>
+    dc:identifier "53X-A6A3G7E8B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-541X-J9P4H8B3B9>
+    dc:identifier "541X-J9P4H8B3B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-543X-J9E8P5F9E9>
+    dc:identifier "543X-J9E8P5F9E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-544X-P7E7E7G6H6>
+    dc:identifier "544X-P7E7E7G6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-545X-P7H4D7A7A3>
+    dc:identifier "545X-P7H4D7A7A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-546X-D6G2A5E8D5>
+    dc:identifier "546X-D6G2A5E8D5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-549X-F4G6J6J6B9>
+    dc:identifier "549X-F4G6J6J6B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-552X-E2B2C3D9P3>
+    dc:identifier "552X-E2B2C3D9P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-553X-D8E7A9J9B3>
+    dc:identifier "553X-D8E7A9J9B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-556X-G3F8P2B5J3>
+    dc:identifier "556X-G3F8P2B5J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-558X-J8E9J6J6D3>
+    dc:identifier "558X-J8E9J6J6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-562X-E3C2D8G5G3>
+    dc:identifier "562X-E3C2D8G5G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-563X-F5F6F3D3G3>
+    dc:identifier "563X-F5F6F3D3G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-564X-P5C8P9A6P6>
+    dc:identifier "564X-P5C8P9A6P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-567X-E6D2D7J4P5>
+    dc:identifier "567X-E6D2D7J4P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-568X-G3A4D4B2C2>
+    dc:identifier "568X-G3A4D4B2C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-569X-F9P3H2D6C6>
+    dc:identifier "569X-F9P3H2D6C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-570X-E7A6G5F8G6>
+    dc:identifier "570X-E7A6G5F8G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-574X-P3F3P6D7E3>
+    dc:identifier "574X-P3F3P6D7E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-575X-B5J5P7H8E7>
+    dc:identifier "575X-B5J5P7H8E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-576X-F3C2A3B4C3>
+    dc:identifier "576X-F3C2A3B4C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-578X-H3B8A4G3G8>
+    dc:identifier "578X-H3B8A4G3G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-579X-E2J2H8C6B3>
+    dc:identifier "579X-E2J2H8C6B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-582X-D4C9P8H5H2>
+    dc:identifier "582X-D4C9P8H5H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-583X-P4G9C6P3C3>
+    dc:identifier "583X-P4G9C6P3C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-585X-B6C4B9P6H2>
+    dc:identifier "585X-B6C4B9P6H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-587X-C9H2B6H6P2>
+    dc:identifier "587X-C9H2B6H6P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-588X-D2F7H4B6B9>
+    dc:identifier "588X-D2F7H4B6B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-589X-B4F4H2A3D7>
+    dc:identifier "589X-B4F4H2A3D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-58X-D3H4J4B3E4>
+    dc:identifier "58X-D3H4J4B3E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-590X-J7D6C5F8J9>
+    dc:identifier "590X-J7D6C5F8J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-591X-P5G9G3B6H2>
+    dc:identifier "591X-P5G9G3B6H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-593X-H5C5H8C6F3>
+    dc:identifier "593X-H5C5H8C6F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-594X-H8J4C9D6J4>
+    dc:identifier "594X-H8J4C9D6J4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-596X-H8E3J5G3D5>
+    dc:identifier "596X-H8E3J5G3D5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-597X-H7F2D6F3D6>
+    dc:identifier "597X-H7F2D6F3D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-599X-B2F9E6P6D3>
+    dc:identifier "599X-B2F9E6P6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-59X-G7E6B2P5C9>
+    dc:identifier "59X-G7E6B2P5C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-602X-B5A6G9H4F2>
+    dc:identifier "602X-B5A6G9H4F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-604X-H6A8F5P2B6>
+    dc:identifier "604X-H6A8F5P2B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-606X-C9J3E3P2E3>
+    dc:identifier "606X-C9J3E3P2E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-607X-B7D6A8G9H6>
+    dc:identifier "607X-B7D6A8G9H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-60X-B5H7J6B8J9>
+    dc:identifier "60X-B5H7J6B8J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-610X-E7B9F6D9A7>
+    dc:identifier "610X-E7B9F6D9A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-611X-G8P4H7H5D5>
+    dc:identifier "611X-G8P4H7H5D5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-612X-H4H7C5E3F8>
+    dc:identifier "612X-H4H7C5E3F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-616X-H6F3G3H5B3>
+    dc:identifier "616X-H6F3G3H5B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-617X-G3F8B4F6H4>
+    dc:identifier "617X-G3F8B4F6H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-618X-J5A3E2B2P7>
+    dc:identifier "618X-J5A3E2B2P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-619X-C7B3F2D7C4>
+    dc:identifier "619X-C7B3F2D7C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-621X-E6C3B3F3G3>
+    dc:identifier "621X-E6C3B3F3G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-624X-H9C9H6C8A6>
+    dc:identifier "624X-H9C9H6C8A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-627X-C8G8A5H4A4>
+    dc:identifier "627X-C8G8A5H4A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-628X-B2E8C6B6P9>
+    dc:identifier "628X-B2E8C6B6P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-62X-E9A9H3E5C4>
+    dc:identifier "62X-E9A9H3E5C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-630X-H3G4D7E9G8>
+    dc:identifier "630X-H3G4D7E9G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-632X-J9H7B2E5C2>
+    dc:identifier "632X-J9H7B2E5C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-633X-J7P2B5G2F6>
+    dc:identifier "633X-J7P2B5G2F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-634X-A4C6F5G7A4>
+    dc:identifier "634X-A4C6F5G7A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-636X-H6E6P3H6C4>
+    dc:identifier "636X-H6E6P3H6C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-639X-D7G3G7P3J6>
+    dc:identifier "639X-D7G3G7P3J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-63X-D4F4P8B6P8>
+    dc:identifier "63X-D4F4P8B6P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-640X-F3G3D9C2D6>
+    dc:identifier "640X-F3G3D9C2D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-641X-D4E6H6D9D3>
+    dc:identifier "641X-D4E6H6D9D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-643X-P3A5J6C6P4>
+    dc:identifier "643X-P3A5J6C6P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-645X-B2E9D6H4C3>
+    dc:identifier "645X-B2E9D6H4C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-646X-E2D7J8C5A8>
+    dc:identifier "646X-E2D7J8C5A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-647X-G7A2C9A7A4>
+    dc:identifier "647X-G7A2C9A7A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-648X-A3G3G6C6F9>
+    dc:identifier "648X-A3G3G6C6F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-650X-E7P6A4B3E6>
+    dc:identifier "650X-E7P6A4B3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-656X-D3F2A2J5C4>
+    dc:identifier "656X-D3F2A2J5C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-657X-B9F8B6F2B3>
+    dc:identifier "657X-B9F8B6F2B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-658X-B3B6A7A6F3>
+    dc:identifier "658X-B3B6A7A6F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-659X-G9B4J3C7G8>
+    dc:identifier "659X-G9B4J3C7G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-660X-J3A6F8G3E6>
+    dc:identifier "660X-J3A6F8G3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-661X-D8E3H9J6E3>
+    dc:identifier "661X-D8E3H9J6E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-664X-E6J8D5H6J6>
+    dc:identifier "664X-E6J8D5H6J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-665X-D8P9D8E6J4>
+    dc:identifier "665X-D8P9D8E6J4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-669X-D5C9C3A3B7>
+    dc:identifier "669X-D5C9C3A3B7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-66X-F9C2A6J3P9>
+    dc:identifier "66X-F9C2A6J3P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-670X-C3E3P6B3D3>
+    dc:identifier "670X-C3E3P6B3D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-672X-A7E8F6E4B6>
+    dc:identifier "672X-A7E8F6E4B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-674X-D6A6G6B3A8>
+    dc:identifier "674X-D6A6G6B3A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-675X-C3J9J4B3F7>
+    dc:identifier "675X-C3J9J4B3F7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-676X-F7G4A4H3E8>
+    dc:identifier "676X-F7G4A4H3E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-677X-F8B3B3A8A9>
+    dc:identifier "677X-F8B3B3A8A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-679X-E6G6P4G4P8>
+    dc:identifier "679X-E6G6P4G4P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-67X-G6H6D8E7F6>
+    dc:identifier "67X-G6H6D8E7F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-680X-E6C6P2G9G2>
+    dc:identifier "680X-E6C6P2G9G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-681X-B3E3D8P8B3>
+    dc:identifier "681X-B3E3D8P8B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-682X-B2P2A8D8H9>
+    dc:identifier "682X-B2P2A8D8H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-686X-F8A9P6P6C8>
+    dc:identifier "686X-F8A9P6P6C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-687X-D2C3A3A6J3>
+    dc:identifier "687X-D2C3A3A6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-688X-C3E6D7C6A9>
+    dc:identifier "688X-C3E6D7C6A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-689X-A4F5F5H6J3>
+    dc:identifier "689X-A4F5F5H6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-690X-F9J4D7F7H5>
+    dc:identifier "690X-F9J4D7F7H5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-691X-P2G4A6F9B8>
+    dc:identifier "691X-P2G4A6F9B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-692X-F3H3G8H5B3>
+    dc:identifier "692X-F3H3G8H5B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-694X-A7B6F4E3J9>
+    dc:identifier "694X-A7B6F4E3J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-695X-H6J5C8D6B6>
+    dc:identifier "695X-H6J5C8D6B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-696X-G2F7C6C9B3>
+    dc:identifier "696X-G2F7C6C9B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-697X-G9F7H5H5B3>
+    dc:identifier "697X-G9F7H5H5B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-6X-G7G2E4G3F4>
+    dc:identifier "6X-G7G2E4G3F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-701X-F6A4H3A7P4>
+    dc:identifier "701X-F6A4H3A7P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-703X-F8F6H6E4C6>
+    dc:identifier "703X-F8F6H6E4C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-704X-J3G8A4G3D3>
+    dc:identifier "704X-J3G8A4G3D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-706X-P6F3B2A7D9>
+    dc:identifier "706X-P6F3B2A7D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-708X-H3F3E8A6D9>
+    dc:identifier "708X-H3F3E8A6D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-709X-C2A5C2D5H6>
+    dc:identifier "709X-C2A5C2D5H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-70X-P4P7B9F3A3>
+    dc:identifier "70X-P4P7B9F3A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-710X-B5P7D6E4D4>
+    dc:identifier "710X-B5P7D6E4D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-712X-E7E6F9C2C5>
+    dc:identifier "712X-E7E6F9C2C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-714X-F8C3F4G5C8>
+    dc:identifier "714X-F8C3F4G5C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-715X-C3G4F8J6H2>
+    dc:identifier "715X-C3G4F8J6H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-716X-J2F6E3H2E4>
+    dc:identifier "716X-J2F6E3H2E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-717X-H8H4H7G8B2>
+    dc:identifier "717X-H8H4H7G8B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-719X-J6B6F6H6J2>
+    dc:identifier "719X-J6B6F6H6J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-71X-A5E6P8C8D7>
+    dc:identifier "71X-A5E6P8C8D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-721X-C5H5E6F3C2>
+    dc:identifier "721X-C5H5E6F3C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-722X-J9E2H9J5H6>
+    dc:identifier "722X-J9E2H9J5H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-723X-P9F5P3P9G9>
+    dc:identifier "723X-P9F5P3P9G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-726X-A6J3C3H6H6>
+    dc:identifier "726X-A6J3C3H6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-727X-H8G9B2E4H3>
+    dc:identifier "727X-H8G9B2E4H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-729X-B7H5A9A8H2>
+    dc:identifier "729X-B7H5A9A8H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-730X-C3G6D7H7E9>
+    dc:identifier "730X-C3G6D7H7E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-732X-D6B6F5G4B8>
+    dc:identifier "732X-D6B6F5G4B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-733X-J4G8C4D3H4>
+    dc:identifier "733X-J4G8C4D3H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-735X-D3F6B7J9G6>
+    dc:identifier "735X-D3F6B7J9G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-736X-E6G9P3F2F5>
+    dc:identifier "736X-E6G9P3F2F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-737X-D7P4E2A6P2>
+    dc:identifier "737X-D7P4E2A6P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-738X-H2G5B6C5F2>
+    dc:identifier "738X-H2G5B6C5F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-739X-A7A3D3J2C6>
+    dc:identifier "739X-A7A3D3J2C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-73X-F7H2C2B5J9>
+    dc:identifier "73X-F7H2C2B5J9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-741X-C6A6A3D8J7>
+    dc:identifier "741X-C6A6A3D8J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-743X-D2C2D9A4G7>
+    dc:identifier "743X-D2C2D9A4G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-744X-H6E8A5A5E3>
+    dc:identifier "744X-H6E8A5A5E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-745X-F9F8C5H8J3>
+    dc:identifier "745X-F9F8C5H8J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-747X-B3E6J9E5F5>
+    dc:identifier "747X-B3E6J9E5F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-748X-E8P5F9F2A8>
+    dc:identifier "748X-E8P5F9F2A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-74X-D6B2E9G6C6>
+    dc:identifier "74X-D6B2E9G6C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-750X-P6E7P6P2P3>
+    dc:identifier "750X-P6E7P6P2P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-751X-H6P4A3B7A6>
+    dc:identifier "751X-H6P4A3B7A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-753X-F6C6J3D2F5>
+    dc:identifier "753X-F6C6J3D2F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-754X-A8J3F6E8E7>
+    dc:identifier "754X-A8J3F6E8E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-755X-P7A6A7P3A6>
+    dc:identifier "755X-P7A6A7P3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-756X-P6D9F6B2J4>
+    dc:identifier "756X-P6D9F6B2J4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-758X-B3F2D2B7E8>
+    dc:identifier "758X-B3F2D2B7E8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-763X-F6P5D6G6D6>
+    dc:identifier "763X-F6P5D6G6D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-764X-C3E7C2J7F9>
+    dc:identifier "764X-C3E7C2J7F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-766X-E3E2F8D8E2>
+    dc:identifier "766X-E3E2F8D8E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-768X-G4P2B3B2J8>
+    dc:identifier "768X-G4P2B3B2J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-769X-F6A8J7E2C5>
+    dc:identifier "769X-F6A8J7E2C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-770X-B4C6E7F3H3>
+    dc:identifier "770X-B4C6E7F3H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-771X-E3H2F8J4J3>
+    dc:identifier "771X-E3H2F8J4J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-772X-A6D9F6F6A3>
+    dc:identifier "772X-A6D9F6F6A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-773X-A8F3D6H7F3>
+    dc:identifier "773X-A8F3D6H7F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-774X-F6G8B6H8F8>
+    dc:identifier "774X-F6G8B6H8F8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-775X-C6D4B4E3P5>
+    dc:identifier "775X-C6D4B4E3P5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-777X-J6B2C2J9J5>
+    dc:identifier "777X-J6B2C2J9J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-77X-E6B6C7A8D6>
+    dc:identifier "77X-E6B6C7A8D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-780X-A8J7G5E3B2>
+    dc:identifier "780X-A8J7G5E3B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-781X-J5G3D6B6A8>
+    dc:identifier "781X-J5G3D6B6A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-784X-P3G9J3D3H4>
+    dc:identifier "784X-P3G9J3D3H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-786X-G6A4H7D6D3>
+    dc:identifier "786X-G6A4H7D6D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-787X-F2D6A6B4F6>
+    dc:identifier "787X-F2D6A6B4F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-788X-A8J8B2P4D6>
+    dc:identifier "788X-A8J8B2P4D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-789X-P7G6H6E2C3>
+    dc:identifier "789X-P7G6H6E2C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-791X-A8J6B6J5J6>
+    dc:identifier "791X-A8J6B6J5J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-792X-H3G8C3B2E6>
+    dc:identifier "792X-H3G8C3B2E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-793X-J6D4F6H3B6>
+    dc:identifier "793X-J6D4F6H3B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-795X-B2E6G3G3H6>
+    dc:identifier "795X-B2E6G3G3H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-797X-F5D5J2P7D8>
+    dc:identifier "797X-F5D5J2P7D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-799X-G6J7C2E3J3>
+    dc:identifier "799X-G6J7C2E3J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-79X-P3E8B7P5P2>
+    dc:identifier "79X-P3E8B7P5P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-7X-D8J2A7D7B3>
+    dc:identifier "7X-D8J2A7D7B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-801X-E6E5A6P2P7>
+    dc:identifier "801X-E6E5A6P2P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-803X-B6P4D8C9P4>
+    dc:identifier "803X-B6P4D8C9P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-804X-C6C6E7F4C5>
+    dc:identifier "804X-C6C6E7F4C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-807X-D3F6G6A3P6>
+    dc:identifier "807X-D3F6G6A3P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-808X-J5A6P4F3C3>
+    dc:identifier "808X-J5A6P4F3C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-809X-H5P3G4B9H3>
+    dc:identifier "809X-H5P3G4B9H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-810X-A3H8E6A3G6>
+    dc:identifier "810X-A3H8E6A3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-813X-D2C7B9P8D7>
+    dc:identifier "813X-D2C7B9P8D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-814X-C6A3J2H8J6>
+    dc:identifier "814X-C6A3J2H8J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-816X-J6J3F6J8D2>
+    dc:identifier "816X-J6J3F6J8D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-817X-J2E2J8C5D4>
+    dc:identifier "817X-J2E2J8C5D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-818X-J7E6E9E3A3>
+    dc:identifier "818X-J7E6E9E3A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-820X-A2D6G2E3P7>
+    dc:identifier "820X-A2D6G2E3P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-823X-A7E7A6H3C8>
+    dc:identifier "823X-A7E7A6H3C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-824X-F4J2D7D5C6>
+    dc:identifier "824X-F4J2D7D5C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-826X-G4H7E6G4E2>
+    dc:identifier "826X-G4H7E6G4E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-828X-D7P3P5A4G3>
+    dc:identifier "828X-D7P3P5A4G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-829X-A6H3F4J4P8>
+    dc:identifier "829X-A6H3F4J4P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-832X-H4P3H3P8E6>
+    dc:identifier "832X-H4P3H3P8E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-834X-A7J3H6E3B6>
+    dc:identifier "834X-A7J3H6E3B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-835X-G7E7G4E9J3>
+    dc:identifier "835X-G7E7G4E9J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-837X-B8D6A3B3D3>
+    dc:identifier "837X-B8D6A3B3D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-838X-E3C7A8C9H2>
+    dc:identifier "838X-E3C7A8C9H2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-83X-B7E9H2F2A6>
+    dc:identifier "83X-B7E9H2F2A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-840X-F4G9A6D5E6>
+    dc:identifier "840X-F4G9A6D5E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-841X-A2A3B4H3J2>
+    dc:identifier "841X-A2A3B4H3J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-842X-H9P7G6G4G3>
+    dc:identifier "842X-H9P7G6G4G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-843X-B4D6B5B5A3>
+    dc:identifier "843X-B4D6B5B5A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-844X-C5P4F3E3A6>
+    dc:identifier "844X-C5P4F3E3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-845X-F9J4D9H2B3>
+    dc:identifier "845X-F9J4D9H2B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-846X-F8D6D5C3D7>
+    dc:identifier "846X-F8D6D5C3D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-847X-A9H3E3B6A3>
+    dc:identifier "847X-A9H3E3B6A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-848X-H4B3F3A6D9>
+    dc:identifier "848X-H4B3F3A6D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-849X-B2H3E3E9P2>
+    dc:identifier "849X-B2H3E3E9P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-850X-D4J8B9C5A2>
+    dc:identifier "850X-D4J8B9C5A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-851X-H5J7B3F6H7>
+    dc:identifier "851X-H5J7B3F6H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-852X-F3H5F2B2B6>
+    dc:identifier "852X-F3H5F2B2B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-853X-D9G4A8C3C2>
+    dc:identifier "853X-D9G4A8C3C2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-855X-G4P3J6C8F9>
+    dc:identifier "855X-G4P3J6C8F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-856X-F2A4F9G4H6>
+    dc:identifier "856X-F2A4F9G4H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-857X-A6G2B6C8B6>
+    dc:identifier "857X-A6G2B6C8B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-858X-H4G8C3G3A8>
+    dc:identifier "858X-H4G8C3G3A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-859X-A6P8P6F9J6>
+    dc:identifier "859X-A6P8P6F9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-85X-H9E8E3E6E6>
+    dc:identifier "85X-H9E8E3E6E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-860X-P3J5P7G5F2>
+    dc:identifier "860X-P3J5P7G5F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-862X-C7J3J9C6A8>
+    dc:identifier "862X-C7J3J9C6A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-863X-E2P7P8G3G6>
+    dc:identifier "863X-E2P7P8G3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-864X-H5D5G3G3E4>
+    dc:identifier "864X-H5D5G3G3E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-865X-C7P9P7B2C7>
+    dc:identifier "865X-C7P9P7B2C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-866X-B9G3J6P2H8>
+    dc:identifier "866X-B9G3J6P2H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-867X-F5E8C6D3C9>
+    dc:identifier "867X-F5E8C6D3C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-869X-E2P9F6E2C3>
+    dc:identifier "869X-E2P9F6E2C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-870X-J6C5C3H5E2>
+    dc:identifier "870X-J6C5C3H5E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-877X-A3E5E2B7J7>
+    dc:identifier "877X-A3E5E2B7J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-879X-D9F5E4H8H6>
+    dc:identifier "879X-D9F5E4H8H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-882X-B6G2C6H2D4>
+    dc:identifier "882X-B6G2C6H2D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-883X-C4F3H2C4B3>
+    dc:identifier "883X-C4F3H2C4B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-887X-C4P6C9A9B6>
+    dc:identifier "887X-C4P6C9A9B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-889X-J7B2J3H5D6>
+    dc:identifier "889X-J7B2J3H5D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-88X-C9E2E6H5J6>
+    dc:identifier "88X-C9E2E6H5J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-891X-J2P6P3H3P3>
+    dc:identifier "891X-J2P6P3H3P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-892X-G8B6A3E6D9>
+    dc:identifier "892X-G8B6A3E6D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-893X-P5H2D3H3A6>
+    dc:identifier "893X-P5H2D3H3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-896X-A8E7C2G4H9>
+    dc:identifier "896X-A8E7C2G4H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-899X-G3C3A5F3G8>
+    dc:identifier "899X-G3C3A5F3G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-89X-E9F3C7C4D6>
+    dc:identifier "89X-E9F3C7C4D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-8X-C7G6D8J5C6>
+    dc:identifier "8X-C7G6D8J5C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-900X-E6H6J6J8A4>
+    dc:identifier "900X-E6H6J6J8A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-902X-G6E6H2G6J7>
+    dc:identifier "902X-G6E6H2G6J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-904X-J9H3J7B5D8>
+    dc:identifier "904X-J9H3J7B5D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-906X-E7H6G7B2H4>
+    dc:identifier "906X-E7H6G7B2H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-909X-F6J9H2E3B5>
+    dc:identifier "909X-F6J9H2E3B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-90X-F9E9F6E3C6>
+    dc:identifier "90X-F9E9F6E3C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-911X-P3H4J3J4C9>
+    dc:identifier "911X-P3H4J3J4C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-912X-B5F9B6C6A3>
+    dc:identifier "912X-B5F9B6C6A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-913X-E6A8F6D6P7>
+    dc:identifier "913X-E6A8F6D6P7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-914X-D3F5G6G3P9>
+    dc:identifier "914X-D3F5G6G3P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-915X-B3D3H8F4F3>
+    dc:identifier "915X-B3D3H8F4F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-916X-F9E3E7F6E2>
+    dc:identifier "916X-F9E3E7F6E2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-918X-F4A6D4G2C3>
+    dc:identifier "918X-F4A6D4G2C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-919X-G6H2D5P2A8>
+    dc:identifier "919X-G6H2D5P2A8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-920X-D2J2C9H3B3>
+    dc:identifier "920X-D2J2C9H3B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-921X-F5B2G4C3G6>
+    dc:identifier "921X-F5B2G4C3G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-922X-H5A8E3F7B8>
+    dc:identifier "922X-H5A8E3F7B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-926X-B2F6J6E8C3>
+    dc:identifier "926X-B2F6J6E8C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-929X-D6C3B7D6G2>
+    dc:identifier "929X-D6C3B7D6G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-930X-D3D7D6G8F5>
+    dc:identifier "930X-D3D7D6G8F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-931X-F4H7H3J5G8>
+    dc:identifier "931X-F4H7H3J5G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-934X-C3D5E5E7F6>
+    dc:identifier "934X-C3D5E5E7F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-935X-J6P9H6C7G9>
+    dc:identifier "935X-J6P9H6C7G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-936X-A7C7C3B5H7>
+    dc:identifier "936X-A7C7C3B5H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-940X-B9J9D5P6B4>
+    dc:identifier "940X-B9J9D5P6B4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-941X-B3A8G3A3B4>
+    dc:identifier "941X-B3A8G3A3B4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-943X-G7J2B5F4P3>
+    dc:identifier "943X-G7J2B5F4P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-945X-B3G3C9C6G3>
+    dc:identifier "945X-B3G3C9C6G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-947X-E9H6F5J4G6>
+    dc:identifier "947X-E9H6F5J4G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-94X-G6P9B5F2P8>
+    dc:identifier "94X-G6P9B5F2P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-954X-E7B4J2H7P3>
+    dc:identifier "954X-E7B4J2H7P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-956X-H2A9A3D9J6>
+    dc:identifier "956X-H2A9A3D9J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-959X-P9C8C2B6C9>
+    dc:identifier "959X-P9C8C2B6C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-95X-D4H8G6J2J4>
+    dc:identifier "95X-D4H8G6J2J4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-960X-H8G6F5B3G3>
+    dc:identifier "960X-H8G6F5B3G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-963X-P7G6D8B9G7>
+    dc:identifier "963X-P7G6D8B9G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-964X-A6A4F7J3P8>
+    dc:identifier "964X-A6A4F7J3P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-965X-A4P5D3C8D9>
+    dc:identifier "965X-A4P5D3C8D9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-967X-C7P4C5B9E3>
+    dc:identifier "967X-C7P4C5B9E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-96X-C7C7P4J2B8>
+    dc:identifier "96X-C7C7P4J2B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-970X-G9P6F7G5H4>
+    dc:identifier "970X-G9P6F7G5H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-971X-E3F9G8C4E9>
+    dc:identifier "971X-E3F9G8C4E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-973X-C8A7G6B7C6>
+    dc:identifier "973X-C8A7G6B7C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-975X-E3E6H2G7A3>
+    dc:identifier "975X-E3E6H2G7A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-977X-B7P9D8D2C5>
+    dc:identifier "977X-B7P9D8D2C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-978X-G6A9B4J6D8>
+    dc:identifier "978X-G6A9B4J6D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-979X-C8J6J6B7D8>
+    dc:identifier "979X-C8J6J6B7D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-980X-F6C6D7J5H3>
+    dc:identifier "980X-F6C6D7J5H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-982X-E3E9D3B6J8>
+    dc:identifier "982X-E3E9D3B6J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-983X-P8E6B7A4E6>
+    dc:identifier "983X-P8E6B7A4E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-985X-C3H3D3B3B6>
+    dc:identifier "985X-C3H3D3B3B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-990X-P9P2A7B4G9>
+    dc:identifier "990X-P9P2A7B4G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-991X-A6B7A6D5H4>
+    dc:identifier "991X-A6B7A6D5H4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-992X-F3G8H2B9P4>
+    dc:identifier "992X-F3G8H2B9P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-995X-E6B6J3G9E3>
+    dc:identifier "995X-E6B6J3G9E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-996X-C4P7C2A9D6>
+    dc:identifier "996X-C4P7C2A9D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-998X-A8A6E2B7D6>
+    dc:identifier "998X-A8A6E2B7D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-99X-P3H9E7J2A4>
+    dc:identifier "99X-P3H9E7J2A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-9X-E4F8H3C6G5>
+    dc:identifier "9X-E4F8H3C6G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-10X-E6A3A3B6J7>
+    dc:identifier "10X-E6A3A3B6J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-11X-A2D3P3F4D7>
+    dc:identifier "11X-A2D3P3F4D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-12X-J7A4P2G5E7>
+    dc:identifier "12X-J7A4P2G5E7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-13X-G4P6D3E2J2>
+    dc:identifier "13X-G4P6D3E2J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-14X-G6E8G9J3B3>
+    dc:identifier "14X-G6E8G9J3B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-16X-D6G6A3J4B6>
+    dc:identifier "16X-D6G6A3J4B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-18X-J3E3F5B6C4>
+    dc:identifier "18X-J3E3F5B6C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-19X-B3D9B3B4E6>
+    dc:identifier "19X-B3D9B3B4E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-1X-F9G3H8D6E5>
+    dc:identifier "1X-F9G3H8D6E5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-20X-J4A9J4P8H6>
+    dc:identifier "20X-J4A9J4P8H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-6X-J8G7G6A3J2>
+    dc:identifier "6X-J8G7G6A3J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-8X-D2F9A5D4F2>
+    dc:identifier "8X-D2F9A5D4F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-9X-J7C9J8J9F6>
+    dc:identifier "9X-J7C9J8J9F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-11X-F3E7B4P6G3>
+    dc:identifier "11X-F3E7B4P6G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-12X-E3D6J4E6C3>
+    dc:identifier "12X-E3D6J4E6C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-13X-J9E6E6E8A3>
+    dc:identifier "13X-J9E6E6E8A3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-14X-J5G7J6D3D4>
+    dc:identifier "14X-J5G7J6D3D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-15X-G3C5H2E7A5>
+    dc:identifier "15X-G3C5H2E7A5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-1X-E5D7P3E8B2>
+    dc:identifier "1X-E5D7P3E8B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-4X-H9F8G6E6G3>
+    dc:identifier "4X-H9F8G6E6G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MMC2014-5X-F7G6P2F6G7>
+    dc:identifier "5X-F7G6P2F6G7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-10X-H4A6H9D9B3>
+    dc:identifier "10X-H4A6H9D9B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-13X-G8H9G6G6C9>
+    dc:identifier "13X-G8H9G6G6C9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-14X-H5B6P6B6J3>
+    dc:identifier "14X-H5B6P6B6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-22X-B7C7F6G5C8>
+    dc:identifier "22X-B7C7F6G5C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-25X-B4E6E5J4B6>
+    dc:identifier "25X-B4E6E5J4B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-30X-P5F5P8P8B6>
+    dc:identifier "30X-P5F5P8P8B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-32X-D8J3B4F7F2>
+    dc:identifier "32X-D8J3B4F7F2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-34X-C3C3D3A9G2>
+    dc:identifier "34X-C3C3D3A9G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-37X-C7E5A9H8E3>
+    dc:identifier "37X-C7E5A9H8E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-39X-C3P6B5D8D8>
+    dc:identifier "39X-C3P6B5D8D8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-40X-B5G5C3E7F4>
+    dc:identifier "40X-B5G5C3E7F4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-41X-D3D3P6F7D7>
+    dc:identifier "41X-D3D3P6F7D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-4X-F3D6G5F8G6>
+    dc:identifier "4X-F3D6G5F8G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-6X-C2A3J6G3H8>
+    dc:identifier "6X-C2A3J6G3H8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#MTE2014-9X-P8J4H7P2D2>
+    dc:identifier "9X-P8J4H7P2D2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-10X-A7D4C5D4J8>
+    dc:identifier "10X-A7D4C5D4J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-15X-E6P9P9J7E4>
+    dc:identifier "15X-E6P9P9J7E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-16X-F5B6D4D6C8>
+    dc:identifier "16X-F5B6D4D6C8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-17X-C6F2G6C6B5>
+    dc:identifier "17X-C6F2G6C6B5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-4X-H3J4F6A3H3>
+    dc:identifier "4X-H3J4F6A3H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-6X-B4G8B4E3F6>
+    dc:identifier "6X-B4G8B4E3F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-7X-J6P5J6F3C5>
+    dc:identifier "7X-J6P5J6F3C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OSACT2014-8X-B6J9P3D9A7>
+    dc:identifier "8X-B6J9P3D9A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-1X-B5G5P6J6D7>
+    dc:identifier "1X-B5G5P6J6D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-2X-H6F6D2J3B8>
+    dc:identifier "2X-H6F6D2J3B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-3X-G3C9F3F3P8>
+    dc:identifier "3X-G3C9F3F3P8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-4X-H3C8C8C2P3>
+    dc:identifier "4X-H3C8C8C2P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-5X-A3G6E2P3A4>
+    dc:identifier "5X-A3G6E2P3A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#OpeNER2014-6X-G4F2H6H4P4>
+    dc:identifier "6X-G4F2H6H4P4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-1X-A3E8D4P3E6>
+    dc:identifier "1X-A3E8D4P3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-2X-G2E6C5C9A4>
+    dc:identifier "2X-G2E6C5C9A4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-3X-J5B6D3J9P9>
+    dc:identifier "3X-J5B6D3J9P9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-5X-C7E9F5A9A2>
+    dc:identifier "5X-C7E9F5A9A2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-6X-J2A9F8B3B3>
+    dc:identifier "6X-J2A9F8B3B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SaLTMiL2014-8X-D8D8J4H3H3>
+    dc:identifier "8X-D8D8J4H3H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-10X-H3B8E5E4G4>
+    dc:identifier "10X-H3B8E5E4G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-12X-A7A4C8H3J6>
+    dc:identifier "12X-A7A4C8H3J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-14X-J2E3F8B6J3>
+    dc:identifier "14X-J2E3F8B6J3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-15X-D8G6G8H4F6>
+    dc:identifier "15X-D8G6G8H4F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-16X-D2C6E4F8G5>
+    dc:identifier "16X-D2C6E4F8G5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-17X-F9E4P6D8E6>
+    dc:identifier "17X-F9E4P6D8E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-18X-H6E7A6P6B8>
+    dc:identifier "18X-H6E7A6P6B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-19X-F6H5J2D8G6>
+    dc:identifier "19X-F6H5J2D8G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-20X-D5B3J7P5H3>
+    dc:identifier "20X-D5B3J7P5H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-21X-E4B7D7C3E4>
+    dc:identifier "21X-E4B7D7C3E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-22X-A7H4J8E3D6>
+    dc:identifier "22X-A7H4J8E3D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-23X-D9G2F5H3D7>
+    dc:identifier "23X-D9G2F5H3D7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-24X-F7G7P2D9H7>
+    dc:identifier "24X-F7G7P2D9H7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-25X-H8P8G6F4G4>
+    dc:identifier "25X-H8P8G6F4G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-26X-H7F6G6B7H3>
+    dc:identifier "26X-H7F6G6B7H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-28X-E6G8J6C7D4>
+    dc:identifier "28X-E6G8J6C7D4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-29X-C2H5G3E3H3>
+    dc:identifier "29X-C2H5G3E3H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-30X-A5C9G6F3D6>
+    dc:identifier "30X-A5C9G6F3D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-31X-G8B5H3E4E6>
+    dc:identifier "31X-G8B5H3E4E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-34X-P3E2G6E3G2>
+    dc:identifier "34X-P3E2G6E3G2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-3X-J3P4G2P6B8>
+    dc:identifier "3X-J3P4G2P6B8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-4X-H7P5G9J3A6>
+    dc:identifier "4X-H7P5G9J3A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-5X-C6H7D8J3E6>
+    dc:identifier "5X-C6H7D8J3E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-6X-J3B9H3J7F9>
+    dc:identifier "6X-J3B9H3J7F9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-7X-C6D8A8F2E6>
+    dc:identifier "7X-C6D8A8F2E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-8X-D6E4H6B8F3>
+    dc:identifier "8X-D6E4H6B8F3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#SignLanguage2014-9X-F9P8D5G7A9>
+    dc:identifier "9X-F9P8D5G7A9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-2X-E5B7D3A3J7>
+    dc:identifier "2X-E5B7D3A3J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-3X-A6A2G3C6B9>
+    dc:identifier "3X-A6A2G3C6B9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-4X-C7E5E5G4P2>
+    dc:identifier "4X-C7E5E5G4P2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-5X-A4B6J6H7C6>
+    dc:identifier "5X-A4B6J6H7C6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-6X-E6G7D3C7P3>
+    dc:identifier "6X-E6G7D3C7P3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-7X-A5C2J3G9J5>
+    dc:identifier "7X-A5C2J3G9J5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#VisLR2014-8X-J4G6D5E6B3>
+    dc:identifier "8X-J4G6D5E6B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-10X-C9D6J8E7B2>
+    dc:identifier "10X-C9D6J8E7B2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-11X-B3A7P6C5J7>
+    dc:identifier "11X-B3A7P6C5J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-12X-F6C2G5F9E6>
+    dc:identifier "12X-F6C2G5F9E6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-14X-A9C2C2D2H9>
+    dc:identifier "14X-A9C2C2D2H9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-16X-G6H6F7G6E4>
+    dc:identifier "16X-G6H6F7G6E4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-18X-C4D3C5A8A6>
+    dc:identifier "18X-C4D3C5A8A6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-19X-J8B2B4G8P6>
+    dc:identifier "19X-J8B2B4G8P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-20X-E3P3J4F3F6>
+    dc:identifier "20X-E3P3J4F3F6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-21X-G2A6G8D6G4>
+    dc:identifier "21X-G2A6G8D6G4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-22X-J3D4C5C2P6>
+    dc:identifier "22X-J3D4C5C2P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-23X-E7J6E7G6E3>
+    dc:identifier "23X-E7J6E7G6E3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-25X-G2A5E9E6C3>
+    dc:identifier "25X-G2A5E9E6C3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-26X-G2D6F4B7G8>
+    dc:identifier "26X-G2D6F4B7G8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-27X-P5C3D2G7G3>
+    dc:identifier "27X-P5C3D2G7G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-28X-D6E2F4C4E9>
+    dc:identifier "28X-D6E2F4C4E9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-3X-D5F8G4A4G6>
+    dc:identifier "3X-D5F8G4A4G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-4X-F2B5C6J3J7>
+    dc:identifier "4X-F2B5C6J3J7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-5X-C8A5D3H4J6>
+    dc:identifier "5X-C8A5D3H4J6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-7X-F9H3J3A9G9>
+    dc:identifier "7X-F9H3J3A9G9" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-8X-F2B6H6C7J8>
+    dc:identifier "8X-F2B6H6C7J8" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#WILDRE2014-9X-P3C6E4D3B3>
+    dc:identifier "9X-P3C6E4D3B3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-10X-H4A6G6A2C4>
+    dc:identifier "10X-H4A6G6A2C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-11X-G7H3G6P8C5>
+    dc:identifier "11X-G7H3G6P8C5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-12X-G2P5B8H2G6>
+    dc:identifier "12X-G2P5B8H2G6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-13X-C9P5H9H2C7>
+    dc:identifier "13X-C9P5H9H2C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-14X-E9P2H3F7H3>
+    dc:identifier "14X-E9P2H3F7H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-15X-C2D5A2J6H6>
+    dc:identifier "15X-C2D5A2J6H6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-16X-E4F3E8H2G3>
+    dc:identifier "16X-E4F3E8H2G3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-17X-J9P4E5J5B6>
+    dc:identifier "17X-J9P4E5J5B6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-18X-H5J6P7B3P6>
+    dc:identifier "18X-H5J6P7B3P6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-19X-P7A5F7D7F5>
+    dc:identifier "19X-P7A5F7D7F5" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-1X-J6P5F6D6C7>
+    dc:identifier "1X-J6P5F6D6C7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-21X-P5A6F3A8J2>
+    dc:identifier "21X-P5A6F3A8J2" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-22X-E5B7J6A9D3>
+    dc:identifier "22X-E5B7J6A9D3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-5X-P8P3J6G5C4>
+    dc:identifier "5X-P8P3J6G5C4" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-6X-P9C3C7G9H3>
+    dc:identifier "6X-P9C3C7G9H3" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-7X-A2J9A6B6D6>
+    dc:identifier "7X-A2J9A6B6D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-8X-F6A3P6E7D6>
+    dc:identifier "8X-F6A3P6E7D6" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_sub#isa-102014-9X-A6G7C6J5A7>
+    dc:identifier "9X-A6G7C6J5A7" ;
+    a <http://purl.org/dc/dcmitype//Event>, owl:NamedIndividual .
+

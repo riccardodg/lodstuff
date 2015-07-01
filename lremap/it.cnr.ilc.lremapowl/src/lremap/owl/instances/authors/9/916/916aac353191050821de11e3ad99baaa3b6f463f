@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/916/916aac353191050821de11e3ad99baaa3b6f463f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Stankovic</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ranka.stankovic@rgf.bg.ac.rs"/>
+		<foaf:mbox_sha1sum>916aac353191050821de11e3ad99baaa3b6f463f</foaf:mbox_sha1sum>
+		<foaf:firstName>Ranka</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/051/0515bcaed2ba58016dcbac1eb03e0b9f669feeda"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cf6/cf6fe42f4a07a12da98b40ebb2bdf926e101d734"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

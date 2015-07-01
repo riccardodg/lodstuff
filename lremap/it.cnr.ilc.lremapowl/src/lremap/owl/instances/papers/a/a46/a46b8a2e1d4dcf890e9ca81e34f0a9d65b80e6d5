@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/a/a46/a46b8a2e1d4dcf890e9ca81e34f0a9d65b80e6d5">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Classifying Inconsistencies in DBpedia Language Specific Chapters</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/8/8fd/8fdb2b7fac1017bb77ad3d49e035450e42a28c2e">
+				<rdfs:label>Piperidis Stelios</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/257/257c0fd8230cb14e3b59a79de9e2ee647717667b">
+				<rdfs:label>Navas Eva</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b13/b130df6bb3f9af3654e373d21dcca648faf6d31e">
+				<rdfs:label>Thompson Paul</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/711/711133ba1ea3caa996a111a46e1d92534479c5da">
+				<rdfs:label>Przepiórkowski Adam</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/180/18046265e01b9af5651401bf3095e36bc456f3b5">
+				<rdfs:label>Gibet Sylvie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e9c/e9c8bec3c91a1d99d364f5869d9f8fd5ecfb421f">
+				<rdfs:label>Rögnvaldsson Eiríkur</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b4e/b4e6b845afb1b5bdd2a386b0b1058faebe39439d">
+				<rdfs:label>De Loor Pierre</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f47/f47e821d9cee04617a01b28d8bdca5712dea8f38">
+				<rdfs:label>Cabrio Elena</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/345/3456a5178e4c9e0992ba9aaa96df974224bb2429">
+				<rdfs:label>Rosner Michael</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/561/561a3085a12b8eb2ddfa4b330fb46fb2d281c6e1">
+				<rdfs:label>Martin Jean-Claude</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c62/c62d53e6e9f6549a6f9a84c8cac949c46255c4ad">
+				<rdfs:label>Charton Eric</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f47/f47e821d9cee04617a01b28d8bdca5712dea8f38">
+				<rdfs:label>Cabrio Elena</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c65/c65e82a1f76fde165581798349b424c6fd69fe85">
+				<rdfs:label>De Smedt Koenraad</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/ff4/ff467501d32a8a25b945b49c3ff252f658317ce4">
+				<rdfs:label>Skadina Inguna</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/341/3418cf092c6e590a90f658680257f5066d71bc0f">
+				<rdfs:label>Nöth Elmar</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d0f/d0f68681c12cd9bb3851669aaacc4573c85592ba">
+				<rdfs:label>Magnini Bernardo</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e39/e396972a14c6ee87cf3db009466ffdc4ec4ed104">
+				<rdfs:label>Rodriguez-Fuentes Luis Javier</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c83/c8320a9e3012a17131933b6132b07b6ec4a52830">
+				<rdfs:label>Tadić Marko</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/db3/db3cca501f79a1ea48ef9f2feb35fbce37d4e6cd">
+				<rdfs:label>Zabarskaite Jolanta</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/4ac/4ac308ce192f202dad623f10eb6a7ebf05b502ea">
+				<rdfs:label>McNaught John</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/5a8/5a841786b7591d129189ac7d38a7efe24c4d53d3">
+				<rdfs:label>Pedersen Bolette</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fe4/fe43d847f3b548907eed1e153b6517465695c6df">
+				<rdfs:label>Melero Maite</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/18e/18e586e8654a9a4d11d405507e09bd56344c46d7">
+				<rdfs:label>Vider Kadri</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/013/013b7df7926f1af87a42e4aca6b86ec02fa9049d">
+				<rdfs:label>Monachini Monica</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/de1/de16c4ce2767f8f4a8068a2a486dfb27d8a13092">
+				<rdfs:label>Mariani Joseph</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/0d7/0d733fe0a31c631728bdb10094ea5d8e2c342447">
+				<rdfs:label>Moreno Asuncion</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/592/59235aee9db0a74c9db77fcbfca63a533ce3122c">
+				<rdfs:label>Vasiļjevs Andrejs</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/22d/22de1465be8810b220b7668b480dbd68120d874b">
+				<rdfs:label>Odijk Jan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/017/017b0652ed18fa5a800a4cbfbeb82c8063617991">
+				<rdfs:label>Tufiș Dan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/476/4768a3461248acab8dffc059bad2f9e15e692b11">
+				<rdfs:label>Ogrodniczuk Maciej</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/2b6/2b647270ecb0693d2edfb503cce7e06a1335655c">
+				<rdfs:label>Váradi Tamás</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/301/3016a4a533d3e131556b4abbfe1db5d2efdc8228">
+				<rdfs:label>Torres María Inés</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d3f/d3f648025cc73bdd0e7ccb40ac29988c7163c6ce">
+				<rdfs:label>Linden Krister</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/1de/1de4ab700d751178dd3e253f7084e54c0b07f44c">
+				<rdfs:label>Pezik Piotr</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

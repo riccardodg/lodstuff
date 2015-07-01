@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/084/084c6abea4404710ebd228f3443a1b9b34bebc7d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Sindlerova</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:sindlerova@ufal.mff.cuni.cz"/>
+		<foaf:mbox_sha1sum>084c6abea4404710ebd228f3443a1b9b34bebc7d</foaf:mbox_sha1sum>
+		<foaf:firstName>Jana</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/82f/82f20b1d4e533f07003e39f2932d5e189da4e5bd"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/661/661b7abec66dec4aff4aa03304bfb49ba4114843"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

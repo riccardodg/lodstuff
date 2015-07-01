@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/6/6a7/6a7657ae6cb296b7cfb2ab5cdc0bcd55813088bf">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Interlingua model for Machine Translation of resource-scarce languages in Kenya</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/5/5c4/5c4fba2411dae92d93e2d0763426a9d53ae3f0b1">
+				<rdfs:label>Soria Claudia</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/dce/dce323e6a6ea6f50da2033d078236a076f0d0d8a">
+				<rdfs:label>Stickel Gerhard</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/af1/af179657d3e3cedc478d79375dd553f249a7fb1e">
+				<rdfs:label>Ombui Edward</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/b29/b29f4229a4c56dcf8ff0e8fbfa935cfe633be3fe">
+				<rdfs:label>Oeter Stefan</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e7b/e7ba49a49ae9e29fc897a2b3c688e5a91393594f">
+				<rdfs:label>Váradi Tamás</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/213/213b0514950aa4108c4a346e38316c45968fab63">
+				<rdfs:label>Gramstad Sigve</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/0b3/0b39b850143ab506c003897370e9e91eb5441609">
+				<rdfs:label>Jones Meirion Prys</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/de1/de16c4ce2767f8f4a8068a2a486dfb27d8a13092">
+				<rdfs:label>Mariani Joseph</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/eab/eabebb5874a7c35666e078bed37d9e5da4563090">
+				<rdfs:label>Kirchmeier-Andersen Sabine</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/82e/82ea9028e800fe2d6058d3a83a9913d09fbf11bc">
+				<rdfs:label>Frontini Francesca</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d5c/d5cd610f5251af5c18fb13ee411023c4ce71e9cb">
+				<rdfs:label>Mermer Coskun</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e32/e320a3862facd4ede7e55ea4d2934b23a284aa8b">
+				<rdfs:label>Khan Fahad</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/af1/af179657d3e3cedc478d79375dd553f249a7fb1e">
+				<rdfs:label>Ombui Edward</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

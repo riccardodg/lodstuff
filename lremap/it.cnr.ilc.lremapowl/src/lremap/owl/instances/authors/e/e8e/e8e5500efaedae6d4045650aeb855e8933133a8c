@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/e8e/e8e5500efaedae6d4045650aeb855e8933133a8c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Jaballah</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:kabil.jaballah@gmail.com"/>
+		<foaf:mbox_sha1sum>e8e5500efaedae6d4045650aeb855e8933133a8c</foaf:mbox_sha1sum>
+		<foaf:firstName>Kabil</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0a5/0a5aabe4c3f94560467ee42c21c0e34dfc26e455"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6b3/6b3942ddd788e5a612f37e1728d52153d4f16366"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

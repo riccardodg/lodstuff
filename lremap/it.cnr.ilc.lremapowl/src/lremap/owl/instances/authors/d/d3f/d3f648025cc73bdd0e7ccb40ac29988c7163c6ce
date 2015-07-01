@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/d3f/d3f648025cc73bdd0e7ccb40ac29988c7163c6ce">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Linden</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:krister.linden@helsinki.fi"/>
+		<foaf:mbox_sha1sum>d3f648025cc73bdd0e7ccb40ac29988c7163c6ce</foaf:mbox_sha1sum>
+		<foaf:firstName>Krister</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/247/247043970162dc239de18df35a8fb7c2d2965a65"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/27a/27af695619ce8bffd670343cd0b3121a029d6756"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

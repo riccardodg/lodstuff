@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a83/a83821c762d3a96fbd89566aab4b8c405a278a9f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Prószéky</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:proszeky.gabor@itk.ppke.hu"/>
+		<foaf:mbox_sha1sum>a83821c762d3a96fbd89566aab4b8c405a278a9f</foaf:mbox_sha1sum>
+		<foaf:firstName>Gábor</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/442/4428ef9ab675f816478a86de169fb53efc27cc25"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/025/0258a1eb042069328ca85e40e12948b2df822b49"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4c8/4c850b1353c9b05a70dcfdd24fc1bc6c91a237e9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/412/4123eef99639aa088f82bbbb4c815b3693180528"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8bc/8bc55964bc9f312004f9755eb4d63bc26f00763b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a2c/a2c0d217cd540a17744b29e4723f13b2d42ff34f"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

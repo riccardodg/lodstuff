@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/00c/00c864805324187c346d2b97edcd771cdd12e44d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Sonntag</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:jonathan.sonntag@yahoo.de"/>
+		<foaf:mbox_sha1sum>00c864805324187c346d2b97edcd771cdd12e44d</foaf:mbox_sha1sum>
+		<foaf:firstName>Jonathan</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/52d/52d5c349e8e58787c9271493f359a1344af9419f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d7a/d7a147f53e43f629d6621a502e23a64bbf069089"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5af/5afa24c511b74e41d505adc8741e944b8ffedf38"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3f8/3f86b8fc3aa053ce0a10c4148f42f80cbe7afed9"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

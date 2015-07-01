@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/ff4/ff4452a1aa8723f6d4a889ab36db65878c43d6de">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Steinberger</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ralf.steinberger@jrc.ec.europa.eu"/>
+		<foaf:mbox_sha1sum>ff4452a1aa8723f6d4a889ab36db65878c43d6de</foaf:mbox_sha1sum>
+		<foaf:firstName>Ralf</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5c0/5c043f224ae1d89246d7b9795de291927f37f253"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/958/958d79cd968fd3a0a25a0b2fb701fa255863165f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5d1/5d1c7be3670c6ebe5e54014f547aeb6bf66ef045"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d74/d747a890ddbe3bf17c397d4b433a69224cee278b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9cf/9cf1e90d1f3b4392aa26dc80583c23381945754a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e76/e769cb64845c7737c973d3de94129103eb58b270"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/906/906d6f9f213d2714fb41b6ba62a2d5e3e41dd8a3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/095/095b9a71f83a6007a1cd7501dba0982c848f50aa"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b2b/b2b09ba64e95eb55deab93a04f084e6a61c33ddf"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d41/d41dfd787743333e85377c289f79d2b0df34ec91"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/068/0683b41adaf92e1c51d7df536b51cb84b209b595"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1bd/1bd77415a519c994f961a866863331d8db49dde2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5b7/5b7f366cd29ce68a8e3fadbf364a16eb3962dc74"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

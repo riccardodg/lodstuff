@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/c/c41/c4154808446725e25755b6b7c4174b6834e5e5ca">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Van den Bogaert</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:joachim@crosslang.com"/>
+		<foaf:mbox_sha1sum>c4154808446725e25755b6b7c4174b6834e5e5ca</foaf:mbox_sha1sum>
+		<foaf:firstName>Joachim</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/df5/df5f6908c6ad661d80c0dc2ba28cf3f1392a66de"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/787/787531610be1276bb5ba921bcf9f79591d973bef"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/78b/78bd2f366b2c9ef9911d2292924eb4d1662f059e">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Gabarró-López</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:silvia.gabarro@unamur.be"/>
+		<foaf:mbox_sha1sum>78bd2f366b2c9ef9911d2292924eb4d1662f059e</foaf:mbox_sha1sum>
+		<foaf:firstName>Sílvia</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/924/92413344028e9aa7d540ac3789eaa506e1be65b3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9dc/9dc34d71f0babc83cd09fa2e9fe5003d7ad4d404"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

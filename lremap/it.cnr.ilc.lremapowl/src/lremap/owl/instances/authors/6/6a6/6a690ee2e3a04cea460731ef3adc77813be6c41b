@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/6a6/6a690ee2e3a04cea460731ef3adc77813be6c41b">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Banerjee</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:esha.jnu@gmail.com"/>
+		<foaf:mbox_sha1sum>6a690ee2e3a04cea460731ef3adc77813be6c41b</foaf:mbox_sha1sum>
+		<foaf:firstName>Esha</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/91e/91e2e867eaa5d7b16b56b27ded07a389b6e3076d"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c5f/c5f727f08ce4d56e48a70a4a66051961229433dd"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,185 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.resourcebook.eu/lremap/owl/lremap_ri#> .
+@prefix lremap: <http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lvont: <http://lexvo.org/ontology> .
+@prefix sub: <http://www.resourcebook.eu/lremap/owl/lremap_sub> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema##> .
+@prefix dcterms: <http://purl.org/dc/terms/#> .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri>
+    a owl:Ontology ;
+    rdfs:comment "This is the collection of resource instances. It imports the Resource and the submissions." ;
+    owl:imports <http://lexvo.org/ontology>, <http://www.resourcebook.eu/lremap/owl/mergedNew.owl> .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#048e9a37a3f674418789596b631f5971d6e068cd>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-886X-B4G4H9B4J6> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceName :english_and_Arabic_WordNet ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    lremap:hasResourceUse :Evaluation ;
+    a lremap:Ontology, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#10522a683ccf05e3d1650fdd7e1d350227ed0564>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-885X-A8J5P5D3A4> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality :Not_Applicable ;
+    lremap:hasResourceName <http://www.resourcebook.eu/lremap/owl/lremap_ri#WordNet_3.0> ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    lremap:hasResourceUse lremap:Word_Sense_Disambiguation ;
+    a lremap:Lexicon, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#2805a948de3d466c2d354752d3f59633f65b3c22>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-526X-C2F6C8D3F3> ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :WordNet_Spectrums_and_Sensory_Words ;
+    lremap:hasResourceStatus lremap:Newly_created-in_progress ;
+    a lremap:Lexicon, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#2c8acde48afa3ed683c0f849346e56c595e56fba>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LDL2014-4X-G3E7P4H5D5> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :WordNet_RDF ;
+    lremap:hasResourceStatus lremap:Newly_created-finished ;
+    lremap:hasResourceUse lremap:Semantic_Web ;
+    a lremap:Lexicon, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#488edff5fe200fc7c49859f932ab9149de6bc7f2>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-122X-H6H6B8F6B2> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :WordNet_Domains_Specific_corpora_from_Wikipedia ;
+    lremap:hasResourceStatus lremap:Newly_created-finished ;
+    lremap:hasResourceUse lremap:Word_Sense_Disambiguation ;
+    a lremap:Corpus, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#52250277aa0ae419cd68f060e8073a650f6b1258>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-46X-A4J3A8G9J6> ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName <http://www.resourcebook.eu/lremap/owl/lremap_ri#OpenWordNet.PT> ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    lremap:hasResourceUse lremap:Word_Sense_Disambiguation ;
+    a lremap:Ontology, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#60d0f3d522a98318352ec39d2658927b0880cf23>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-882X-B6G2C6H2D4> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName <http://www.resourcebook.eu/lremap/owl/lremap_ri#Polish_WordNet_(plWordNet)> ;
+    lremap:hasResourceStatus lremap:Newly_created-in_progress ;
+    lremap:hasResourceUse :universal_lexico-semantic_resource-_for_many_applications ;
+    a lremap:Lexicon, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#695ae082ee12ab3bd4b6e59b52906eb1d6ff8c45>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-866X-B9G3J6P2H8> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :eXtended_WordNet_Knowledge_Base ;
+    lremap:hasResourceStatus lremap:Newly_created-in_progress ;
+    lremap:hasResourceUse lremap:Textual_Entailment ;
+    a lremap:Ontology, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#764a006c7aaef6579333019df60193e3b59774cc>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-712X-E7E6F9C2C5> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :ItalWordNet ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    a lremap:Ontology, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#7facbdb8701f6c179b68098028d51afa07f8083e>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LRT4HDA2014-3X-H6F7P3J9J8> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Modality_Independent ;
+    lremap:hasResourceName :WordNet ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    lremap:hasResourceUse lremap:Knowledge_Discovery-Representation ;
+    a lremap:Ontology, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#83929910b705ae5b68cb4c0a71fb939737535578>
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-4X-E3B5H2C7H8> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :Alignment_of_WordNet-_Wikipedia-_and_Wiktionary ;
+    lremap:hasResourceStatus lremap:Newly_created-finished ;
+    lremap:hasResourceUse lremap:Word_Sense_Disambiguation ;
+    a lremap:Lexicon, owl:NamedIndividual .
+
+:Alignment_of_WordNet-_Wikipedia-_and_Wiktionary
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:AncientGreekWordNet
+    a lremap:ResourceName, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#Czech_WordNet_1.9_PDT>
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:Evaluation
+    a lremap:ResourceUse, owl:NamedIndividual .
+
+:ItalWordNet
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:Machine_Translation-_SpeechToSpeech_Translation
+    a lremap:ResourceUse, owl:NamedIndividual .
+
+:Not_Applicable
+    a lremap:ResourceModality, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#OpenWordNet.PT>
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:Paraphrasing
+    a lremap:ResourceUse, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#Polish_WordNet_(plWordNet)>
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:WordNet
+    a lremap:ResourceName, owl:NamedIndividual .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_ri#WordNet_3.0>
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:WordNet_Domains_Specific_corpora_from_Wikipedia
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:WordNet_RDF
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:WordNet_Spectrums_and_Sensory_Words
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:aaf88e739a3323354ca6f8a5668d90a44cf46789
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-935X-J6P9H6C7G9> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName <http://www.resourcebook.eu/lremap/owl/lremap_ri#Czech_WordNet_1.9_PDT> ;
+    lremap:hasResourceStatus lremap:Existing-used ;
+    lremap:hasResourceUse :Paraphrasing ;
+    a lremap:Corpus, owl:NamedIndividual .
+
+:c1a2745c5c0f17747ee14202dcb5e10539260318
+    dcterms:references <http://www.resourcebook.eu/lremap/owl/lremap_sub#LREC2014-1071X-C9D3H9E4F5> ;
+    lremap:hasResourceAvailability lremap:Freely_Available ;
+    lremap:hasResourceModality lremap:Written ;
+    lremap:hasResourceName :AncientGreekWordNet ;
+    lremap:hasResourceStatus lremap:Newly_created-in_progress ;
+    lremap:hasResourceUse :Machine_Translation-_SpeechToSpeech_Translation ;
+    a :wordnet, owl:NamedIndividual .
+
+:eXtended_WordNet_Knowledge_Base
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:english_and_Arabic_WordNet
+    a lremap:ResourceName, owl:NamedIndividual .
+
+:universal_lexico-semantic_resource-_for_many_applications
+    a lremap:ResourceUse, owl:NamedIndividual .
+
+:wordnet
+    a owl:Class ;
+    rdfs:subClassOf lremap:ResourceType .
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/0e3/0e3cdfcc4afcd4d98f5ad61f5b85d432aa9c9948">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Bhat</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:riyaz.ah.bhat@gmail.com"/>
+		<foaf:mbox_sha1sum>0e3cdfcc4afcd4d98f5ad61f5b85d432aa9c9948</foaf:mbox_sha1sum>
+		<foaf:firstName>Riyaz Ahmad</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/305/3058e227149c6cee2634aefc9f3f00672c572b55"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4be/4be03ef5ada3c2cd9f7e4047374b55403dbbc04a"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

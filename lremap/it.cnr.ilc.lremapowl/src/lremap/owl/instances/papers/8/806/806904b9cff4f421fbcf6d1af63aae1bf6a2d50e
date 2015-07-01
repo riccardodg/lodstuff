@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/8/806/806904b9cff4f421fbcf6d1af63aae1bf6a2d50e">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Implementation of an Automatic Sign Language Lexical Annotation Framework based on Propositional Dynamic Logic</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/3/33c/33c724e66341b8e19cc8e82f66f6a97a3d56be87">
+				<rdfs:label>Peng Xi</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/049/04993e049ab8a2bd90769d7d94920119da8dbbc4">
+				<rdfs:label>Collet Christophe</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/337/3379d7be6856893300d3c8f1cc23d0a3c50b47b9">
+				<rdfs:label>Curiel Arturo</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/337/3379d7be6856893300d3c8f1cc23d0a3c50b47b9">
+				<rdfs:label>Curiel Arturo</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/008/0080ff56f42c4c0173324e226ec9a517bf2622f2">
+				<rdfs:label>Metaxas Dimitris</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/cb6/cb67e688aa8f0dba0fa45fe29037594137d64e06">
+				<rdfs:label>Vogler Christian</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c8a/c8aaa19802831fdcd219835a3b73dda47502330a">
+				<rdfs:label>Liu Bo</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/a/a7d/a7d53f9dcdda14dbfc95028e31b345ab14737a74">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>de Chalendar</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:gael.de-chalendar@cea.fr"/>
+		<foaf:mbox_sha1sum>a7d53f9dcdda14dbfc95028e31b345ab14737a74</foaf:mbox_sha1sum>
+		<foaf:firstName>Gaël</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/686/68667d8c35ced6a4818ff01b452e025dfd0f1603"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/98b/98b6c8743cea8b6717621ee62b2b928b69d809e2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/b2e/b2ea6804252f5def60ca5c3047237057a618a99b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/44f/44f8428f2b103bcc7417ac3036de07aa9f2a22e8"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d82/d82a75b4085e1b47e6a79c962771b3f79c7f6dce"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

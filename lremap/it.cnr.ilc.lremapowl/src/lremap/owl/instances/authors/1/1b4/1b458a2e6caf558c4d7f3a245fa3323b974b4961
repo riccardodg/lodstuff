@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/1/1b4/1b458a2e6caf558c4d7f3a245fa3323b974b4961">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Mello</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:heliana.mello@gmail.com"/>
+		<foaf:mbox_sha1sum>1b458a2e6caf558c4d7f3a245fa3323b974b4961</foaf:mbox_sha1sum>
+		<foaf:firstName>Heliana</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/49b/49b835eacf545bebbf523076a886db2e3da34be7"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c24/c24ced12d64110941b17be1c4c6c9dca0a71c2c1"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/43d/43d4668b056e617c03727e9db5da738e417065b6"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d5d/d5d7bec4dc86dd424842f228848aaf0fbf964ab1"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

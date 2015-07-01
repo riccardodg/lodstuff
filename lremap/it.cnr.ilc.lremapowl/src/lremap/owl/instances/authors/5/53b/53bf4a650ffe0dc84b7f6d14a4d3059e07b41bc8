@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/53b/53bf4a650ffe0dc84b7f6d14a4d3059e07b41bc8">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Biemann</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:biem@cs.tu-darmstadt.de"/>
+		<foaf:mbox_sha1sum>53bf4a650ffe0dc84b7f6d14a4d3059e07b41bc8</foaf:mbox_sha1sum>
+		<foaf:firstName>Chris</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e73/e73d76e153806a88d3abc5049ea1fe219b7ff017"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/008/0086e53376262b684f928a41fa4957916efd0fef"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/956/9567b651a24b24add161acf67c2cd9c9b20eb780"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ed2/ed27607d678cda2683d3d66b1411945312e321f4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/519/519d37f6c1dc0fea748eef6c0aaa07e54913f68a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d7a/d7ad44b502899092237d51ecb7af916005e24a8a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3d9/3d9718beda47f487d50036e807b9f06ba7f5e463"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/fef/fef94cb345ea9a91417323662182d18bb34754a4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1bd/1bd24d770ffff29967b3d9528e4bf90330e48eb3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/6c4/6c475a1c7441d413cc429013632c71a4efc95400"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

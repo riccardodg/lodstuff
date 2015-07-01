@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/3e5/3e592c5e58e26c61efa81d7639a1839e5c8f6c3c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Sima'an</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:k.simaan@uva.nl"/>
+		<foaf:mbox_sha1sum>3e592c5e58e26c61efa81d7639a1839e5c8f6c3c</foaf:mbox_sha1sum>
+		<foaf:firstName>Khalil</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d34/d34651d657a3657a62b11cc90ad7b309d4fd6c22"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4a6/4a625d79c27ce4b4e4ab270a47eb4c668c341a26"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/ba4/ba4fc8d70fa73dcbc30cb235d0f90b1d2464f394"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ecd/ecd6d18a9c7a27f0369e3b0366bf138b80246b44"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/5/54b/54b9f5df48d4adb8b0dec6943434fe7539a9772a">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Automatic Expansion of the MRC Psycholinguistic Database Imageability Ratings</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/4/49c/49ca1ae924df35e296454bf171fc0daf0d24c608">
+				<rdfs:label>Yamrom Boris</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/717/717b139812c248f836dadb615ba4cc14549ce3aa">
+				<rdfs:label>van Erp Marieke</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/ced/ced93da7b8e9c63e5d71fe8c082644948e926a32">
+				<rdfs:label>Shaikh Samira</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a9d/a9d6ce6914eaf869de408c145d21da06abc0c7fb">
+				<rdfs:label>Lien John</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/23b/23b5614e55fd540f7ca6979a9fc66cad481108a8">
+				<rdfs:label>Liu Ting</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a52/a525b03cee47b39e0d8f3f31783e04faf4741c8c">
+				<rdfs:label>Boz Umit</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/2/23b/23b5614e55fd540f7ca6979a9fc66cad481108a8">
+				<rdfs:label>Liu Ting</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/319/3197e004cdb63b3b9dd32efb856c17902c62a993">
+				<rdfs:label>Feldman Laurie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/7b5/7b580b1d9039cc37dc5fa4bffe5f764637b11c12">
+				<rdfs:label>Cases Ignacio</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/ddf/ddfdfb915bae63a0b1f529c14e68cca202f4070b">
+				<rdfs:label>Broadwell G. Aaron</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/a13/a13ccf813b26845efb7ddd202cf978d7f8c50486">
+				<rdfs:label>Taylor Sarah</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/f9c/f9cbf1a5bf4b8df02c548a068f196a27c5293dd9">
+				<rdfs:label>Strzalkowski Tomek</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/1/1aa/1aa07da15f5f7b475f672ada336525028c2b7b4b">
+				<rdfs:label>Lin Ching-Sheng</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/be0/be0385333f3ea6d212ffd8130cbe0055e1dc1c99">
+				<rdfs:label>Webb Nick</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/561/56186f98be84c2144544757f7f79875927b66ab4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Neidle</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:carol@bu.edu"/>
+		<foaf:mbox_sha1sum>56186f98be84c2144544757f7f79875927b66ab4</foaf:mbox_sha1sum>
+		<foaf:firstName>Carol</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cb1/cb1f04a9180847752d23bc65e0d48c6f9cf8bd4a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/02e/02ea74abaebd2ed2a2f6f6871a3f86c9d056d5bd"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/dfb/dfb806d65507e6be49193863fb4a965ec13200be"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/60f/60f9226b79addf4d06b6ac05e4cb5ce1a1187a7a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/307/3074cf205790796dcb4cb2bccf27b6c3d9f77a6b"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/b/b5b/b5b24ba9c524c0346bd575812ecd44e6e87ce68d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Jansche</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:mjansche@google.com"/>
+		<foaf:mbox_sha1sum>b5b24ba9c524c0346bd575812ecd44e6e87ce68d</foaf:mbox_sha1sum>
+		<foaf:firstName>Martin</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/01c/01cbaf4d923249ac4e629218517e19292dbb0fd3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8f4/8f4f12bf681cb998f2f8b6d62fca0b70a725d3a2"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

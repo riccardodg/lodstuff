@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/b/bbb/bbb8578dc412a5a091773c77ca366ff8cae80929">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Vulcu</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:gabriela.vulcu@deri.org"/>
+		<foaf:mbox_sha1sum>bbb8578dc412a5a091773c77ca366ff8cae80929</foaf:mbox_sha1sum>
+		<foaf:firstName>Gabriela</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a76/a764fbe8f4bac8d9acc7da118913f7be7383ffcc"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/113/1136d8a14c6ecc6840784157884c9159344ea99c"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

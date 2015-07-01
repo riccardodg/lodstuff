@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/2/284/2849b1dc85ce4c19830f5c1464c7316f1e066274">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>tam</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:tamuwairokku@yahoo.co.jp"/>
+		<foaf:mbox_sha1sum>2849b1dc85ce4c19830f5c1464c7316f1e066274</foaf:mbox_sha1sum>
+		<foaf:firstName>wailok</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/799/799c02fae7e38c76e147d65cd623cb37f4f5aadf"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/bb6/bb67201a22d7d76dbec133c363cd8e3c1a04e0af"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

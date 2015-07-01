@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/7/741/74173850dbebddf02458bdc0b1e3b4098e29a417">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Venturi</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:giulia.venturi@ilc.cnr.it"/>
+		<foaf:mbox_sha1sum>74173850dbebddf02458bdc0b1e3b4098e29a417</foaf:mbox_sha1sum>
+		<foaf:firstName>Giulia</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0c8/0c8697663ea5dd7e4757199a13facc2551987683"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/acd/acd5610ff93a83c546a1ad4be3a6c627f96587e9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/a33/a3377b9fdfe61525e6b2d719e0c86571fd2e2a7f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cca/cca231d70b576d90f8ef10f2fcfb5d3da5b50048"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

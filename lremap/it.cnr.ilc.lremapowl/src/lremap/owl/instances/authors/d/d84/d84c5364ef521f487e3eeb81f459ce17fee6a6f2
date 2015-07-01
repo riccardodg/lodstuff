@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/d84/d84c5364ef521f487e3eeb81f459ce17fee6a6f2">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Garrido</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:juanmaria.garrido@upf.edu"/>
+		<foaf:mbox_sha1sum>d84c5364ef521f487e3eeb81f459ce17fee6a6f2</foaf:mbox_sha1sum>
+		<foaf:firstName>Juan-María</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e5b/e5bc2e2e0a4d64b1fdd8bb2bb2d2b0c48a836844"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/bda/bdacf089576b4961d2ed2ee684969fb62d02ed17"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

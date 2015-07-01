@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/ed9/ed9f4813bb4e3377e4ef8611f72cc7f1665507aa">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Ganitkevitch</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:juri@cs.jhu.edu"/>
+		<foaf:mbox_sha1sum>ed9f4813bb4e3377e4ef8611f72cc7f1665507aa</foaf:mbox_sha1sum>
+		<foaf:firstName>Juri</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2bc/2bc1ed322d41a8fea823c1fad37a8979beb7ec14"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c80/c805204d237aaba000614f7259e7439ba0c0ab01"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

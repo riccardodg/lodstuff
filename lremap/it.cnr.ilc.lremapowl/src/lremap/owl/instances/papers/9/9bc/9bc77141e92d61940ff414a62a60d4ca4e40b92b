@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/9/9bc/9bc77141e92d61940ff414a62a60d4ca4e40b92b">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The fun of exploration: how to access a non-standard language corpus visually</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/d/d3b/d3b3c56aeb27f1d4f185cfb5f04e589dd4921664">
+				<rdfs:label>Theron Roberto</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/aa3/aa39828b42b594766802d18b834185d263c5d424">
+				<rdfs:label>Ghoniem Mohammad</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/ff9/ff901b3c0d45316fa1e829a77809ea6e9f419423">
+				<rdfs:label>Tamisier Thomas</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/da6/da6c54748bf4cfce76d5974e6f60f18bd7908e11">
+				<rdfs:label>Wandl-Vogt Eveline</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/ae2/ae2b053bd875576dacd497e7e37a3e59e21f6cc0">
+				<rdfs:label>Mohammadi Amir</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/54e/54e776df3f5f2d73bff07040a0af0efd464a8352">
+				<rdfs:label>Koch Steffen</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d3b/d3b3c56aeb27f1d4f185cfb5f04e589dd4921664">
+				<rdfs:label>Theron Roberto</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

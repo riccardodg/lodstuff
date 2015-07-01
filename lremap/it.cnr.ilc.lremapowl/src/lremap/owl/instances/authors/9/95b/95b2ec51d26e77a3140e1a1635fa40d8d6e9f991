@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/9/95b/95b2ec51d26e77a3140e1a1635fa40d8d6e9f991">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Oshima</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:oshima@nlp.cs.tut.ac.jp"/>
+		<foaf:mbox_sha1sum>95b2ec51d26e77a3140e1a1635fa40d8d6e9f991</foaf:mbox_sha1sum>
+		<foaf:firstName>Hiroshi</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/eea/eea4c9ff3ec356c53b2560f94e6fdb9e50fddc22"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/242/242dec875b0de235b23f11696b020d9ec4a41860"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

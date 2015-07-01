@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY year "http://www.resourcebook.eu/lremap/owl/lremap_year" >
+    <!ENTITY conf "http://www.resourcebook.eu/lremap/owl/lremap_conf" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&conf;#"
+     xmlns:dc="&dc;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:conf="&conf;"
+     xmlns:year="&year;">
+    <owl:Ontology rdf:about="&conf;">
+        <rdfs:label rdf:datatype="&xsd;string">Basic Conference Ontology</rdfs:label>
+    </owl:Ontology>
+    
+    <owl:ObjectProperty rdf:about="&conf;#heldIn">
+        <rdfs:comment>Defines the property which links the Conference to the Year it was held</rdfs:comment>
+        <rdfs:domain rdf:resource="&conf;#Conference"/>
+        <rdfs:range rdf:resource="&year;#Year"/>
+    </owl:ObjectProperty>
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_year#Year -->
+
+    <owl:Class rdf:about="&conf;#Conference">
+        <rdfs:label xml:lang="en">Conference</rdfs:label>
+    </owl:Class>
+   

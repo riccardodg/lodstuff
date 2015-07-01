@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/8a5/8a509c452f3e4ab7bea4be9412f438d2ebb4aea2">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Wisniewski</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:guillaume.wisniewski@limsi.fr"/>
+		<foaf:mbox_sha1sum>8a509c452f3e4ab7bea4be9412f438d2ebb4aea2</foaf:mbox_sha1sum>
+		<foaf:firstName>Guillaume</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/aed/aed2d5800314b0d38c615e99d61e90dfdd8a9394"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/43a/43a5edca0a5eb71f5773e71df4bed3377cae3f3d"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

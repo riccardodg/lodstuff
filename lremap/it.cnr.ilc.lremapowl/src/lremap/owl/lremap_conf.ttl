@@ -1,0 +1,165 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://www.resourcebook.eu/lremap/owl/lremap_conf#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix conf: <http://www.resourcebook.eu/lremap/owl/lremap_conf> .
+@prefix year: <http://www.resourcebook.eu/lremap/owl/lremap_year> .
+
+swc:BUCC20142014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "BUCC2014 2014" .
+
+swc:BioTxtM2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "BioTxtM 2014" .
+
+swc:CCURL2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "CCURL 2014" .
+
+swc:CMLC-22014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "CMLC-2 2014" .
+
+swc:CNL2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "CNL 2014" .
+
+swc:DIMPLE2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "DIMPLE 2014" .
+
+swc:ES3LOD2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "ES3LOD 2014" .
+
+swc:LDL2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "LDL 2014" .
+
+swc:LRE-Rel22014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "LRE-Rel2 2014" .
+
+swc:LREC2014
+    swc:hasLocation swc:Reykjavik ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:ConferenceEvent, owl:NamedIndividual ;
+    rdfs:label "LREC 2014" .
+
+swc:LRT4HDA2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "LRT4HDA 2014" .
+
+swc:MMC2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "MMC 2014" .
+
+swc:MTE2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "MTE 2014" .
+
+swc:OSACT2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "OSACT 2014" .
+
+swc:OpeNER2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "OpeNER 2014" .
+
+swc:Reykjavik
+    a owl:NamedIndividual, geo:SpatialThing .
+
+swc:SPLET2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "SPLET 2014" .
+
+swc:SaLTMiL2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "SaLTMiL 2014" .
+
+swc:SignLanguage2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "SignLanguage 2014" .
+
+swc:VisLR2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "VisLR 2014" .
+
+swc:WILDRE2014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "WILDRE 2014" .
+
+swc:isa-102014
+    swc:hasLocation swc:Reykjavik ;
+    swc:isSubEventOf swc:LREC2014 ;
+    tl:atYear "2014"^^xsd:gYear ;
+    a swc:WorkshopEvent, owl:NamedIndividual ;
+    rdfs:label "isa-10 2014" .
+
+<http://www.resourcebook.eu/lremap/owl/lremap_conf>
+    a owl:Ontology ;
+    rdfs:label "Modeled on http://data.semanticweb.org/ns/swc/ontology"^^<http://www.w3.org/2001/XMLSchemastring> .
+

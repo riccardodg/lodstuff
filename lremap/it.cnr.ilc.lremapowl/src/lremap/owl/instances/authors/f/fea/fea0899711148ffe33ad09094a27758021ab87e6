@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/fea/fea0899711148ffe33ad09094a27758021ab87e6">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Lebani</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:gianluca.lebani@for.unipi.it"/>
+		<foaf:mbox_sha1sum>fea0899711148ffe33ad09094a27758021ab87e6</foaf:mbox_sha1sum>
+		<foaf:firstName>Gianluca</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/7e5/7e5c3e36d14f484b6d73350bd45c4afc32e8c8cf"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/848/848494bacb577dfe0731f7bfc30169119d091574"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c10/c10d06e8dd989d7f525f2155b66d9d709a0823a8"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3b6/3b64ee3cdce65d8e882dcb42289ced123b96c4ab"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cd1/cd1de2efc5e9f9684d47a9ca19742890df6462dc"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

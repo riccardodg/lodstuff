@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/0/044/04405c9db1d113b4491f630995f9232d7916ee49">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Starlander</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:marianne.starlander@unige.ch"/>
+		<foaf:mbox_sha1sum>04405c9db1d113b4491f630995f9232d7916ee49</foaf:mbox_sha1sum>
+		<foaf:firstName>Marianne</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3c6/3c606018ff772421b1d54536334159bf95cf2bc7"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/141/141df87e735ccf0ac355032c958564d585010655"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2e0/2e0fe46c792485c32a672b723c48009005ffcad4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

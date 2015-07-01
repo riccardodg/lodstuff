@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/c/c9e/c9ecf7c991658e45cc52be4cbbcfccb46c7efd6f">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>The CLE Urdu POS Tagset</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/b/b28/b28d5a6addd99ee4ae60e04ace3b82bf220452b6">
+				<rdfs:label>Wong Kam-Fai</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/328/328f89845be92d45157a9c0176cc9eb8187b0cd9">
+				<rdfs:label>Hussain Sarmad</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/74c/74cb7712270c0ccd6ac5e01cf54fe40accaead74">
+				<rdfs:label>Adeeba Farah</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/4b2/4b25bbfe45587df9b40271c3a8e9ba79536c2bad">
+				<rdfs:label>Hautli Annette</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c58/c586cd8facb3ca19781470dc05bc4f7bf2e3088c">
+				<rdfs:label>Khan Tafseer Ahmed</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/765/765a4a6dcf4144ba18dba715b28019548fc17446">
+				<rdfs:label>Dredze Mark</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/53b/53bf4a650ffe0dc84b7f6d14a4d3059e07b41bc8">
+				<rdfs:label>Biemann Chris</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/88c/88c9c6ca7ab45ce65cbac77971cc1f782fd85f7b">
+				<rdfs:label>Butt Miriam</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/328/328f89845be92d45157a9c0176cc9eb8187b0cd9">
+				<rdfs:label>Hussain Sarmad</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

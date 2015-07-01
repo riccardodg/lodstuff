@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/5/513/51363cbc8ef933d784e8bc281e2a2b0df8019c0d">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Benko</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:vladimir.benko@uniba.sk"/>
+		<foaf:mbox_sha1sum>51363cbc8ef933d784e8bc281e2a2b0df8019c0d</foaf:mbox_sha1sum>
+		<foaf:firstName>Vladimír</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/4f6/4f653b1cb2c68bce4f509765f410bcbe35b7a60f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d54/d5466fbe26f524d2ea2b3982e7c5ec5049ebc3e4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

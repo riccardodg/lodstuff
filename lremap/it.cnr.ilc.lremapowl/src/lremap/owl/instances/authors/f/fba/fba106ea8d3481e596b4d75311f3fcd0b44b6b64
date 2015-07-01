@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/fba/fba106ea8d3481e596b4d75311f3fcd0b44b6b64">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Ngonga Ngomo</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:ngonga@informatik.uni-leipzig.de"/>
+		<foaf:mbox_sha1sum>fba106ea8d3481e596b4d75311f3fcd0b44b6b64</foaf:mbox_sha1sum>
+		<foaf:firstName>Axel-Cyrille</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/196/1963de40d648556f9cb363ea2ed5fcc668a311dc"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/db5/db5e86ba8dd99c1854bfe89a141d1df99fa66504"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

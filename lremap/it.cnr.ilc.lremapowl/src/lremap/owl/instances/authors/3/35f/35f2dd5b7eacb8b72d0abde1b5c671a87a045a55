@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/3/35f/35f2dd5b7eacb8b72d0abde1b5c671a87a045a55">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Mayor</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:aingeru@ehu.es"/>
+		<foaf:mbox_sha1sum>35f2dd5b7eacb8b72d0abde1b5c671a87a045a55</foaf:mbox_sha1sum>
+		<foaf:firstName>Aingeru</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5fd/5fd9bdfd68e2bf9e20b21cb2e521006e1fadf664"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

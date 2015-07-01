@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/d/d16/d163987ac05ec74594e42115152d054680ba8997">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Multimodal Corpora for Silent Speech Interaction</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/5/574/57493217171dd541733378cd334b5576d09998a3">
+				<rdfs:label>Dias Miguel</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/c/c90/c90cd117769b6d79a46a81eb833dd0325edc6886">
+				<rdfs:label>Nagy Ágoston</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8c1/8c101d32524ac36b59195017df96d2637832a3d2">
+				<rdfs:label>Freitas João</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/0/03f/03f69796792254d0a356e37de66713c9688d05da">
+				<rdfs:label>Zsibrita János</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/8c1/8c101d32524ac36b59195017df96d2637832a3d2">
+				<rdfs:label>Freitas João</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fd9/fd90f7cdf74cab382260bd06cbb079e9159a86ad">
+				<rdfs:label>Teixeira António</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/52d/52d6f0e72e935176280e0e726d13ae6ee20a2196">
+				<rdfs:label>Csirik János</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d14/d144f75e21fc42a69dc03ee214f375228ae1f785">
+				<rdfs:label>Farkas Richárd</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

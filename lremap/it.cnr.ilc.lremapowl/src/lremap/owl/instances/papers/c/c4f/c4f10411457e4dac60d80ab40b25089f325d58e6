@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/c/c4f/c4f10411457e4dac60d80ab40b25089f325d58e6">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>CORRELATING DOCUMENT SENTIMENT SCORES WITH WEB-SOURCED EMOTIONAL RESPONSE POLLS FOR A MORE REALISTIC MEASURE OF SENTIMENT PERFORMANCE</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/f/fc0/fc0e9e6b3eeeb0cb55bd44be654d9307dcf5b873">
+				<rdfs:label>Baran Elizabeth</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d52/d5218190dd866d5daeaf01e650007429e3107f19">
+				<rdfs:label>Schuller Björn</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/3/3ac/3acf1808c9e6834023c8d22f620e7817a380d6d6">
+				<rdfs:label>Le Calvé Anne</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/f/fc0/fc0e9e6b3eeeb0cb55bd44be654d9307dcf5b873">
+				<rdfs:label>Baran Elizabeth</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/5/50c/50c170daf232b2033a61d815c3a337f2cc875d6b">
+				<rdfs:label>Clavel Chloé</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

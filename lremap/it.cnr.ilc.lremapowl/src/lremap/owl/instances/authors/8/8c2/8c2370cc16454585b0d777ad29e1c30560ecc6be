@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/8c2/8c2370cc16454585b0d777ad29e1c30560ecc6be">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Neves</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:marianalaraneves@gmail.com"/>
+		<foaf:mbox_sha1sum>8c2370cc16454585b0d777ad29e1c30560ecc6be</foaf:mbox_sha1sum>
+		<foaf:firstName>Mariana</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/7a2/7a20c221796960567d6ef553dd39e88942c893c3"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1f5/1f5f9a49d18037118ad480495cbc870d185d9949"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

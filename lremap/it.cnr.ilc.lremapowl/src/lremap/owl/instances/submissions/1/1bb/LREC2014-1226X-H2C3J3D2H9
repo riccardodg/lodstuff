@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY conf "http://www.resourcebook.eu/lremap/owl/lremap_conf" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+    <!ENTITY lio "http://linkedevents.org/ontology/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+]>
+
+
+<rdf:RDF xmlns="&sub;"
+     xmlns:lio="&lio;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:sub="&sub;"
+     xmlns:paper="&paper;"
+     xmlns:conf="&conf;"
+     xmlns:dc="&dc;#"
+     xmlns:dcterms="&dcterms;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&sub;">
+        <rdfs:comment>
+        	A submission is an event which references a (bibo) article and an Academic event (swc).
+    	</rdfs:comment>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&sub;submissions/1/1bb/LREC2014-1226X-H2C3J3D2H9">
+	</owl:NamedIndividual>
+
+
+<!-- End Submission List -->
+
+</rdf:RDF>

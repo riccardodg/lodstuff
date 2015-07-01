@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/83d/83d0bd98e579f9a5e88fc8edab46ec7b09aefcd4">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Azpeitia</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:aazpeitia@vicomtech.org"/>
+		<foaf:mbox_sha1sum>83d0bd98e579f9a5e88fc8edab46ec7b09aefcd4</foaf:mbox_sha1sum>
+		<foaf:firstName>Andoni</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2ef/2ef572a354a001b2af343bd624e70e2b2424b9f6"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/930/9308b0840652a28a505d602a5a5fcf0d4cf3225c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d3f/d3f10c44b2ce1b1eadd67800f918ca938cf9baa1"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/548/548daa6a022588ac84af4203cc7e1c32e3131d83"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

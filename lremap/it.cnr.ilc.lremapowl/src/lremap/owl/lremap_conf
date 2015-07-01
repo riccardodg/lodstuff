@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY year "http://www.resourcebook.eu/lremap/owl/lremap_year" >
+    <!ENTITY conf "http://www.resourcebook.eu/lremap/owl/lremap_conf" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+    <!ENTITY tl "http://purl.org/NET/c4dm/timeline.owl" >
+    <!ENTITY geo "http://www.w3.org/2003/01/geo/wgs84_pos" >
+]>
+
+
+<rdf:RDF xmlns="&conf;#"
+     xmlns:dc="&dc;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:swc="&swc;#"
+     xmlns:tl="&tl;#"
+     xmlns:geo="&geo;#"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:conf="&conf;"
+     xmlns:year="&year;">
+    <owl:Ontology rdf:about="&conf;">
+        <rdfs:label rdf:datatype="&xsd;string">Modeled on http://data.semanticweb.org/ns/swc/ontology</rdfs:label>
+    </owl:Ontology>
+   
+
+
+<!-- Start Conference List -->
+	<owl:NamedIndividual rdf:about="&swc;#CNL2014">
+		<rdfs:label>CNL 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#LREC2014">
+		<rdfs:label>LREC 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#ConferenceEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#OSACT2014">
+		<rdfs:label>OSACT 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#LRE-Rel22014">
+		<rdfs:label>LRE-Rel2 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#SaLTMiL2014">
+		<rdfs:label>SaLTMiL 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#SignLanguage2014">
+		<rdfs:label>SignLanguage 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#MTE2014">
+		<rdfs:label>MTE 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#LRT4HDA2014">
+		<rdfs:label>LRT4HDA 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#MMC2014">
+		<rdfs:label>MMC 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#OpeNER2014">
+		<rdfs:label>OpeNER 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#BioTxtM2014">
+		<rdfs:label>BioTxtM 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#LDL2014">
+		<rdfs:label>LDL 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#ES3LOD2014">
+		<rdfs:label>ES3LOD 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#DIMPLE2014">
+		<rdfs:label>DIMPLE 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#WILDRE2014">
+		<rdfs:label>WILDRE 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#CCURL2014">
+		<rdfs:label>CCURL 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#VisLR2014">
+		<rdfs:label>VisLR 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#isa-102014">
+		<rdfs:label>isa-10 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#BUCC20142014">
+		<rdfs:label>BUCC2014 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#SPLET2014">
+		<rdfs:label>SPLET 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+	<owl:NamedIndividual rdf:about="&swc;#CMLC-22014">
+		<rdfs:label>CMLC-2 2014</rdfs:label>
+		<rdf:type rdf:resource="&swc;#WorkshopEvent"/>
+		<tl:atYear rdf:datatype="&xsd;#gYear">2014</tl:atYear>
+		<swc:hasLocation rdf:resource="&swc;#Reykjavik"/>
+		<swc:isSubEventOf rdf:resource="&swc;#LREC2014"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Conference List List -->
+
+
+
+<!-- Start Location List -->
+	<owl:NamedIndividual rdf:about="&swc;#Reykjavik">
+		<rdf:type rdf:resource="&geo;#SpatialThing"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Location List -->
+</rdf:RDF>

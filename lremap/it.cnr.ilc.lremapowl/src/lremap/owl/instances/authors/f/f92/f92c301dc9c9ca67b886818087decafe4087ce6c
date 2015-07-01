@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/f92/f92c301dc9c9ca67b886818087decafe4087ce6c">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Lopatkova</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:lopatkova@ufal.mff.cuni.cz"/>
+		<foaf:mbox_sha1sum>f92c301dc9c9ca67b886818087decafe4087ce6c</foaf:mbox_sha1sum>
+		<foaf:firstName>Marketa</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/329/3294b3f8f6c18534ef78b0c89ec0dbf97669ed84"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0c6/0c62ccc36a81d76b34478aad5764ab722c7a4073"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/68f/68f414fd4bb91b374da93a790d421b85fcf98b76"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/608/608be5093f56d090fb474994577e7e6cb5066afa"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/9fd/9fd31e3328273f7572ad58873ebdf4d998c442e2"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/0e0/0e0d86343fedf0a27d46a753be695d8d9a5f131f"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2a9/2a9f49ddbd899a4e2859f3e1212bc223d63fd3b8"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

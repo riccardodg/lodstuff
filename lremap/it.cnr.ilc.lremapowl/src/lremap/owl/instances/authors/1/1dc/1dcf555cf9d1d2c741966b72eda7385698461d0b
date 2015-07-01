@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/1/1dc/1dcf555cf9d1d2c741966b72eda7385698461d0b">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Chalamandaris</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:achalam@ilsp.gr"/>
+		<foaf:mbox_sha1sum>1dcf555cf9d1d2c741966b72eda7385698461d0b</foaf:mbox_sha1sum>
+		<foaf:firstName>Aimilios</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/721/721ca8bbf4734278f2343a8ad6883baf3f79b5eb"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/378/37895a88816cd748ab3cdde1cfa56be80db1dfc3"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

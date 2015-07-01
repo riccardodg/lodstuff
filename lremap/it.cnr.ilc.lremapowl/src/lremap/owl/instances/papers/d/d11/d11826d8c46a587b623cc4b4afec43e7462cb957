@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY paper "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+]>
+
+
+<rdf:RDF xmlns="&paper;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:paper="&paper;"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#"
+     xmlns:dc="&dc;"
+     xmlns:bibo="&bibo;">
+    <owl:Ontology rdf:about="http://&paper;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic paper information of the lremap. 
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="&paper;#hasKeyword">
+        <rdfs:domain rdf:resource="&bibo;Document"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_paper#status -->
+
+    <owl:Class rdf:about="&paper;#status">
+        <rdfs:subClassOf rdf:resource="&bibo;DocumentStatus"/>
+    </owl:Class>
+	<owl:NamedIndividual rdf:about="&paper;papers/d/d11/d11826d8c46a587b623cc4b4afec43e7462cb957">
+		<rdf:type rdf:resource="&bibo;Article"/>
+		<dc:title>Investigating the Image of Entities in Social Media: Dataset Design and First Results</dc:title>
+		<bibo:authorList rdf:parseType="Collection">
+			<rdf:Description rdf:about="&auth;authors/3/312/312cafe0d20459b68c697b02abd0a389c46c7a1a">
+				<rdfs:label>Brun Caroline</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/8/864/86461c32406b7af75d80c3e3f9b305f278130132">
+				<rdfs:label>Boyadjian Julien</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/d/d8b/d8b566545e58ac2912a5121564b01f25e001a394">
+				<rdfs:label>Khouas Leila</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/72f/72f06018ad29ceb4b952432970fc17c92d2fbff3">
+				<rdfs:label>Molina Alejandro</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bb0/bb0f24be230528b34d261f8368bf18c919ef7fd8">
+				<rdfs:label>Kim Young-Min</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bec/bec50cb992b2331e0b5cf5552c47dc2b35bd3881">
+				<rdfs:label>Tiedemann Jörg</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/eaf/eaff820342469a137066084abadfbb71482d2adc">
+				<rdfs:label>Bonnevay Stéphane</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/a/ade/adee261c3e6bd085e3c93c1eea6651776ab13423">
+				<rdfs:label>Neihouser Marie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/4/4dc/4dc2573ebc8a47534e9c09e9d775395d8498bd40">
+				<rdfs:label>Losnegaard Gyri S.</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/b/bb0/bb0f24be230528b34d261f8368bf18c919ef7fd8">
+				<rdfs:label>Kim Young-Min</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e81/e8140de4c17ef469a761c8388ed2c3b9e5af7db3">
+				<rdfs:label>Roux Claude</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/e/e50/e507bd093fdd110b8ed29d98c9499b92cafa34d6">
+				<rdfs:label>Webber Bonnie</rdfs:label>
+			</rdf:Description>
+			<rdf:Description rdf:about="&auth;authors/7/7b0/7b03db50947e1b462c1eee26750ad94741df7320">
+				<rdfs:label>Peradotto Anne</rdfs:label>
+			</rdf:Description>
+		</bibo:authorList>
+	</owl:NamedIndividual>
+</rdf:RDF>

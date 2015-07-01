@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/62e/62e7675aff2726ee7e4c13124337f2332b48d5aa">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Batista-Navarro</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:riza.batista-navarro@cs.man.ac.uk"/>
+		<foaf:mbox_sha1sum>62e7675aff2726ee7e4c13124337f2332b48d5aa</foaf:mbox_sha1sum>
+		<foaf:firstName>Riza Theresa</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/8/8c7/8c7add9efd905be20738f3a0799e8f2af6e6aa21"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/9/908/9088768c8df240eb4cc06d66dd481b360fff4226"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e0b/e0b301ba31e42e6d987e5bc3892af7b69f89546c"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/54f/54facb4daf1c38abdee13bf55cc80059a244da3a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/27d/27d4d6537b87c1278567132ae1df464a0cba0dd0"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

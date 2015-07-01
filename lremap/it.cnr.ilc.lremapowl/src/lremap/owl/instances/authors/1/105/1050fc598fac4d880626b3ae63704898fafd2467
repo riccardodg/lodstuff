@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/1/105/1050fc598fac4d880626b3ae63704898fafd2467">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Palmer</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:martha.palmer@colorado.edu"/>
+		<foaf:mbox_sha1sum>1050fc598fac4d880626b3ae63704898fafd2467</foaf:mbox_sha1sum>
+		<foaf:firstName>Martha</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/c75/c75e1aa6153a3fdac1a22de3d35648e7d9c211d4"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/675/675d011add6d43f38ab278638ac387ef68926e03"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/5/5a1/5a1ce1d864744ea28c8b4c90878347f85bd7dfff"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

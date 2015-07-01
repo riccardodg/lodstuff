@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/68d/68d392f687691d5964fd9e330185e2f3ee1cc427">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Uszkoreit</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:uszkoreit@dfki.de"/>
+		<foaf:mbox_sha1sum>68d392f687691d5964fd9e330185e2f3ee1cc427</foaf:mbox_sha1sum>
+		<foaf:firstName>Hans</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/1e9/1e90dbabf026a71d48d88d2f6ce9a37f7e416641"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2e4/2e4b8e4fd453aaa1ee347d6391d4ef9d5de1afab"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/f/ff8/ff89d789da9a7eb346d11e55dd8ccb41bae4ae39"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/d20/d20d284a093cbfd0c00aa0a222e9858a46495a0a"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/1/107/107af6638901798e90bb2cf1c7f3d2555c1ec027"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/3/3ac/3acddc5c48f8d17e306015e83278ec2c512f3a09"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/e/e4f/e4f2718903e717229b1a55b49527ab5998e172da">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Sharoff</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:s.sharoff@leeds.ac.uk"/>
+		<foaf:mbox_sha1sum>e4f2718903e717229b1a55b49527ab5998e172da</foaf:mbox_sha1sum>
+		<foaf:firstName>Serge</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/759/75911cd2ca584117607648ed76c71fcf2d6fb5c9"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/0/052/052b8648280b7031642fb38b5e292d8d0ea2dcdc"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/e58/e5899687bac599dda9d8f79c0911f919e0cd8c85"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/2cd/2cd8a4d33d03e24d91ca4b3c7d2fd056941f8be4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

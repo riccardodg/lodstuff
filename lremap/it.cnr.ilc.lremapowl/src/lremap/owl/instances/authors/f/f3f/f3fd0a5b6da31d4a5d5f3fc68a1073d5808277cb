@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/f/f3f/f3fd0a5b6da31d4a5d5f3fc68a1073d5808277cb">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Lapshinova-Koltunski</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:e.lapshinova@mx.uni-saarland.de"/>
+		<foaf:mbox_sha1sum>f3fd0a5b6da31d4a5d5f3fc68a1073d5808277cb</foaf:mbox_sha1sum>
+		<foaf:firstName>Ekaterina</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ebc/ebc358164a481bbe78088326d042afddd79b6e68"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/796/7960684e412b2a0e78ce6b0036c235d7d8abab1e"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/ed1/ed1e0baa710ac02424004a5b123d85a5e74787a4"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

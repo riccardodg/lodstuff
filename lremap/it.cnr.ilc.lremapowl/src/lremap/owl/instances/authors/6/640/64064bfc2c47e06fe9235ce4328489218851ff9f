@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/6/640/64064bfc2c47e06fe9235ce4328489218851ff9f">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Derczynski</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:leon@dcs.shef.ac.uk"/>
+		<foaf:mbox_sha1sum>64064bfc2c47e06fe9235ce4328489218851ff9f</foaf:mbox_sha1sum>
+		<foaf:firstName>Leon</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/c/cd7/cd7cd37ad5f58d974fdb65c92167ef69546558b0"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/7/771/7714a2de64cbbbe18fa8f94bcf3a60b67ae0cb02"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/b/be5/be53b812761d0e9798884f19df45971e368f0c7c"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

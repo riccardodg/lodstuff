@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/d/df9/df9b09fdb307e6ecf6fa0b7f4df85751687f65e3">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Dandapat</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:sandipandandapat@gmail.com"/>
+		<foaf:mbox_sha1sum>df9b09fdb307e6ecf6fa0b7f4df85751687f65e3</foaf:mbox_sha1sum>
+		<foaf:firstName>Sandipan</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/286/286e1b67906122040acaaf2e336c1a123d936847"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/a/ae0/ae07abac1a0592074c94b4c52dfd8c8b8bc1003b"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/6/60a/60ae40feb8dccd08964187041fd8fe0996c274fa"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

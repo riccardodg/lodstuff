@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY gn "http://www.geonames.org/ontology#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/lremap_auth" >
+    <!ENTITY lremap_auth "http://www.resourcebook.eu/lremap/owl/lremap_auth#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.resourcebook.eu/lremap/owl/lremap_auth"
+     xml:base="http://www.resourcebook.eu/lremap/owl/lremap_auth"
+     xmlns:gn="http://www.geonames.org/ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1#"
+     xmlns:lremap_auth="&auth;#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:auth="http://www.resourcebook.eu/lremap/owl/lremap_auth">
+    <owl:Ontology rdf:about="http://www.resourcebook.eu/lremap/owl/lremap_auth">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap. It imports http://www.resourcebook.eu/lremap/owl/obj_auth.owl which contains the basic Person, affiliation and Geographical information. It contains instances extracted from the lremap db.
+    	</rdfs:comment>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/obj_auth.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#hasAffiliation -->
+
+    <owl:AnnotationProperty rdf:about="&auth;#hasAffiliation">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1Person"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#familyName -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;familyName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#firstName -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;firstName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#mbox -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#mbox_sha1sum -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;mbox_sha1sum"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#organization -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="&auth;#hasAffiliation">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#013b7df7926f1af87a42e4aca6b86ec02fa9049d -->
+
+    <owl:NamedIndividual rdf:about="&auth;#013b7df7926f1af87a42e4aca6b86ec02fa9049d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Monica</foaf:firstName>
+        <foaf:familyName>Monachini</foaf:familyName>
+        <foaf:mbox_sha1sum>013b7df7926f1af87a42e4aca6b86ec02fa9049d</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:monica.monachini@ilc.cnr.it"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#017b0652ed18fa5a800a4cbfbeb82c8063617991 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#017b0652ed18fa5a800a4cbfbeb82c8063617991">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>017b0652ed18fa5a800a4cbfbeb82c8063617991</foaf:mbox_sha1sum>
+        <foaf:familyName>Tufiș</foaf:familyName>
+        <foaf:firstName>Dan</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:tufis@racai.ro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#08dedd869fd423b8a3af79c38661a26244844f57 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#08dedd869fd423b8a3af79c38661a26244844f57">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>FBK</foaf:organization>
+        <gn:countryCode>IT</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#0911e9a660c1ac5464d7b869e906bbd94ea9cbe4 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#0911e9a660c1ac5464d7b869e906bbd94ea9cbe4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>JP</gn:countryCode>
+        <foaf:organization>University of Zagreb</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#096a9c9858b83dfa4b67296833ce8be14b2c1141 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#096a9c9858b83dfa4b67296833ce8be14b2c1141">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Universitat Pompeu Fabra</foaf:organization>
+        <gn:countryCode>ES</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#0d733fe0a31c631728bdb10094ea5d8e2c342447 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#0d733fe0a31c631728bdb10094ea5d8e2c342447">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>0d733fe0a31c631728bdb10094ea5d8e2c342447</foaf:mbox_sha1sum>
+        <foaf:firstName>Asuncion</foaf:firstName>
+        <foaf:familyName>Moreno</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:asuncion.moreno@upc.edu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#1211895b1d4ef75b2da6f18daa2e2f1af836ca96 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#1211895b1d4ef75b2da6f18daa2e2f1af836ca96">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Institute of Computer Science, Polish Academy of Sciences</foaf:organization>
+        <gn:countryCode>PL</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#13a634319e7278badc3059ea22809f6381856c0e -->
+
+    <owl:NamedIndividual rdf:about="&auth;#13a634319e7278badc3059ea22809f6381856c0e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Traum</foaf:familyName>
+        <foaf:mbox_sha1sum>13a634319e7278badc3059ea22809f6381856c0e</foaf:mbox_sha1sum>
+        <foaf:firstName>David</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:traum@ict.usc.edu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#18e586e8654a9a4d11d405507e09bd56344c46d7 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#18e586e8654a9a4d11d405507e09bd56344c46d7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>18e586e8654a9a4d11d405507e09bd56344c46d7</foaf:mbox_sha1sum>
+        <foaf:firstName>Kadri</foaf:firstName>
+        <foaf:familyName>Vider</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:kadri.vider@ut.ee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#1de4ab700d751178dd3e253f7084e54c0b07f44c -->
+
+    <owl:NamedIndividual rdf:about="&auth;#1de4ab700d751178dd3e253f7084e54c0b07f44c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>1de4ab700d751178dd3e253f7084e54c0b07f44c</foaf:mbox_sha1sum>
+        <foaf:familyName>Pezik</foaf:familyName>
+        <foaf:firstName>Piotr</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:piotr.pezik@gmail.com"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#1f636099d65167d5bd8ba301a9458d858388517d -->
+
+    <owl:NamedIndividual rdf:about="&auth;#1f636099d65167d5bd8ba301a9458d858388517d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>HR</gn:countryCode>
+        <foaf:organization>University of Zagreb, Faculty of Humanities and Social Sciences</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#22de1465be8810b220b7668b480dbd68120d874b -->
+
+    <owl:NamedIndividual rdf:about="&auth;#22de1465be8810b220b7668b480dbd68120d874b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>22de1465be8810b220b7668b480dbd68120d874b</foaf:mbox_sha1sum>
+        <foaf:firstName>Jan</foaf:firstName>
+        <foaf:familyName>Odijk</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:j.odijk@uu.nl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#247043970162dc239de18df35a8fb7c2d2965a65 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#247043970162dc239de18df35a8fb7c2d2965a65">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Helsinki</foaf:organization>
+        <gn:countryCode>FI</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#24883b8b673b64c0c62d8e3060fa412bfec65aab -->
+
+    <owl:NamedIndividual rdf:about="&auth;#24883b8b673b64c0c62d8e3060fa412bfec65aab">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Institute of Computational Linguistics - CNR</foaf:organization>
+        <gn:countryCode>IT</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#29e8580ab1ce31bb4bd3e13b92fca0365a55f07d -->
+
+    <owl:NamedIndividual rdf:about="&auth;#29e8580ab1ce31bb4bd3e13b92fca0365a55f07d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Zagreb</foaf:organization>
+        <gn:countryCode>HR</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#2b647270ecb0693d2edfb503cce7e06a1335655c -->
+
+    <owl:NamedIndividual rdf:about="&auth;#2b647270ecb0693d2edfb503cce7e06a1335655c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Váradi</foaf:familyName>
+        <foaf:firstName>Tamás</foaf:firstName>
+        <foaf:mbox_sha1sum>2b647270ecb0693d2edfb503cce7e06a1335655c</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:tavaradi@gmail.com"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#2d0249738f36125405e9333b23035856b20db21c -->
+
+    <owl:NamedIndividual rdf:about="&auth;#2d0249738f36125405e9333b23035856b20db21c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>2d0249738f36125405e9333b23035856b20db21c</foaf:mbox_sha1sum>
+        <foaf:firstName>Vasile</foaf:firstName>
+        <foaf:familyName>Rus</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:vrus@memphis.edu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#33d7e45c587272e3f09380cb7a902140d5b5d619 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#33d7e45c587272e3f09380cb7a902140d5b5d619">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Manchester</foaf:organization>
+        <gn:countryCode>GB</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#3456a5178e4c9e0992ba9aaa96df974224bb2429 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#3456a5178e4c9e0992ba9aaa96df974224bb2429">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Rosner</foaf:familyName>
+        <foaf:firstName>Michael</foaf:firstName>
+        <foaf:mbox_sha1sum>3456a5178e4c9e0992ba9aaa96df974224bb2429</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:mike.rosner@um.edu.mt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#4768a3461248acab8dffc059bad2f9e15e692b11 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#4768a3461248acab8dffc059bad2f9e15e692b11">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Ogrodniczuk</foaf:familyName>
+        <foaf:firstName>Maciej</foaf:firstName>
+        <foaf:mbox_sha1sum>4768a3461248acab8dffc059bad2f9e15e692b11</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:maciej.ogrodniczuk@gmail.com"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#4ac308ce192f202dad623f10eb6a7ebf05b502ea -->
+
+    <owl:NamedIndividual rdf:about="&auth;#4ac308ce192f202dad623f10eb6a7ebf05b502ea">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>John</foaf:firstName>
+        <foaf:familyName>McNaught</foaf:familyName>
+        <foaf:mbox_sha1sum>4ac308ce192f202dad623f10eb6a7ebf05b502ea</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:John.McNaught@manchester.ac.uk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#50a7e255f4a1a73be7c0f8101561738a2bc14a10 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#50a7e255f4a1a73be7c0f8101561738a2bc14a10">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Research Institute for Artificial Intelligence, Romanian Academy</foaf:organization>
+        <gn:countryCode>RO</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#582e21aa622b9adf4a76d29bfeb8655609bede6b -->
+
+    <owl:NamedIndividual rdf:about="&auth;#582e21aa622b9adf4a76d29bfeb8655609bede6b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>PL</gn:countryCode>
+        <foaf:organization>University of Łódź</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#59235aee9db0a74c9db77fcbfca63a533ce3122c -->
+
+    <owl:NamedIndividual rdf:about="&auth;#59235aee9db0a74c9db77fcbfca63a533ce3122c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Vasiļjevs</foaf:familyName>
+        <foaf:mbox_sha1sum>59235aee9db0a74c9db77fcbfca63a533ce3122c</foaf:mbox_sha1sum>
+        <foaf:firstName>Andrejs</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:andrejs@tilde.com"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#5a841786b7591d129189ac7d38a7efe24c4d53d3 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#5a841786b7591d129189ac7d38a7efe24c4d53d3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Bolette</foaf:firstName>
+        <foaf:mbox_sha1sum>5a841786b7591d129189ac7d38a7efe24c4d53d3</foaf:mbox_sha1sum>
+        <foaf:familyName>Pedersen</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:bspedersen@hum.ku.dk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#6ecd66ae427634bb35e7596bf6a2718a1ce8bf5e -->
+
+    <owl:NamedIndividual rdf:about="&auth;#6ecd66ae427634bb35e7596bf6a2718a1ce8bf5e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>IS</gn:countryCode>
+        <foaf:organization>University of Iceland</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#711133ba1ea3caa996a111a46e1d92534479c5da -->
+
+    <owl:NamedIndividual rdf:about="&auth;#711133ba1ea3caa996a111a46e1d92534479c5da">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Przepiórkowski</foaf:familyName>
+        <foaf:firstName>Adam</foaf:firstName>
+        <foaf:mbox_sha1sum>711133ba1ea3caa996a111a46e1d92534479c5da</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:adamp@ipipan.waw.pl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#74b862cc83dbfdd624564a920b21bc7037aedd75 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#74b862cc83dbfdd624564a920b21bc7037aedd75">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>LIMSI-CNRS &amp; IMMI</foaf:organization>
+        <gn:countryCode>FR</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#79f379a76f5a1efca8d7cdb55fc1fd55eba516dd -->
+
+    <owl:NamedIndividual rdf:about="&auth;#79f379a76f5a1efca8d7cdb55fc1fd55eba516dd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Tilde</foaf:organization>
+        <gn:countryCode>LV</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#7b4e9a157e14a04e4dd7e8486886649d318c06c6 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#7b4e9a157e14a04e4dd7e8486886649d318c06c6">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Universitat Politècnica de Catalunya</foaf:organization>
+        <gn:countryCode>ES</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#85a47d1b64b3321aae5f306cad2b171cca2407da -->
+
+    <owl:NamedIndividual rdf:about="&auth;#85a47d1b64b3321aae5f306cad2b171cca2407da">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>PL</gn:countryCode>
+        <foaf:organization>Institute of Computer Science at the Polish Academy of Sciences</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#884b3e04e115949d94fb5308a9fe766867307d28 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#884b3e04e115949d94fb5308a9fe766867307d28">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Kristín Lena</foaf:firstName>
+        <foaf:familyName>Þorvaldsdóttir</foaf:familyName>
+        <foaf:mbox_sha1sum>884b3e04e115949d94fb5308a9fe766867307d28</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:kria@shh.is"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#8b31e3851c3a5981279e8d7fcac67ed1e274e1e9 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#8b31e3851c3a5981279e8d7fcac67ed1e274e1e9">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Matea</foaf:firstName>
+        <foaf:familyName>Srebačić</foaf:familyName>
+        <foaf:mbox_sha1sum>8b31e3851c3a5981279e8d7fcac67ed1e274e1e9</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:matea.srebacic@unizg.hr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#8fdb2b7fac1017bb77ad3d49e035450e42a28c2e -->
+
+    <owl:NamedIndividual rdf:about="&auth;#8fdb2b7fac1017bb77ad3d49e035450e42a28c2e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Stelios</foaf:firstName>
+        <foaf:mbox_sha1sum>8fdb2b7fac1017bb77ad3d49e035450e42a28c2e</foaf:mbox_sha1sum>
+        <foaf:familyName>Piperidis</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:spip@ilsp.gr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#9d8df1b9230c6941b9a61af722727f44e5354771 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#9d8df1b9230c6941b9a61af722727f44e5354771">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Utrecht University</foaf:organization>
+        <gn:countryCode>NL</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#a47c68bfed0c600a4442dd88745f3314e855c8e7 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#a47c68bfed0c600a4442dd88745f3314e855c8e7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Copenhagen</foaf:organization>
+        <gn:countryCode>DK</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#ab4f0197991b8e3e0f7cbc897d2d98df08675799 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#ab4f0197991b8e3e0f7cbc897d2d98df08675799">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>EE</gn:countryCode>
+        <foaf:organization>University of Tartu</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#b130df6bb3f9af3654e373d21dcca648faf6d31e -->
+
+    <owl:NamedIndividual rdf:about="&auth;#b130df6bb3f9af3654e373d21dcca648faf6d31e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Paul</foaf:firstName>
+        <foaf:mbox_sha1sum>b130df6bb3f9af3654e373d21dcca648faf6d31e</foaf:mbox_sha1sum>
+        <foaf:familyName>Thompson</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:paul.thompson@manchester.ac.uk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#b7d4d6796f33ee16bdb27e46ec8edb0cfc9cfaea -->
+
+    <owl:NamedIndividual rdf:about="&auth;#b7d4d6796f33ee16bdb27e46ec8edb0cfc9cfaea">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>IS</gn:countryCode>
+        <foaf:organization>The University of Memphis</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#c34f2cfef80c254477e3e30f598cf24875d7ed2a -->
+
+    <owl:NamedIndividual rdf:about="&auth;#c34f2cfef80c254477e3e30f598cf24875d7ed2a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Malta</foaf:organization>
+        <gn:countryCode>MT</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#c539ce22fe1012f8dde475fe7d669b72b1c5f01e -->
+
+    <owl:NamedIndividual rdf:about="&auth;#c539ce22fe1012f8dde475fe7d669b72b1c5f01e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>LT</gn:countryCode>
+        <foaf:organization>Institute of the Lithuanian Language</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#c65e82a1f76fde165581798349b424c6fd69fe85 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#c65e82a1f76fde165581798349b424c6fd69fe85">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>De Smedt</foaf:familyName>
+        <foaf:mbox_sha1sum>c65e82a1f76fde165581798349b424c6fd69fe85</foaf:mbox_sha1sum>
+        <foaf:firstName>Koenraad</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:desmedt@uib.no"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#c7ba68a79ffd9133013cf1438a48ea7c208639df -->
+
+    <owl:NamedIndividual rdf:about="&auth;#c7ba68a79ffd9133013cf1438a48ea7c208639df">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>IT</gn:countryCode>
+        <foaf:organization>ILC</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#c8320a9e3012a17131933b6132b07b6ec4a52830 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#c8320a9e3012a17131933b6132b07b6ec4a52830">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>c8320a9e3012a17131933b6132b07b6ec4a52830</foaf:mbox_sha1sum>
+        <foaf:firstName>Marko</foaf:firstName>
+        <foaf:familyName>Tadić</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:marko.tadic@ffzg.hr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#cc5cd65d71e855b128b9b3459266c0edf9745cb0 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#cc5cd65d71e855b128b9b3459266c0edf9745cb0">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Mayumi</foaf:firstName>
+        <foaf:mbox_sha1sum>cc5cd65d71e855b128b9b3459266c0edf9745cb0</foaf:mbox_sha1sum>
+        <foaf:familyName>Bono</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:bono@nii.ac.jp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#ce3fea8e6ebd93c47ec2c4c305f88d8f632a3eaf -->
+
+    <owl:NamedIndividual rdf:about="&auth;#ce3fea8e6ebd93c47ec2c4c305f88d8f632a3eaf">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>University of Bergen</foaf:organization>
+        <gn:countryCode>NO</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#d0f68681c12cd9bb3851669aaacc4573c85592ba -->
+
+    <owl:NamedIndividual rdf:about="&auth;#d0f68681c12cd9bb3851669aaacc4573c85592ba">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:firstName>Bernardo</foaf:firstName>
+        <foaf:familyName>Magnini</foaf:familyName>
+        <foaf:mbox_sha1sum>d0f68681c12cd9bb3851669aaacc4573c85592ba</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:magnini@fbk.eu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#d3f648025cc73bdd0e7ccb40ac29988c7163c6ce -->
+
+    <owl:NamedIndividual rdf:about="&auth;#d3f648025cc73bdd0e7ccb40ac29988c7163c6ce">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Linden</foaf:familyName>
+        <foaf:firstName>Krister</foaf:firstName>
+        <foaf:mbox_sha1sum>d3f648025cc73bdd0e7ccb40ac29988c7163c6ce</foaf:mbox_sha1sum>
+        <foaf:mbox rdf:resource="mailto:krister.linden@helsinki.fi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#d9efc8eb03d091b40c8651a65a0145c4fd1859b2 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#d9efc8eb03d091b40c8651a65a0145c4fd1859b2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>The University of Memphis</foaf:organization>
+        <gn:countryCode></gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#db3cca501f79a1ea48ef9f2feb35fbce37d4e6cd -->
+
+    <owl:NamedIndividual rdf:about="&auth;#db3cca501f79a1ea48ef9f2feb35fbce37d4e6cd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Zabarskaite</foaf:familyName>
+        <foaf:mbox_sha1sum>db3cca501f79a1ea48ef9f2feb35fbce37d4e6cd</foaf:mbox_sha1sum>
+        <foaf:firstName>Jolanta</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:jolanta.zabarskaite@lki.lt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#de16c4ce2767f8f4a8068a2a486dfb27d8a13092 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#de16c4ce2767f8f4a8068a2a486dfb27d8a13092">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>de16c4ce2767f8f4a8068a2a486dfb27d8a13092</foaf:mbox_sha1sum>
+        <foaf:familyName>Mariani</foaf:familyName>
+        <foaf:firstName>Joseph</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:joseph.mariani@limsi.fr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#dfb806d65507e6be49193863fb4a965ec13200be -->
+
+    <owl:NamedIndividual rdf:about="&auth;#dfb806d65507e6be49193863fb4a965ec13200be">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>The University of Memphis</foaf:organization>
+        <gn:countryCode>US</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#e0b301ba31e42e6d987e5bc3892af7b69f89546c -->
+
+    <owl:NamedIndividual rdf:about="&auth;#e0b301ba31e42e6d987e5bc3892af7b69f89546c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>GB</gn:countryCode>
+        <foaf:organization>The National Centre for Text Mining, The University of Manchester</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#e9c8bec3c91a1d99d364f5869d9f8fd5ecfb421f -->
+
+    <owl:NamedIndividual rdf:about="&auth;#e9c8bec3c91a1d99d364f5869d9f8fd5ecfb421f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:familyName>Rögnvaldsson</foaf:familyName>
+        <foaf:mbox_sha1sum>e9c8bec3c91a1d99d364f5869d9f8fd5ecfb421f</foaf:mbox_sha1sum>
+        <foaf:firstName>Eiríkur</foaf:firstName>
+        <foaf:mbox rdf:resource="mailto:eirikur@hi.is"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#ef3aec381f2ad417edb5d9dbc368d072eb64be24 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#ef3aec381f2ad417edb5d9dbc368d072eb64be24">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <gn:countryCode>HU</gn:countryCode>
+        <foaf:organization>Research institute for Linguistics, Hungarian Academy of Sciences</foaf:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#f129a990f41c1f50d8c1e5caa1cd3f5839c307dd -->
+
+    <owl:NamedIndividual rdf:about="&auth;#f129a990f41c1f50d8c1e5caa1cd3f5839c307dd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:organization>Athena RC/ILSP</foaf:organization>
+        <gn:countryCode>GR</gn:countryCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#fe43d847f3b548907eed1e153b6517465695c6df -->
+
+    <owl:NamedIndividual rdf:about="&auth;#fe43d847f3b548907eed1e153b6517465695c6df">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:mbox_sha1sum>fe43d847f3b548907eed1e153b6517465695c6df</foaf:mbox_sha1sum>
+        <foaf:firstName>Maite</foaf:firstName>
+        <foaf:familyName>Melero</foaf:familyName>
+        <foaf:mbox rdf:resource="mailto:maite.melero@upf.edu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.resourcebook.eu/lremap/owl/lremap_auth#ff467501d32a8a25b945b49c3ff252f658317ce4 -->
+
+    <owl:NamedIndividual rdf:about="&auth;#ff467501d32a8a25b945b49c3ff252f658317ce4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <lremap_auth:hasAffiliation>Skadina</lremap_auth:hasAffiliation>
+        <foaf:mbox_sha1sum>ff467501d32a8a25b945b49c3ff252f658317ce4</foaf:mbox_sha1sum>
+        <foaf:firstName>Inguna</foaf:firstName>
+        <lremap_auth:hasAffiliation rdf:resource="&auth;#ff467501d32a8a25b945b49c3ff252f658317ce4"/>
+        <foaf:mbox rdf:resource="mailto:inguna.skadina@tilde.lv"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+

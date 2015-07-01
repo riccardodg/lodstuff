@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/0/0db/0db16626fa1c604f2c4c173eaba852992389f476">
+		<rdf:type rdf:resource="&ri;#morphological_analysis"/>
+		<lremap:hasResourceAvailability rdf:resource="&lremap;From_Owner"/>
+		<lremap:hasResourceStatus rdf:resource="&lremap;Existing-used"/>
+		<lremap:hasResourceModality rdf:resource="&lremap;Written"/>
+		<lremap:hasResourceUse rdf:resource="&ri;resources/0/0db/Czech_is_a_morphologically_rich_language-_so_some_sort_of_lemmatization_is_present_in_almost_any_NLP_application_for_Czech."/>
+		<lremap:hasResourceName rdf:resource="&lremap;Czech_Morphological_Analysis_in_PDT_2.0"/>
+		<dcterms:references rdf:resource="&sub;#LREC2014-501X-J3P5E7J3J8"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+	<owl:Class rdf:about="&ri;resources/0/0db/morphological_analysis">
+		<rdfs:subClassOf rdf:resource="&lremap;ResourceType"/>
+	</owl:Class>
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/0/0db/Czech_Morphological_Analysis_in_PDT_2.0">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+
+
+<!-- Start Resource Uses List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/0/0db/Czech_is_a_morphologically_rich_language-_so_some_sort_of_lemmatization_is_present_in_almost_any_NLP_application_for_Czech.">
+		<rdf:type rdf:resource="&lremap;ResourceUse"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Uses List -->
+</rdf:RDF>

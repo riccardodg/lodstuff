@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY gn "http://www.geonames.org/ontology" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY auth "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY base "http://www.resourcebook.eu/lremap/owl" >
+    <!ENTITY swc "http://data.semanticweb.org/ns/swc/ontology" >
+]>
+
+
+<rdf:RDF xmlns="&auth;"
+     xmlns:gn="&gn;#"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:foaf="&foaf;#"
+     xmlns:swc="&swc;#"
+     xmlns:auth="&auth;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:rdf="&rdf;#">
+    <owl:Ontology rdf:about="http://&auth;">
+        <rdfs:comment>
+        	This is the simplest ontology covering the basic author information of the lremap.
+    	</rdfs:comment>
+    </owl:Ontology>
+ 
+	<owl:NamedIndividual rdf:about="&auth;authors/8/86b/86b7fe4c5ed5cad58a5ea2d5acaf41a3a943e615">
+		<rdf:type rdf:resource="&foaf;/Person"/>
+		<foaf:familyName>Jokinen</foaf:familyName>
+		<foaf:mbox rdf:resource="mailto:kristiina.jokinen@helsinki.fi"/>
+		<foaf:mbox_sha1sum>86b7fe4c5ed5cad58a5ea2d5acaf41a3a943e615</foaf:mbox_sha1sum>
+		<foaf:firstName>Kristiina</foaf:firstName>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/290/290209dc8b3b29c61276db2d242f09da5fd52559"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/4/45f/45f772f7b5812c0b0e9209f9a07647d49eb15ee5"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/2/247/247043970162dc239de18df35a8fb7c2d2965a65"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/e/eb3/eb364f022d3612d4581577f6d8391609ec90fcb8"/>
+		<swc:affiliation rdf:resource="&auth;affiliations/d/daa/daae94dd4d1d08010edd11c8cd9850b1636a5fc7"/>
+	</owl:NamedIndividual>
+</rdf:RDF>

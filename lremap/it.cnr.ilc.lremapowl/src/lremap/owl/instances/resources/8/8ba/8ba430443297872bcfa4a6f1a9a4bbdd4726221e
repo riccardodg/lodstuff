@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY lvont "http://lexvo.org/ontology" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/#" >
+    <!ENTITY sub "http://www.resourcebook.eu/lremap/owl/lremap_sub" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns" >
+    <!ENTITY ri "http://www.resourcebook.eu/lremap/owl/instances/" >
+    <!ENTITY lremap "http://www.resourcebook.eu/lremap/owl/lremap_resource.owl#" >
+    <!ENTITY merged "http://www.resourcebook.eu/lremap/owl/mergedNew.owl#" >
+    <!ENTITY ms "http://purl.org/net/def/metashare#" >
+]>
+
+
+<rdf:RDF xmlns="&ri;#"
+     xmlns:lremap="&lremap;"
+     xmlns:rdfs="&rdfs;#"
+     xmlns:lvont="&lvont;#"
+     xmlns:ri="&ri;#"
+     xmlns:sub="&sub;"
+     xmlns:owl="&owl;#"
+     xmlns:xsd="&xsd;#"
+     xmlns:ms="&ms;"
+     xmlns:merged="&merged;"
+     xmlns:rdf="&rdf;#"
+     xmlns:dcterms="&dcterms;">
+    <owl:Ontology rdf:about="&ri;">
+        <rdfs:comment>This is the collection of resource instances. It imports the new merged ontology between LREMAP and metashare.</rdfs:comment>
+        <owl:imports rdf:resource="http://lexvo.org/ontology"/>
+        <owl:imports rdf:resource="http://www.resourcebook.eu/lremap/owl/mergedNew.owl"/>
+    </owl:Ontology>
+	<owl:NamedIndividual rdf:about="&ri;resources/8/8ba/8ba430443297872bcfa4a6f1a9a4bbdd4726221e">
+		<rdf:type rdf:resource="&lremap;Corpus"/>
+		<lremap:hasResourceAvailability rdf:resource="&ri;resources/8/8ba/Not_currently_available"/>
+		<lremap:hasResourceStatus rdf:resource="&lremap;Newly_created-in_progress"/>
+		<lremap:hasResourceModality rdf:resource="&ri;resources/8/8ba/Multimodal-Multimedia"/>
+		<lremap:hasResourceUse rdf:resource="&ri;resources/8/8ba/Answer_questions_about_language-_nonverbal_behavior-_psychophysiology_and_human-computer_interaction"/>
+		<lremap:hasResourceName rdf:resource="&lremap;Distress_Analysis_Interview_Corpus"/>
+		<dcterms:references rdf:resource="&sub;#LREC2014-508X-G3F3C8E9B7"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource List -->
+
+
+
+<!-- Start Resource Class List -->
+
+
+<!-- End Resource Class List -->
+
+
+<!-- Start Resource Names List -->
+	<owl:NamedIndividual rdf:about="&lremap;resources/8/8ba/Distress_Analysis_Interview_Corpus">
+		<rdf:type rdf:resource="&lremap;ResourceName"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Names List -->
+
+
+<!-- Start Resource Avails List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/8/8ba/Not_currently_available">
+		<rdf:type rdf:resource="&lremap;ResourceAvailability"/>
+	</owl:NamedIndividual>
+
+
+<!-- End Resource Avails List -->
+
+
+<!-- Start Resource Modality List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/8/8ba/Multimodal-Multimedia">
+		<rdf:type rdf:resource="&lremap;ResourceModality"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Modality List -->
+
+
+<!-- Start Resource Uses List -->
+	<owl:NamedIndividual rdf:about="&ri;resources/8/8ba/Answer_questions_about_language-_nonverbal_behavior-_psychophysiology_and_human-computer_interaction">
+		<rdf:type rdf:resource="&lremap;ResourceUse"/>
+	</owl:NamedIndividual>
+
+
+
+<!-- End Resource Uses List -->
+</rdf:RDF>
